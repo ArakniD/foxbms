@@ -3,6 +3,14 @@ Version=1.0
 [Project1]
 ProjectPath=hw-extension\v1.0.5\Sources\extension-010005.PrjPcb
 [Project2]
-ProjectPath=hw-slave-18-ltc6813-1\v1.1.5\Sources\slave-18-ltc6813-1-010105.PrjPcb
+ProjectPath=hw-interface-ltc6820\v1.9.3\Sources\interface.PrjPcb
 [Project3]
 ProjectPath=hw-master\v1.0.6\Sources\master-010106.PrjPcb
+[Project4]
+ProjectPath=library\ti-import.LibPkg
+[Project5]
+ProjectPath=..\..\..\..\Users\lucas\Downloads\Altium\UL_50225C\AltiumDesigner\2019-06-14_09-30-08\UL_Import2.PrjScr
+[Project6]
+ProjectPath=..\..\..\..\Users\lucas\Documents\AltiumLL\AltiumLL.PrjScr
+[Project7]
+ProjectPath=hw-multiboard-v2.0.x\foxBMS-MultiBoard\foxBMS-MultiBoard.PrjMbd
