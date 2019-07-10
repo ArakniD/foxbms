@@ -1,7 +1,10 @@
 Protel Design System Design Rule Check
 PCB File : C:\Sandbox\github\foxbms\hardware\hw-master\v1.0.6\Sources\master.PcbDoc
-Date     : 10/07/2019
-Time     : 12:24:38 AM
+Date     : 11/07/2019
+Time     : 6:25:27 AM
+
+Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU')  and OnOutside       and not IsKeepOut),((not InNetClass('ISO_MCU')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB')))
+Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU_SEC') and OnOutside and not IsKeepOut),((not InNetClass('ISO_MCU_SEC')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_USB')))
 Rule Violations :0
@@ -9,29 +12,25 @@ Rule Violations :0
 Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU_USB') and OnOutside and not IsKeepOut),((not InNetClass('ISO_MCU_USB')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_EXT') and OnMid and not IsKeepOut),(not InNetClass('ISO_EXT') and OnMid and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB')))
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU')  and OnOutside       and not IsKeepOut),((not InNetClass('ISO_MCU')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB')))
-Rule Violations :0
-
 Processing Rule : Clearance Constraint (Gap=0.2mm) (OnMid),(not IsKeepOut)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.15mm) (OnOutside),(not IsKeepOut)
-   Violation between Clearance Constraint: (Collision < 0.1mm) Between Pad SV1602-1(48.27mm,30.65mm) on Multi-Layer And Track (49.054mm,31.894mm)(50.324mm,30.624mm) on Top Signal 
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_EXT') and OnOutside and not IsKeepOut),((InNetClass('ISO_EXT') = false) and OnOutside and (IsKeepOut = false) and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_EXT') and OnMid and not IsKeepOut),(not InNetClass('ISO_EXT') and OnMid and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB')))
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.12mm) (InNetClass('FMC.SDRAM')),(All)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.15mm) (IsKeepOut),(InPoly)
+Processing Rule : Clearance Constraint (Gap=0.15mm) (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB') or InNetClass('ISO_MCU')),(not (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB') or InNetClass('ISO_MCU')))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.15mm) (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB') or InNetClass('ISO_MCU')),(not (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB') or InNetClass('ISO_MCU')))
+Processing Rule : Clearance Constraint (Gap=0.15mm) (IsKeepOut),(InPoly)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_MCU') and OnMid and not IsKeepOut),(not InNetClass('ISO_MCU') and OnMid and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB')))
@@ -44,8 +43,7 @@ Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_MCU_USB') an
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-   Violation between Short-Circuit Constraint: Between Pad SV1602-1(48.27mm,30.65mm) on Multi-Layer And Track (49.054mm,31.894mm)(50.324mm,30.624mm) on Top Signal Location : [X = 74.539mm][Y = 56.919mm]
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
@@ -65,22 +63,16 @@ Rule Violations :0
 Processing Rule : Routing Via (MinHoleWidth=0.2mm) (MaxHoleWidth=1mm) (PreferredHoleWidth=0.3mm) (MinWidth=0.45mm) (MaxWidth=7mm) (PreferedWidth=0.45mm) (All)
 Rule Violations :0
 
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('D_2_N'))
+Rule Violations :0
+
 Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('U_1_P'))
-Rule Violations :0
-
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('U_1_N'))
-Rule Violations :0
-
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('D_1_P'))
 Rule Violations :0
 
 Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.203mm) (Prefered=0.152mm)  and Width Constraints (Min=0.131mm) (Max=0.152mm) (Prefered=0.14mm) (All)
 Rule Violations :0
 
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('D_1_N'))
-Rule Violations :0
-
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('D_2_N'))
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('U_1_N'))
 Rule Violations :0
 
 Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('U_2_P'))
@@ -89,482 +81,11 @@ Rule Violations :0
 Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('U_2_N'))
 Rule Violations :0
 
-Processing Rule : SMD To Corner (Distance=0mm) (All)
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('D_1_N'))
 Rule Violations :0
 
-Processing Rule : SMD To Plane Constraint (Distance=0mm) (All)
-   Violation between SMD To Plane Constraint: Between Pad C1101-1(92.109mm,92.44mm) on Top Signal And Pad SV901-5(88.73mm,100.73mm) on Multi-Layer Actual Distance = 10.132mm
-   Violation between SMD To Plane Constraint: Between Pad C1101-2(90.659mm,92.44mm) on Top Signal And Via (90.66mm,93.531mm) from Top Signal to Bottom Signal Actual Distance = 3.109mm
-   Violation between SMD To Plane Constraint: Pad C1102-1(92.109mm,90.865mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C1102-2(90.659mm,90.865mm) on Top Signal And Via (90.66mm,93.531mm) from Top Signal to Bottom Signal Actual Distance = 3.109mm
-   Violation between SMD To Plane Constraint: Between Pad C1103-2(90.565mm,83.693mm) on Top Signal And Via (91.516mm,83.9mm) from Top Signal to Bottom Signal Actual Distance = 0.57mm
-   Violation between SMD To Plane Constraint: Between Pad C1104-2(88.951mm,92.114mm) on Top Signal And Via (88.951mm,93.019mm) from Top Signal to Bottom Signal Actual Distance = 0.905mm
-   Violation between SMD To Plane Constraint: Between Pad C1106-1(64.174mm,51.181mm) on Top Signal And Pad X402-1(66.199mm,51.261mm) on Multi-Layer Actual Distance = 1.982mm
-   Violation between SMD To Plane Constraint: Between Pad C1106-2(62.724mm,51.181mm) on Top Signal And Pad X401-1(60.484mm,51.261mm) on Multi-Layer Actual Distance = 2.16mm
-   Violation between SMD To Plane Constraint: Between Pad C1501-1(85.696mm,34.167mm) on Top Signal And Via (85.69mm,35.034mm) from Top Signal to Bottom Signal Actual Distance = 0.867mm
-   Violation between SMD To Plane Constraint: Between Pad C1501-2(84.246mm,34.167mm) on Top Signal And Via (84.246mm,35.034mm) from Top Signal to Bottom Signal Actual Distance = 0.867mm
-   Violation between SMD To Plane Constraint: Between Pad C1601-1(51.345mm,32.053mm) on Top Signal And Pad SV1602-3(48.27mm,33.19mm) on Multi-Layer Actual Distance = 3.421mm
-   Violation between SMD To Plane Constraint: Between Pad C1601-2(52.795mm,32.053mm) on Top Signal And Via (54.134mm,32.053mm) from Top Signal to Bottom Signal Actual Distance = 1.214mm
-   Violation between SMD To Plane Constraint: Between Pad C1602-2(52.795mm,30.624mm) on Top Signal And Via (54.134mm,30.624mm) from Top Signal to Bottom Signal Actual Distance = 1.214mm
-   Violation between SMD To Plane Constraint: Between Pad C1603-1(10.705mm,33.164mm) on Top Signal And Pad SV1604-3(8.27mm,33.19mm) on Multi-Layer Actual Distance = 0.037mm
-   Violation between SMD To Plane Constraint: Between Pad C1603-2(12.155mm,33.164mm) on Top Signal And Via (12.155mm,32.354mm) from Top Signal to Bottom Signal Actual Distance = 0.81mm
-   Violation between SMD To Plane Constraint: Between Pad C1604-2(3.651mm,31.645mm) on Top Signal And Via (3.651mm,30.306mm) from Top Signal to Bottom Signal Actual Distance = 1.214mm
-   Violation between SMD To Plane Constraint: Between Pad C1801-1(127.66mm,39.909mm) on Top Signal And Via (126.549mm,39.909mm) from Top Signal to Bottom Signal Actual Distance = 1.111mm
-   Violation between SMD To Plane Constraint: Between Pad C1801-2(127.66mm,38.459mm) on Top Signal And Via (126.549mm,38.459mm) from Top Signal to Bottom Signal Actual Distance = 1.111mm
-   Violation between SMD To Plane Constraint: Between Pad C1802-1(127.575mm,35.108mm) on Top Signal And Via (126.386mm,35.268mm) from Top Signal to Bottom Signal Actual Distance = 0.142mm
-   Violation between SMD To Plane Constraint: Between Pad C1802-2(127.575mm,33.658mm) on Top Signal And Via (126.409mm,33.713mm) from Top Signal to Bottom Signal Actual Distance = 0.077mm
-   Violation between SMD To Plane Constraint: Between Pad C1803-1(126.78mm,31.644mm) on Top Signal And Via (126.771mm,30.886mm) from Top Signal to Bottom Signal Actual Distance = 0.071mm
-   Violation between SMD To Plane Constraint: Between Pad C1803-2(125.329mm,31.644mm) on Top Signal And Via (124.668mm,31.664mm) from Top Signal to Bottom Signal Actual Distance = 0.642mm
-   Violation between SMD To Plane Constraint: Between Pad C1804-1(127.645mm,21.196mm) on Top Signal And Via (127.645mm,20.36mm) from Top Signal to Bottom Signal Actual Distance = 0.836mm
-   Violation between SMD To Plane Constraint: Between Pad C1804-2(126.195mm,21.196mm) on Top Signal And Via (126.195mm,22.14mm) from Top Signal to Bottom Signal Actual Distance = 0.944mm
-   Violation between SMD To Plane Constraint: Between Pad C1805-1(127.645mm,41.996mm) on Top Signal And Via (127.645mm,43.107mm) from Top Signal to Bottom Signal Actual Distance = 1.111mm
-   Violation between SMD To Plane Constraint: Between Pad C1805-2(126.195mm,41.996mm) on Top Signal And Via (126.195mm,43.107mm) from Top Signal to Bottom Signal Actual Distance = 1.111mm
-   Violation between SMD To Plane Constraint: Between Pad C1806-1(143.711mm,33.114mm) on Top Signal And Via (144.805mm,33.164mm) from Top Signal to Bottom Signal Actual Distance = 1.105mm
-   Violation between SMD To Plane Constraint: Between Pad C1806-2(143.711mm,31.664mm) on Top Signal And Via (144.805mm,31.664mm) from Top Signal to Bottom Signal Actual Distance = 1.094mm
-   Violation between SMD To Plane Constraint: Between Pad C1807-1(143.711mm,37.547mm) on Top Signal And Via (144.704mm,37.542mm) from Top Signal to Bottom Signal Actual Distance = 1.063mm
-   Violation between SMD To Plane Constraint: Between Pad C1807-2(143.711mm,36.097mm) on Top Signal And Via (144.704mm,36.11mm) from Top Signal to Bottom Signal Actual Distance = 1.065mm
-   Violation between SMD To Plane Constraint: Pad C201-1(139.598mm,104.367mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C201-2(139.598mm,97.867mm) on Top Signal And Via (141.63mm,96.342mm) from Top Signal to Bottom Signal Actual Distance = 2.23mm
-   Violation between SMD To Plane Constraint: Between Pad C202-2(145.779mm,105.893mm) on Top Signal And Via (145.059mm,105.893mm) from Top Signal to Bottom Signal Actual Distance = 0.719mm
-   Violation between SMD To Plane Constraint: Between Pad C203-2(151.464mm,87.964mm) on Top Signal And Pad IC202-23(156.515mm,81.788mm) on Multi-Layer Actual Distance = 9.338mm
-   Violation between SMD To Plane Constraint: Pad C204-1(138.163mm,91.112mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C204-2(138.163mm,88.162mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C2101-1(120.155mm,8.597mm) on Top Signal And Via (120.949mm,8.597mm) from Top Signal to Bottom Signal Actual Distance = 0.795mm
-   Violation between SMD To Plane Constraint: Between Pad C2101-2(118.704mm,8.597mm) on Top Signal And Via (117.935mm,8.631mm) from Top Signal to Bottom Signal Actual Distance = 0.003mm
-   Violation between SMD To Plane Constraint: Between Pad C2102-2(114.87mm,8.534mm) on Top Signal And Via (113.618mm,8.534mm) from Top Signal to Bottom Signal Actual Distance = 1.252mm
-   Violation between SMD To Plane Constraint: Between Pad C211-2(137.198mm,62.598mm) on Top Signal And Via (137.185mm,61.976mm) from Top Signal to Bottom Signal Actual Distance = 0.03mm
-   Violation between SMD To Plane Constraint: Between Pad C213-2(137.198mm,63.698mm) on Top Signal And Via (137.185mm,64.338mm) from Top Signal to Bottom Signal Actual Distance = 0.64mm
-   Violation between SMD To Plane Constraint: Between Pad C214-1(134.376mm,70.333mm) on Top Signal And Via (133.221mm,71.059mm) from Top Signal to Bottom Signal Actual Distance = 1.932mm
-   Violation between SMD To Plane Constraint: Pad C220-1(157.617mm,101.7mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C221-1(145.167mm,100.538mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C221-2(145.167mm,103.488mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C301-1(23.643mm,87.757mm) on Top Signal And Via (23.19mm,90.863mm) from Top Signal to Bottom Signal Actual Distance = 9.254mm
-   Violation between SMD To Plane Constraint: Between Pad C301-2(26.243mm,87.757mm) on Top Signal And Via (28.379mm,89.052mm) from Top Signal to Bottom Signal Actual Distance = 1.46mm
-   Violation between SMD To Plane Constraint: Between Pad C302-1(23.617mm,84.226mm) on Top Signal And Via (23.19mm,90.863mm) from Top Signal to Bottom Signal Actual Distance = 9.254mm
-   Violation between SMD To Plane Constraint: Between Pad C303-1(23.336mm,57.498mm) on Top Signal And Via (22.399mm,57.819mm) from Top Signal to Bottom Signal Actual Distance = 0.354mm
-   Violation between SMD To Plane Constraint: Between Pad C304-2(6.371mm,55.783mm) on Top Signal And Via (5.842mm,56.312mm) from Top Signal to Bottom Signal Actual Distance = 0.748mm
-   Violation between SMD To Plane Constraint: Between Pad C305-2(23.135mm,50.456mm) on Top Signal And Via (22.223mm,50.415mm) from Top Signal to Bottom Signal Actual Distance = 0.042mm
-   Violation between SMD To Plane Constraint: Between Pad C306-2(23.135mm,51.756mm) on Top Signal And Via (22.223mm,51.783mm) from Top Signal to Bottom Signal Actual Distance = 0.029mm
-   Violation between SMD To Plane Constraint: Between Pad C310-2(23.53mm,54.822mm) on Top Signal And Via (22.705mm,55.143mm) from Top Signal to Bottom Signal Actual Distance = 0.354mm
-   Violation between SMD To Plane Constraint: Between Pad C311-2(28.535mm,55.306mm) on Top Signal And Via (29.259mm,55.288mm) from Top Signal to Bottom Signal Actual Distance = 0.724mm
-   Violation between SMD To Plane Constraint: Between Pad C313-2(27.435mm,55.306mm) on Top Signal And Via (27.452mm,56.03mm) from Top Signal to Bottom Signal Actual Distance = 0.724mm
-   Violation between SMD To Plane Constraint: Between Pad C401-2(112.323mm,13.83mm) on Top Signal And Via (112.369mm,13.094mm) from Top Signal to Bottom Signal Actual Distance = 0.743mm
-   Violation between SMD To Plane Constraint: Between Pad C402-1(105.371mm,16.654mm) on Top Signal And Via (106.07mm,15.867mm) from Top Signal to Bottom Signal Actual Distance = 0.993mm
-   Violation between SMD To Plane Constraint: Between Pad C403-1(125.707mm,15.32mm) on Top Signal And Via (126.676mm,15.32mm) from Top Signal to Bottom Signal Actual Distance = 0.969mm
-   Violation between SMD To Plane Constraint: Between Pad C403-2(125.707mm,13.87mm) on Top Signal And Via (126.676mm,13.992mm) from Top Signal to Bottom Signal Actual Distance = 4.748mm
-   Violation between SMD To Plane Constraint: Between Pad C404-1(117.286mm,12.09mm) on Top Signal And Via (117.286mm,11.137mm) from Top Signal to Bottom Signal Actual Distance = 0.953mm
-   Violation between SMD To Plane Constraint: Between Pad C404-2(115.836mm,12.09mm) on Top Signal And Via (115.828mm,11.33mm) from Top Signal to Bottom Signal Actual Distance = 0.743mm
-   Violation between SMD To Plane Constraint: Between Pad C405-1(118.452mm,23.032mm) on Top Signal And Via (119.248mm,22.625mm) from Top Signal to Bottom Signal Actual Distance = 0.576mm
-   Violation between SMD To Plane Constraint: Between Pad C405-2(118.452mm,21.582mm) on Top Signal And Via (118.413mm,20.635mm) from Top Signal to Bottom Signal Actual Distance = 0.947mm
-   Violation between SMD To Plane Constraint: Between Pad C406-2(120.151mm,41.23mm) on Top Signal And Via (120.151mm,42.034mm) from Top Signal to Bottom Signal Actual Distance = 0.804mm
-   Violation between SMD To Plane Constraint: Pad C407-1(88.99mm,23.28mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C407-2(88.99mm,24.73mm) on Top Signal And Via (89.712mm,24.257mm) from Top Signal to Bottom Signal Actual Distance = 0.669mm
-   Violation between SMD To Plane Constraint: Pad C408-1(124.278mm,15.32mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C408-2(124.278mm,13.87mm) on Top Signal And Via (126.676mm,13.992mm) from Top Signal to Bottom Signal Actual Distance = 4.748mm
-   Violation between SMD To Plane Constraint: Between Pad C409-1(101.244mm,17.01mm) on Top Signal And Via (101.573mm,17.741mm) from Top Signal to Bottom Signal Actual Distance = 1.204mm
-   Violation between SMD To Plane Constraint: Between Pad C409-2(101.244mm,15.56mm) on Top Signal And Via (101.244mm,14.681mm) from Top Signal to Bottom Signal Actual Distance = 0.879mm
-   Violation between SMD To Plane Constraint: Between Pad C410-1(102.794mm,15.599mm) on Top Signal And Via (102.794mm,14.681mm) from Top Signal to Bottom Signal Actual Distance = 0.918mm
-   Violation between SMD To Plane Constraint: Between Pad C410-2(102.794mm,17.049mm) on Top Signal And Via (102.573mm,17.741mm) from Top Signal to Bottom Signal Actual Distance = 0.606mm
-   Violation between SMD To Plane Constraint: Between Pad C411-2(111.824mm,16.992mm) on Top Signal And Via (112.319mm,16.154mm) from Top Signal to Bottom Signal Actual Distance = 0.984mm
-   Violation between SMD To Plane Constraint: Between Pad C412-1(119.024mm,29.495mm) on Top Signal And Via (120.017mm,29.495mm) from Top Signal to Bottom Signal Actual Distance = 0.993mm
-   Violation between SMD To Plane Constraint: Between Pad C412-2(119.024mm,28.045mm) on Top Signal And Via (119.967mm,27.978mm) from Top Signal to Bottom Signal Actual Distance = 0.876mm
-   Violation between SMD To Plane Constraint: Between Pad C413-1(119.024mm,34.521mm) on Top Signal And Via (120.017mm,34.521mm) from Top Signal to Bottom Signal Actual Distance = 0.993mm
-   Violation between SMD To Plane Constraint: Between Pad C413-2(119.024mm,33.071mm) on Top Signal And Via (119.967mm,33.071mm) from Top Signal to Bottom Signal Actual Distance = 0.943mm
-   Violation between SMD To Plane Constraint: Between Pad C414-2(109.415mm,16.604mm) on Top Signal And Via (108.69mm,15.828mm) from Top Signal to Bottom Signal Actual Distance = 0.603mm
-   Violation between SMD To Plane Constraint: Between Pad C415-1(114.293mm,47.288mm) on Top Signal And Via (114.293mm,48.369mm) from Top Signal to Bottom Signal Actual Distance = 1.081mm
-   Violation between SMD To Plane Constraint: Between Pad C415-2(115.743mm,47.288mm) on Top Signal And Via (115.729mm,48.281mm) from Top Signal to Bottom Signal Actual Distance = 1.007mm
-   Violation between SMD To Plane Constraint: Between Pad C416-1(107.225mm,47.341mm) on Top Signal And Via (107.225mm,48.422mm) from Top Signal to Bottom Signal Actual Distance = 1.081mm
-   Violation between SMD To Plane Constraint: Between Pad C416-2(108.675mm,47.341mm) on Top Signal And Via (108.661mm,48.334mm) from Top Signal to Bottom Signal Actual Distance = 1.007mm
-   Violation between SMD To Plane Constraint: Between Pad C417-1(101.662mm,47.388mm) on Top Signal And Via (101.662mm,48.469mm) from Top Signal to Bottom Signal Actual Distance = 1.081mm
-   Violation between SMD To Plane Constraint: Between Pad C417-2(103.112mm,47.388mm) on Top Signal And Via (103.099mm,48.381mm) from Top Signal to Bottom Signal Actual Distance = 1.007mm
-   Violation between SMD To Plane Constraint: Between Pad C418-1(95.135mm,47.109mm) on Top Signal And Via (95.072mm,48.099mm) from Top Signal to Bottom Signal Actual Distance = 1.534mm
-   Violation between SMD To Plane Constraint: Between Pad C418-2(96.585mm,47.109mm) on Top Signal And Via (96.585mm,48.189mm) from Top Signal to Bottom Signal Actual Distance = 1.081mm
-   Violation between SMD To Plane Constraint: Between Pad C419-1(88.011mm,41.309mm) on Top Signal And Via (86.93mm,41.309mm) from Top Signal to Bottom Signal Actual Distance = 1.081mm
-   Violation between SMD To Plane Constraint: Between Pad C419-2(88.011mm,42.759mm) on Top Signal And Via (86.93mm,42.759mm) from Top Signal to Bottom Signal Actual Distance = 1.081mm
-   Violation between SMD To Plane Constraint: Between Pad C420-1(88.41mm,33.917mm) on Top Signal And Via (87.114mm,33.917mm) from Top Signal to Bottom Signal Actual Distance = 0.897mm
-   Violation between SMD To Plane Constraint: Between Pad C420-2(88.41mm,35.367mm) on Top Signal And Via (87.114mm,35.367mm) from Top Signal to Bottom Signal Actual Distance = 0.897mm
-   Violation between SMD To Plane Constraint: Between Pad C421-1(88.41mm,29.041mm) on Top Signal And Via (87.21mm,29.01mm) from Top Signal to Bottom Signal Actual Distance = 0.801mm
-   Violation between SMD To Plane Constraint: Between Pad C421-2(88.41mm,30.491mm) on Top Signal And Via (87.21mm,30.46mm) from Top Signal to Bottom Signal Actual Distance = 0.801mm
-   Violation between SMD To Plane Constraint: Between Pad C422-2(114.185mm,13.83mm) on Top Signal And Via (114.166mm,13.094mm) from Top Signal to Bottom Signal Actual Distance = 0.743mm
-   Violation between SMD To Plane Constraint: Between Pad C423-2(119.156mm,13.64mm) on Top Signal And Via (119.146mm,12.887mm) from Top Signal to Bottom Signal Actual Distance = 0.743mm
-   Violation between SMD To Plane Constraint: Between Pad C424-2(115.824mm,13.855mm) on Top Signal And Via (115.817mm,13.094mm) from Top Signal to Bottom Signal Actual Distance = 0.743mm
-   Violation between SMD To Plane Constraint: Between Pad C425-2(102.86mm,11.542mm) on Top Signal And Via (102.86mm,10.687mm) from Top Signal to Bottom Signal Actual Distance = 0.855mm
-   Violation between SMD To Plane Constraint: Between Pad C426-2(98.072mm,48.759mm) on Top Signal And Via (98.072mm,49.54mm) from Top Signal to Bottom Signal Actual Distance = 0.781mm
-   Violation between SMD To Plane Constraint: Between Pad C427-2(121.929mm,41.225mm) on Top Signal And Via (121.929mm,42.034mm) from Top Signal to Bottom Signal Actual Distance = 0.809mm
-   Violation between SMD To Plane Constraint: Between Pad C428-1(96.215mm,16.795mm) on Top Signal And Via (96.073mm,17.61mm) from Top Signal to Bottom Signal Actual Distance = 0.805mm
-   Violation between SMD To Plane Constraint: Between Pad C429-2(98.45mm,16.795mm) on Top Signal And Via (98.582mm,17.605mm) from Top Signal to Bottom Signal Actual Distance = 0.805mm
-   Violation between SMD To Plane Constraint: Between Pad C430-1(61.664mm,42.689mm) on Top Signal And Via (60.325mm,42.689mm) from Top Signal to Bottom Signal Actual Distance = 1.339mm
-   Violation between SMD To Plane Constraint: Between Pad C430-2(63.114mm,42.689mm) on Top Signal And Via (64.77mm,42.689mm) from Top Signal to Bottom Signal Actual Distance = 1.531mm
-   Violation between SMD To Plane Constraint: Between Pad C431-1(131.392mm,49.733mm) on Top Signal And Via (130.768mm,49.733mm) from Top Signal to Bottom Signal Actual Distance = 0.624mm
-   Violation between SMD To Plane Constraint: Between Pad C431-2(131.392mm,48.733mm) on Top Signal And Via (132.015mm,48.733mm) from Top Signal to Bottom Signal Actual Distance = 0.624mm
-   Violation between SMD To Plane Constraint: Between Pad C432-2(126.39mm,48.065mm) on Top Signal And Via (124.174mm,47.993mm) from Top Signal to Bottom Signal Actual Distance = 0.289mm
-   Violation between SMD To Plane Constraint: Pad C433-1(123.031mm,56.439mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C434-1(126.549mm,53.586mm) on Top Signal And Via (126.559mm,54.473mm) from Top Signal to Bottom Signal Actual Distance = 0.901mm
-   Violation between SMD To Plane Constraint: Between Pad C435-1(87.504mm,23.232mm) on Top Signal And Via (87.114mm,22.307mm) from Top Signal to Bottom Signal Actual Distance = 0.704mm
-   Violation between SMD To Plane Constraint: Between Pad C435-2(87.504mm,25.282mm) on Top Signal And Via (87.114mm,26.176mm) from Top Signal to Bottom Signal Actual Distance = 0.704mm
-   Violation between SMD To Plane Constraint: Between Pad C501-1(33.794mm,28.092mm) on Top Signal And Via (33.121mm,28.608mm) from Top Signal to Bottom Signal Actual Distance = 0.116mm
-   Violation between SMD To Plane Constraint: Between Pad C502-1(32.207mm,34.761mm) on Top Signal And Via (32.22mm,35.548mm) from Top Signal to Bottom Signal Actual Distance = 0.817mm
-   Violation between SMD To Plane Constraint: Between Pad C502-2(32.207mm,33.311mm) on Top Signal And Via (33.121mm,33.958mm) from Top Signal to Bottom Signal Actual Distance = 1.315mm
-   Violation between SMD To Plane Constraint: Between Pad C503-1(15.171mm,37.291mm) on Top Signal And Via (15.171mm,38.179mm) from Top Signal to Bottom Signal Actual Distance = 0.887mm
-   Violation between SMD To Plane Constraint: Between Pad C503-2(13.721mm,37.291mm) on Top Signal And Via (13.721mm,38.156mm) from Top Signal to Bottom Signal Actual Distance = 0.865mm
-   Violation between SMD To Plane Constraint: Between Pad C504-1(32.334mm,26.831mm) on Top Signal And Via (33.194mm,26.333mm) from Top Signal to Bottom Signal Actual Distance = 1.293mm
-   Violation between SMD To Plane Constraint: Between Pad C504-2(32.334mm,25.381mm) on Top Signal And Via (33.172mm,25.349mm) from Top Signal to Bottom Signal Actual Distance = 0.845mm
-   Violation between SMD To Plane Constraint: Between Pad C505-2(33.794mm,31.996mm) on Top Signal And Via (33.121mm,31.471mm) from Top Signal to Bottom Signal Actual Distance = 0.095mm
-   Violation between SMD To Plane Constraint: Between Pad C506-1(27.244mm,39.069mm) on Top Signal And Via (27.216mm,39.863mm) from Top Signal to Bottom Signal Actual Distance = 0.789mm
-   Violation between SMD To Plane Constraint: Between Pad C506-2(28.694mm,39.069mm) on Top Signal And Via (28.697mm,39.871mm) from Top Signal to Bottom Signal Actual Distance = 0.799mm
-   Violation between SMD To Plane Constraint: Between Pad C507-1(12.541mm,22.898mm) on Top Signal And Via (11.748mm,22.898mm) from Top Signal to Bottom Signal Actual Distance = 0.794mm
-   Violation between SMD To Plane Constraint: Between Pad C507-2(12.541mm,24.348mm) on Top Signal And Via (11.748mm,24.348mm) from Top Signal to Bottom Signal Actual Distance = 0.794mm
-   Violation between SMD To Plane Constraint: Between Pad C508-1(29.3mm,19.988mm) on Top Signal And Via (29.3mm,19.109mm) from Top Signal to Bottom Signal Actual Distance = 0.878mm
-   Violation between SMD To Plane Constraint: Between Pad C508-2(27.85mm,19.988mm) on Top Signal And Via (27.85mm,19.138mm) from Top Signal to Bottom Signal Actual Distance = 0.204mm
-   Violation between SMD To Plane Constraint: Between Pad C509-2(29.596mm,17.765mm) on Top Signal And Via (28.416mm,17.765mm) from Top Signal to Bottom Signal Actual Distance = 1.055mm
-   Violation between SMD To Plane Constraint: Between Pad C510-1(34.098mm,24.274mm) on Top Signal And Via (34.671mm,24.854mm) from Top Signal to Bottom Signal Actual Distance = 0.093mm
-   Violation between SMD To Plane Constraint: Between Pad C510-2(35.548mm,24.274mm) on Top Signal And Via (36.354mm,24.354mm) from Top Signal to Bottom Signal Actual Distance = 0.726mm
-   Violation between SMD To Plane Constraint: Between Pad C511-2(11.811mm,27.558mm) on Top Signal And Via (11.811mm,28.279mm) from Top Signal to Bottom Signal Actual Distance = 0.001mm
-   Violation between SMD To Plane Constraint: Between Pad C513-1(66.954mm,4.38mm) on Top Signal And Via (66.911mm,3.428mm) from Top Signal to Bottom Signal Actual Distance = 0.025mm
-   Violation between SMD To Plane Constraint: Between Pad C513-2(66.954mm,5.83mm) on Top Signal And Via (66.675mm,6.97mm) from Top Signal to Bottom Signal Actual Distance = 0.998mm
-   Violation between SMD To Plane Constraint: Between Pad C601-1(47.466mm,58.652mm) on Top Signal And Via (48.578mm,58.583mm) from Top Signal to Bottom Signal Actual Distance = 1.211mm
-   Violation between SMD To Plane Constraint: Between Pad C601-2(47.466mm,60.102mm) on Top Signal And Via (48.578mm,60.17mm) from Top Signal to Bottom Signal Actual Distance = 1.211mm
-   Violation between SMD To Plane Constraint: Between Pad C602-1(34.087mm,60.059mm) on Top Signal And Via (34.158mm,60.884mm) from Top Signal to Bottom Signal Actual Distance = 0.85mm
-   Violation between SMD To Plane Constraint: Between Pad C602-2(34.087mm,58.609mm) on Top Signal And Via (34.087mm,57.929mm) from Top Signal to Bottom Signal Actual Distance = 0.681mm
-   Violation between SMD To Plane Constraint: Pad C801-1(124.652mm,85.51mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C801-2(123.202mm,85.51mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C802-1(124.652mm,84.15mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C802-2(123.202mm,84.15mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C803-1(122.902mm,87.12mm) on Top Signal And Via (122.885mm,88.341mm) from Top Signal to Bottom Signal Actual Distance = 1.221mm
-   Violation between SMD To Plane Constraint: Between Pad C803-2(124.952mm,87.12mm) on Top Signal And Via (124.969mm,88.341mm) from Top Signal to Bottom Signal Actual Distance = 1.221mm
-   Violation between SMD To Plane Constraint: Pad C804-1(128.549mm,104.255mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C805-1(124.626mm,70.815mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C805-2(123.176mm,70.815mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C806-1(124.626mm,69.304mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C806-2(123.176mm,69.304mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C807-1(132.156mm,91.572mm) on Top Signal And Via (131.928mm,90.373mm) from Top Signal to Bottom Signal Actual Distance = 0.971mm
-   Violation between SMD To Plane Constraint: Between Pad C808-1(122.927mm,67.564mm) on Top Signal And Via (122.902mm,66.448mm) from Top Signal to Bottom Signal Actual Distance = 0.072mm
-   Violation between SMD To Plane Constraint: Between Pad C808-2(124.977mm,67.564mm) on Top Signal And Via (124.977mm,66.448mm) from Top Signal to Bottom Signal Actual Distance = 1.116mm
-   Violation between SMD To Plane Constraint: Between Pad C809-1(125.294mm,105.888mm) on Top Signal And Via (126.061mm,106.648mm) from Top Signal to Bottom Signal Actual Distance = 1.088mm
-   Violation between SMD To Plane Constraint: Between Pad C810-2(131.983mm,105.888mm) on Top Signal And Via (132.476mm,106.375mm) from Top Signal to Bottom Signal Actual Distance = 1.383mm
-   Violation between SMD To Plane Constraint: Between Pad C901-2(47.875mm,89.323mm) on Top Signal And Via (49.073mm,89.323mm) from Top Signal to Bottom Signal Actual Distance = 1.198mm
-   Violation between SMD To Plane Constraint: Between Pad C902-2(47.417mm,87.577mm) on Top Signal And Via (48.755mm,87.577mm) from Top Signal to Bottom Signal Actual Distance = 1.214mm
-   Violation between SMD To Plane Constraint: Between Pad C903_1-2(106.133mm,89.094mm) on Top Signal And Via (105.815mm,87.791mm) from Top Signal to Bottom Signal Actual Distance = 0.327mm
-   Violation between SMD To Plane Constraint: Between Pad C903_2-2(2.273mm,88.637mm) on Top Signal And Via (1.954mm,87.429mm) from Top Signal to Bottom Signal Actual Distance = 0.327mm
-   Violation between SMD To Plane Constraint: Pad C904_1-2(107.959mm,89.699mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C904_2-2(4.166mm,89.242mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C905_1-1(107.959mm,92.522mm) on Top Signal And Via (106.807mm,92.278mm) from Top Signal to Bottom Signal Actual Distance = 0.247mm
-   Violation between SMD To Plane Constraint: Between Pad C905_1-2(107.959mm,93.972mm) on Top Signal And Via (108.277mm,95.18mm) from Top Signal to Bottom Signal Actual Distance = 1.249mm
-   Violation between SMD To Plane Constraint: Pad C905_2-1(4.166mm,92.087mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C905_2-2(4.166mm,93.537mm) on Top Signal And Via (4.484mm,94.744mm) from Top Signal to Bottom Signal Actual Distance = 1.249mm
-   Violation between SMD To Plane Constraint: Between Pad C906_1-1(117.362mm,89.637mm) on Top Signal And Via (117.405mm,88.613mm) from Top Signal to Bottom Signal Actual Distance = 0.002mm
-   Violation between SMD To Plane Constraint: Between Pad C906_1-2(118.812mm,89.637mm) on Top Signal And Via (118.855mm,88.613mm) from Top Signal to Bottom Signal Actual Distance = 1.024mm
-   Violation between SMD To Plane Constraint: Between Pad C906_2-1(13.931mm,89.205mm) on Top Signal And Via (13.93mm,88.181mm) from Top Signal to Bottom Signal Actual Distance = 0.003mm
-   Violation between SMD To Plane Constraint: Between Pad C906_2-2(15.381mm,89.205mm) on Top Signal And Via (15.381mm,88.181mm) from Top Signal to Bottom Signal Actual Distance = 1.024mm
-   Violation between SMD To Plane Constraint: Between Pad C907_1-1(117.463mm,70.561mm) on Top Signal And Via (117.463mm,69.457mm) from Top Signal to Bottom Signal Actual Distance = 1.104mm
-   Violation between SMD To Plane Constraint: Between Pad C907_1-2(116.013mm,70.561mm) on Top Signal And Via (116.013mm,69.457mm) from Top Signal to Bottom Signal Actual Distance = 1.104mm
-   Violation between SMD To Plane Constraint: Between Pad C907_2-1(12.409mm,71.628mm) on Top Signal And Via (12.319mm,70.51mm) from Top Signal to Bottom Signal Actual Distance = 3.683mm
-   Violation between SMD To Plane Constraint: Between Pad C907_2-2(10.959mm,71.628mm) on Top Signal And Via (11.074mm,70.51mm) from Top Signal to Bottom Signal Actual Distance = 3.657mm
-   Violation between SMD To Plane Constraint: Pad D1001_1-2(57.76mm,89.84mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad D1001_2-2(63.216mm,89.84mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad D1001_3-2(68.672mm,89.84mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad D1001_4-2(74.128mm,89.84mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad D1001_5-2(79.584mm,89.84mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad D1001_6-2(85.04mm,89.84mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad D1101-2(53.002mm,105.232mm) on Top Signal And Via (52.768mm,104.507mm) from Top Signal to Bottom Signal Actual Distance = 0.663mm
-   Violation between SMD To Plane Constraint: Between Pad D1102-2(84.244mm,105.613mm) on Top Signal And Via (85.389mm,104.851mm) from Top Signal to Bottom Signal Actual Distance = 1.397mm
-   Violation between SMD To Plane Constraint: Pad D1103-2(63.823mm,105.218mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad D1104-2(97.079mm,104.093mm) on Top Signal And Via (95.708mm,104.803mm) from Top Signal to Bottom Signal Actual Distance = 1.665mm
-   Violation between SMD To Plane Constraint: Between Pad D1105-2(74.025mm,105.218mm) on Top Signal And Via (73.829mm,104.635mm) from Top Signal to Bottom Signal Actual Distance = 0.166mm
-   Violation between SMD To Plane Constraint: Between Pad D1106-2(105.434mm,105.218mm) on Top Signal And Via (105.144mm,104.518mm) from Top Signal to Bottom Signal Actual Distance = 0.663mm
-   Violation between SMD To Plane Constraint: Between Pad D400-1(142.388mm,51.647mm) on Top Signal And Via (142.388mm,52.406mm) from Top Signal to Bottom Signal Actual Distance = 0.758mm
-   Violation between SMD To Plane Constraint: Pad D801-3(128.549mm,105.375mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad D901-2(48.717mm,107.892mm) on Top Signal And Via (48.717mm,106.985mm) from Top Signal to Bottom Signal Actual Distance = 0.907mm
-   Violation between SMD To Plane Constraint: Between Pad D902-2(43.754mm,107.859mm) on Top Signal And Via (43.754mm,106.92mm) from Top Signal to Bottom Signal Actual Distance = 0.926mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_1-1(56.286mm,62.22mm) on Top Signal And Via (55.686mm,60.503mm) from Top Signal to Bottom Signal Actual Distance = 1.117mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_1-4(56.286mm,70.52mm) on Top Signal And Via (56.312mm,71.988mm) from Top Signal to Bottom Signal Actual Distance = 1.468mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_2-1(61.743mm,62.22mm) on Top Signal And Via (61.143mm,60.503mm) from Top Signal to Bottom Signal Actual Distance = 1.117mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_2-4(61.743mm,70.52mm) on Top Signal And Via (61.768mm,71.988mm) from Top Signal to Bottom Signal Actual Distance = 1.468mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_3-1(67.199mm,62.22mm) on Top Signal And Via (66.599mm,60.503mm) from Top Signal to Bottom Signal Actual Distance = 1.117mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_3-4(67.199mm,70.52mm) on Top Signal And Via (67.224mm,71.988mm) from Top Signal to Bottom Signal Actual Distance = 1.468mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_4-1(72.655mm,62.22mm) on Top Signal And Via (72.055mm,60.503mm) from Top Signal to Bottom Signal Actual Distance = 1.117mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_4-4(72.655mm,70.52mm) on Top Signal And Via (72.68mm,71.988mm) from Top Signal to Bottom Signal Actual Distance = 1.468mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_5-1(78.111mm,62.22mm) on Top Signal And Via (77.511mm,60.503mm) from Top Signal to Bottom Signal Actual Distance = 1.117mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_5-4(78.111mm,70.52mm) on Top Signal And Via (78.136mm,71.808mm) from Top Signal to Bottom Signal Actual Distance = 1.288mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_6-1(83.567mm,62.22mm) on Top Signal And Via (82.967mm,60.503mm) from Top Signal to Bottom Signal Actual Distance = 1.117mm
-   Violation between SMD To Plane Constraint: Between Pad IC1_6-4(83.567mm,70.52mm) on Top Signal And Via (83.593mm,71.808mm) from Top Signal to Bottom Signal Actual Distance = 1.288mm
-   Violation between SMD To Plane Constraint: Pad IC1101-2(90.661mm,85.391mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC1101-3(92.161mm,85.341mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC1102-16(102.667mm,72.769mm) on Top Signal And Via (102.667mm,71.234mm) from Top Signal to Bottom Signal Actual Distance = 1.535mm
-   Violation between SMD To Plane Constraint: Between Pad IC1102-8(93.777mm,82.269mm) on Top Signal And Via (93.777mm,84.026mm) from Top Signal to Bottom Signal Actual Distance = 1.757mm
-   Violation between SMD To Plane Constraint: Between Pad IC1102-9(93.777mm,72.769mm) on Top Signal And Via (93.777mm,71.234mm) from Top Signal to Bottom Signal Actual Distance = 1.535mm
-   Violation between SMD To Plane Constraint: Between Pad IC1501-4(77.21mm,30.272mm) on Top Signal And Via (75.941mm,30.272mm) from Top Signal to Bottom Signal Actual Distance = 1.229mm
-   Violation between SMD To Plane Constraint: Pad IC1501-8(82.61mm,34.082mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC1801-1(129.966mm,41.996mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC1801-12(129.966mm,33.196mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC1801-14(129.966mm,31.596mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC1801-27(129.966mm,21.196mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC1801-28(141.466mm,21.196mm) on Top Signal And Via (142.595mm,21.23mm) from Top Signal to Bottom Signal Actual Distance = 1.102mm
-   Violation between SMD To Plane Constraint: Pad IC1801-3(129.966mm,40.396mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC1801-41(141.466mm,31.596mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC1801-43(141.466mm,33.196mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC1801-46(141.466mm,35.596mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC1801-49(141.466mm,37.996mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC1801-52(141.466mm,40.396mm) on Top Signal And Via (143.127mm,40.447mm) from Top Signal to Bottom Signal Actual Distance = 1.654mm
-   Violation between SMD To Plane Constraint: Between Pad IC1801-54(141.466mm,41.996mm) on Top Signal And Via (142.595mm,42.03mm) from Top Signal to Bottom Signal Actual Distance = 1.102mm
-   Violation between SMD To Plane Constraint: Pad IC1801-6(129.966mm,37.996mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC1801-9(129.966mm,35.596mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC201-14(133.721mm,64.188mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC201-14(133.721mm,64.338mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC201-15(133.221mm,64.188mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC201-15(133.221mm,64.338mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC201-5(132.721mm,61.088mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC201-5(132.721mm,61.238mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC201-6(133.221mm,61.088mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC201-6(133.221mm,61.238mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-1(148.714mm,102.21mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-13(151.714mm,106.01mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-15(150.714mm,106.01mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-16(150.214mm,106.01mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC203-17(149.714mm,106.01mm) on Top Signal And Via (147.634mm,100.305mm) from Top Signal to Bottom Signal Actual Distance = 8.834mm
-   Violation between SMD To Plane Constraint: Pad IC203-2(149.214mm,102.21mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-23(147.814mm,103.61mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-24(147.814mm,103.11mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-3(149.714mm,102.21mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-4(150.214mm,102.21mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-5(150.714mm,102.21mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-6(151.214mm,102.21mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC203-7(151.714mm,102.21mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC204-5(158.375mm,106.096mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC204-6(158.375mm,106.746mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC204-7(158.375mm,107.396mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC204-8(158.375mm,108.046mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC301-14(26.11mm,51.906mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC301-14(26.26mm,51.906mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC301-15(26.11mm,51.406mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC301-15(26.26mm,51.406mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC301-5(29.21mm,50.906mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC301-5(29.36mm,50.906mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC301-6(29.21mm,51.406mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC301-6(29.36mm,51.406mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC401-1(120.979mm,12.932mm) on Top Signal And Via (126.676mm,13.992mm) from Top Signal to Bottom Signal Actual Distance = 6.525mm
-   Violation between SMD To Plane Constraint: Between Pad IC401-2(121.929mm,12.932mm) on Top Signal And Via (126.676mm,13.992mm) from Top Signal to Bottom Signal Actual Distance = 5.808mm
-   Violation between SMD To Plane Constraint: Between Pad IC401-3(122.879mm,12.932mm) on Top Signal And Via (123.82mm,12.813mm) from Top Signal to Bottom Signal Actual Distance = 2.549mm
-   Violation between SMD To Plane Constraint: Pad IC401-4(122.879mm,15.332mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-102(108.072mm,44.334mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-103(107.573mm,44.334mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-113(102.573mm,44.334mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-114(102.072mm,44.334mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-126(96.073mm,44.334mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-127(95.572mm,44.334mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-135(91.273mm,41.534mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-136(91.273mm,41.034mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-14(99.573mm,19.234mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-148(91.273mm,35.034mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-149(91.273mm,34.534mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-15(100.072mm,19.234mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-158(91.273mm,30.034mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-159(91.273mm,29.534mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-171(91.273mm,23.534mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-172(91.273mm,23.034mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-22(103.573mm,19.234mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-23(104.072mm,19.234mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC402-36(110.572mm,19.234mm) on Top Signal And Via (113.073mm,15.28mm) from Top Signal to Bottom Signal Actual Distance = 4.742mm
-   Violation between SMD To Plane Constraint: Pad IC402-37(111.073mm,19.234mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-48(116.372mm,22.534mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-49(116.372mm,23.034mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-61(116.372mm,29.034mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-62(116.372mm,29.534mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-71(116.372mm,34.034mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-72(116.372mm,34.534mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC402-82(116.372mm,39.534mm) on Top Signal And Via (120.151mm,39.175mm) from Top Signal to Bottom Signal Actual Distance = 3.796mm
-   Violation between SMD To Plane Constraint: Pad IC402-90(114.073mm,44.334mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC402-91(113.572mm,44.334mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC403-4(137.401mm,51.729mm) on Top Signal And Via (136.246mm,51.791mm) from Top Signal to Bottom Signal Actual Distance = 0.092mm
-   Violation between SMD To Plane Constraint: Pad IC403-8(133.102mm,49.779mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC404-2(124.462mm,53.561mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC404-5(122.962mm,53.561mm) on Top Signal And Via (122.085mm,53.573mm) from Top Signal to Bottom Signal Actual Distance = 0.026mm
-   Violation between SMD To Plane Constraint: Between Pad IC404-8(123.962mm,49.061mm) on Top Signal And Via (124.174mm,47.993mm) from Top Signal to Bottom Signal Actual Distance = 0.269mm
-   Violation between SMD To Plane Constraint: Between Pad IC404-9(124.462mm,49.061mm) on Top Signal And Via (124.174mm,47.993mm) from Top Signal to Bottom Signal Actual Distance = 0.289mm
-   Violation between SMD To Plane Constraint: Pad IC501-10(30.092mm,27.854mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC501-100(28.542mm,21.804mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC501-11(30.092mm,28.354mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC501-19(30.092mm,32.354mm) on Top Signal And Via (31.374mm,32.2mm) from Top Signal to Bottom Signal Actual Distance = 1.611mm
-   Violation between SMD To Plane Constraint: Pad IC501-20(30.092mm,32.854mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC501-21(30.092mm,33.354mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC501-22(30.092mm,33.854mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC501-27(28.043mm,36.904mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC501-28(27.542mm,36.904mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC501-50(16.543mm,36.904mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC501-6(30.092mm,25.854mm) on Top Signal And Via (34.671mm,24.854mm) from Top Signal to Bottom Signal Actual Distance = 4.223mm
-   Violation between SMD To Plane Constraint: Pad IC501-74(14.993mm,23.854mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC501-75(14.993mm,23.354mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC501-99(28.043mm,21.804mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC601-1(36.128mm,60.012mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC601-10(45.628mm,52.392mm) on Top Signal And Via (47.307mm,52.392mm) from Top Signal to Bottom Signal Actual Distance = 1.679mm
-   Violation between SMD To Plane Constraint: Pad IC601-15(45.628mm,58.742mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC601-16(45.628mm,60.012mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC601-2(36.128mm,58.742mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC601-7(36.128mm,52.392mm) on Top Signal And Via (37.389mm,52.392mm) from Top Signal to Bottom Signal Actual Distance = 1.261mm
-   Violation between SMD To Plane Constraint: Between Pad IC601-8(36.128mm,51.122mm) on Top Signal And Via (36.303mm,50.169mm) from Top Signal to Bottom Signal Actual Distance = 0.952mm
-   Violation between SMD To Plane Constraint: Between Pad IC601-9(45.628mm,51.122mm) on Top Signal And Via (47.307mm,51.122mm) from Top Signal to Bottom Signal Actual Distance = 1.679mm
-   Violation between SMD To Plane Constraint: Between Pad IC801-2(127.991mm,86.708mm) on Top Signal And Via (124.969mm,88.341mm) from Top Signal to Bottom Signal Actual Distance = 3.328mm
-   Violation between SMD To Plane Constraint: Between Pad IC801-3(129.261mm,86.708mm) on Top Signal And Via (122.885mm,88.341mm) from Top Signal to Bottom Signal Actual Distance = 8.508mm
-   Violation between SMD To Plane Constraint: Pad IC802-1(123.266mm,72.593mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC802-10(130.886mm,82.343mm) on Top Signal And Via (130.886mm,84.017mm) from Top Signal to Bottom Signal Actual Distance = 1.674mm
-   Violation between SMD To Plane Constraint: Pad IC802-15(124.536mm,82.343mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC802-16(123.266mm,82.343mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC802-2(124.536mm,72.593mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC802-3(125.806mm,72.593mm) on Top Signal And Via (125.806mm,71.059mm) from Top Signal to Bottom Signal Actual Distance = 1.535mm
-   Violation between SMD To Plane Constraint: Between Pad IC802-8(132.156mm,72.593mm) on Top Signal And Via (132.156mm,71.059mm) from Top Signal to Bottom Signal Actual Distance = 1.535mm
-   Violation between SMD To Plane Constraint: Between Pad IC802-9(132.156mm,82.343mm) on Top Signal And Via (131.928mm,84.023mm) from Top Signal to Bottom Signal Actual Distance = 2.019mm
-   Violation between SMD To Plane Constraint: Between Pad IC902-4(47.371mm,62.298mm) on Top Signal And Via (48.26mm,62.298mm) from Top Signal to Bottom Signal Actual Distance = 0.889mm
-   Violation between SMD To Plane Constraint: Between Pad IC903-4(38.511mm,74.758mm) on Top Signal And Via (38.397mm,75.585mm) from Top Signal to Bottom Signal Actual Distance = 0.996mm
-   Violation between SMD To Plane Constraint: Between Pad IC904-1(49.403mm,62.298mm) on Top Signal And Via (50.292mm,62.298mm) from Top Signal to Bottom Signal Actual Distance = 0.889mm
-   Violation between SMD To Plane Constraint: Between Pad IC905-1(38.497mm,72.722mm) on Top Signal And Via (38.494mm,71.974mm) from Top Signal to Bottom Signal Actual Distance = 0.009mm
-   Violation between SMD To Plane Constraint: Between Pad IC906_1-2(119.412mm,103.346mm) on Top Signal And Via (120.104mm,102.732mm) from Top Signal to Bottom Signal Actual Distance = 0.914mm
-   Violation between SMD To Plane Constraint: Between Pad IC906_2-2(6.887mm,106.766mm) on Top Signal And Via (5.772mm,106.766mm) from Top Signal to Bottom Signal Actual Distance = 1.114mm
-   Violation between SMD To Plane Constraint: Pad IC907_1-13(110.333mm,92.812mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC907_1-14(110.333mm,92.177mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC907_1-16(110.333mm,90.907mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC907_1-3(114.983mm,89.637mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC907_1-6(114.983mm,91.542mm) on Top Signal And Via (116.791mm,91.124mm) from Top Signal to Bottom Signal Actual Distance = 0.825mm
-   Violation between SMD To Plane Constraint: Between Pad IC907_2-13(6.858mm,92.38mm) on Top Signal And Via (2.958mm,92.735mm) from Top Signal to Bottom Signal Actual Distance = 1.499mm
-   Violation between SMD To Plane Constraint: Between Pad IC907_2-14(6.858mm,91.745mm) on Top Signal And Via (2.958mm,92.735mm) from Top Signal to Bottom Signal Actual Distance = 1.45mm
-   Violation between SMD To Plane Constraint: Pad IC907_2-16(6.858mm,90.475mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC907_2-3(11.508mm,89.205mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC907_2-6(11.508mm,91.11mm) on Top Signal And Via (13.316mm,90.692mm) from Top Signal to Bottom Signal Actual Distance = 0.825mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_1-1(117.286mm,82.269mm) on Top Signal And Via (117.286mm,84.464mm) from Top Signal to Bottom Signal Actual Distance = 2.195mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_1-10(109.666mm,72.769mm) on Top Signal And Via (109.666mm,71.234mm) from Top Signal to Bottom Signal Actual Distance = 1.535mm
-   Violation between SMD To Plane Constraint: Pad IC908_1-15(116.016mm,72.769mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad IC908_1-16(117.286mm,72.769mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_1-2(116.016mm,82.269mm) on Top Signal And Via (116.016mm,84.464mm) from Top Signal to Bottom Signal Actual Distance = 2.195mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_1-7(109.666mm,82.269mm) on Top Signal And Via (109.666mm,84.464mm) from Top Signal to Bottom Signal Actual Distance = 2.195mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_1-8(108.396mm,82.269mm) on Top Signal And Via (108.396mm,84.464mm) from Top Signal to Bottom Signal Actual Distance = 2.195mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_1-9(108.396mm,72.769mm) on Top Signal And Via (108.396mm,71.234mm) from Top Signal to Bottom Signal Actual Distance = 1.535mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_2-1(12.319mm,83.693mm) on Top Signal And Via (12.319mm,85.888mm) from Top Signal to Bottom Signal Actual Distance = 2.195mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_2-10(4.699mm,74.193mm) on Top Signal And Via (4.699mm,71.999mm) from Top Signal to Bottom Signal Actual Distance = 2.195mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_2-15(11.049mm,74.193mm) on Top Signal And Via (11.074mm,70.51mm) from Top Signal to Bottom Signal Actual Distance = 3.657mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_2-16(12.319mm,74.193mm) on Top Signal And Via (12.319mm,70.51mm) from Top Signal to Bottom Signal Actual Distance = 3.683mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_2-2(11.049mm,83.693mm) on Top Signal And Via (11.049mm,85.888mm) from Top Signal to Bottom Signal Actual Distance = 2.195mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_2-7(4.699mm,83.693mm) on Top Signal And Via (4.699mm,85.888mm) from Top Signal to Bottom Signal Actual Distance = 2.195mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_2-8(3.429mm,83.693mm) on Top Signal And Via (3.429mm,85.888mm) from Top Signal to Bottom Signal Actual Distance = 2.195mm
-   Violation between SMD To Plane Constraint: Between Pad IC908_2-9(3.429mm,74.193mm) on Top Signal And Via (3.429mm,71.999mm) from Top Signal to Bottom Signal Actual Distance = 2.195mm
-   Violation between SMD To Plane Constraint: Pad L202-1(141.002mm,88.051mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad L202-2(148.622mm,88.051mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad L202-4(141.002mm,94.271mm) on Top Signal And Via (141.63mm,96.342mm) from Top Signal to Bottom Signal Actual Distance = 2.23mm
-   Violation between SMD To Plane Constraint: Between Pad L302-1(29.185mm,87.812mm) on Top Signal And Via (29.185mm,89.052mm) from Top Signal to Bottom Signal Actual Distance = 3.299mm
-   Violation between SMD To Plane Constraint: Pad L401-1(117.3mm,13.745mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad L903_1-1(115.12mm,108.38mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad LED201-2(63.2mm,48.086mm) on Top Signal And Via (64.294mm,48.086mm) from Top Signal to Bottom Signal Actual Distance = 1.044mm
-   Violation between SMD To Plane Constraint: Between Pad LED301-2(61.8mm,21.575mm) on Top Signal And Via (60.801mm,21.575mm) from Top Signal to Bottom Signal Actual Distance = 0.949mm
-   Violation between SMD To Plane Constraint: Between Pad Q401-2(109.419mm,12.481mm) on Top Signal And Via (110.897mm,11.644mm) from Top Signal to Bottom Signal Actual Distance = 1.517mm
-   Violation between SMD To Plane Constraint: Pad Q401-4(105.719mm,14.681mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad Q501-2(37.454mm,31.729mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad Q501-4(35.254mm,28.029mm) on Top Signal And Via (34.467mm,26.475mm) from Top Signal to Bottom Signal Actual Distance = 2.341mm
-   Violation between SMD To Plane Constraint: Pad R1003_1-1(56.809mm,56.058mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad R1003_2-1(62.265mm,56.058mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad R1003_3-1(67.721mm,56.058mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad R1003_4-1(73.177mm,56.058mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad R1003_5-1(78.633mm,56.058mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad R1003_6-1(84.089mm,56.058mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad R1201-2(51.595mm,104.518mm) on Top Signal And Via (52.768mm,104.507mm) from Top Signal to Bottom Signal Actual Distance = 1.162mm
-   Violation between SMD To Plane Constraint: Pad R1202-2(83.027mm,104.518mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad R1203-2(62.072mm,104.507mm) on Top Signal And Via (62.072mm,103.683mm) from Top Signal to Bottom Signal Actual Distance = 0mm
-   Violation between SMD To Plane Constraint: Between Pad R1204-2(94.998mm,105.613mm) on Top Signal And Via (95.708mm,104.803mm) from Top Signal to Bottom Signal Actual Distance = 1.004mm
-   Violation between SMD To Plane Constraint: Between Pad R1205-2(72.55mm,104.518mm) on Top Signal And Via (73.829mm,104.635mm) from Top Signal to Bottom Signal Actual Distance = 1.284mm
-   Violation between SMD To Plane Constraint: Between Pad R1206-2(103.982mm,104.518mm) on Top Signal And Via (105.144mm,104.518mm) from Top Signal to Bottom Signal Actual Distance = 1.162mm
-   Violation between SMD To Plane Constraint: Between Pad R1501-2(85.69mm,32.812mm) on Top Signal And Via (87.071mm,32.812mm) from Top Signal to Bottom Signal Actual Distance = 1.381mm
-   Violation between SMD To Plane Constraint: Between Pad R1502-2(74.981mm,32.882mm) on Top Signal And Via (74.981mm,33.534mm) from Top Signal to Bottom Signal Actual Distance = 0.652mm
-   Violation between SMD To Plane Constraint: Between Pad R201-1(58.672mm,48.086mm) on Top Signal And Via (57.309mm,48.086mm) from Top Signal to Bottom Signal Actual Distance = 1.214mm
-   Violation between SMD To Plane Constraint: Pad R202-1(128.544mm,67.013mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad R205-2(146.728mm,103.781mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad R207-1(151.57mm,107.061mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad R208-1(147.884mm,107.061mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad R209-1(145.779mm,107.061mm) on Top Signal And Via (145.059mm,107.061mm) from Top Signal to Bottom Signal Actual Distance = 0.719mm
-   Violation between SMD To Plane Constraint: Between Pad R301-2(66.264mm,21.575mm) on Top Signal And Via (67.005mm,21.575mm) from Top Signal to Bottom Signal Actual Distance = 0.741mm
-   Violation between SMD To Plane Constraint: Pad R302-1(23.435mm,46.856mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad R401-1(83.452mm,25.472mm) on Top Signal And Via (84.404mm,25.472mm) from Top Signal to Bottom Signal Actual Distance = 0.952mm
-   Violation between SMD To Plane Constraint: Between Pad R402-2(75.724mm,51.803mm) on Top Signal And Via (76.994mm,51.896mm) from Top Signal to Bottom Signal Actual Distance = 1.406mm
-   Violation between SMD To Plane Constraint: Between Pad R405-2(55.88mm,31.988mm) on Top Signal And Via (55.88mm,30.624mm) from Top Signal to Bottom Signal Actual Distance = 1.214mm
-   Violation between SMD To Plane Constraint: Between Pad R406-1(52.388mm,38.179mm) on Top Signal And Via (52.388mm,36.815mm) from Top Signal to Bottom Signal Actual Distance = 1.214mm
-   Violation between SMD To Plane Constraint: Between Pad R407-1(124.677mm,21.196mm) on Top Signal And Via (124.668mm,20.443mm) from Top Signal to Bottom Signal Actual Distance = 0.743mm
-   Violation between SMD To Plane Constraint: Between Pad R408-1(58.672mm,46.499mm) on Top Signal And Via (57.309mm,46.499mm) from Top Signal to Bottom Signal Actual Distance = 1.214mm
-   Violation between SMD To Plane Constraint: Between Pad R409-1(58.672mm,44.911mm) on Top Signal And Via (57.309mm,44.911mm) from Top Signal to Bottom Signal Actual Distance = 1.214mm
-   Violation between SMD To Plane Constraint: Between Pad R410-2(131.392mm,51.533mm) on Top Signal And Via (131.392mm,52.116mm) from Top Signal to Bottom Signal Actual Distance = 0.583mm
-   Violation between SMD To Plane Constraint: Pad R412-1(123.031mm,55.397mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad R414-2(135.977mm,54.18mm) on Top Signal And Via (135.959mm,54.846mm) from Top Signal to Bottom Signal Actual Distance = 0.666mm
-   Violation between SMD To Plane Constraint: Between Pad R415-2(134.849mm,54.18mm) on Top Signal And Via (134.836mm,54.877mm) from Top Signal to Bottom Signal Actual Distance = 0.714mm
-   Violation between SMD To Plane Constraint: Between Pad R418-1(118.567mm,53.43mm) on Top Signal And Via (118.532mm,54.178mm) from Top Signal to Bottom Signal Actual Distance = 0.715mm
-   Violation between SMD To Plane Constraint: Between Pad R502-1(25.559mm,18.335mm) on Top Signal And Via (27.622mm,17.13mm) from Top Signal to Bottom Signal Actual Distance = 2.563mm
-   Violation between SMD To Plane Constraint: Pad R504-2(37.148mm,19.1mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad R505-2(29.621mm,15.384mm) on Top Signal And Via (28.416mm,15.384mm) from Top Signal to Bottom Signal Actual Distance = 1.055mm
-   Violation between SMD To Plane Constraint: Between Pad R506-1(54.928mm,11.94mm) on Top Signal And Via (54.106mm,11.94mm) from Top Signal to Bottom Signal Actual Distance = 0.822mm
-   Violation between SMD To Plane Constraint: Between Pad R507-1(21.525mm,38.72mm) on Top Signal And Via (20.872mm,38.72mm) from Top Signal to Bottom Signal Actual Distance = 0.653mm
-   Violation between SMD To Plane Constraint: Between Pad R508-1(66.264mm,19.988mm) on Top Signal And Via (67.005mm,19.988mm) from Top Signal to Bottom Signal Actual Distance = 0.741mm
-   Violation between SMD To Plane Constraint: Between Pad R509-1(66.264mm,18.4mm) on Top Signal And Via (67.005mm,18.4mm) from Top Signal to Bottom Signal Actual Distance = 0.741mm
-   Violation between SMD To Plane Constraint: Between Pad R804-1(132.156mm,95.909mm) on Top Signal And Via (122.885mm,88.341mm) from Top Signal to Bottom Signal Actual Distance = 16.33mm
-   Violation between SMD To Plane Constraint: Between Pad R901-2(47.763mm,91.44mm) on Top Signal And Via (48.927mm,91.44mm) from Top Signal to Bottom Signal Actual Distance = 1.164mm
-   Violation between SMD To Plane Constraint: Between Pad R903-1(49.809mm,58.761mm) on Top Signal And Via (49.809mm,57.929mm) from Top Signal to Bottom Signal Actual Distance = 0.683mm
-   Violation between SMD To Plane Constraint: Between Pad R904-1(36.989mm,74.85mm) on Top Signal And Via (36.989mm,73.486mm) from Top Signal to Bottom Signal Actual Distance = 1.214mm
-   Violation between SMD To Plane Constraint: Between Pad R906-1(57.287mm,100.508mm) on Top Signal And Via (59.342mm,100.544mm) from Top Signal to Bottom Signal Actual Distance = 2.153mm
-   Violation between SMD To Plane Constraint: Between Pad R908-2(53.862mm,54.991mm) on Top Signal And Via (53.162mm,55.855mm) from Top Signal to Bottom Signal Actual Distance = 0.327mm
-   Violation between SMD To Plane Constraint: Pad R911-2(35.336mm,70.311mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad R915_1-2(118.787mm,94.069mm) on Top Signal And Via (118.745mm,94.844mm) from Top Signal to Bottom Signal Actual Distance = 0.813mm
-   Violation between SMD To Plane Constraint: Between Pad R915_2-2(15.28mm,93.599mm) on Top Signal And Via (15.26mm,94.516mm) from Top Signal to Bottom Signal Actual Distance = 0.945mm
-   Violation between SMD To Plane Constraint: Between Pad R916_1-2(118.744mm,92.461mm) on Top Signal And Via (118.735mm,91.124mm) from Top Signal to Bottom Signal Actual Distance = 0mm
-   Violation between SMD To Plane Constraint: Between Pad R916_2-2(15.28mm,92.05mm) on Top Signal And Via (15.26mm,90.692mm) from Top Signal to Bottom Signal Actual Distance = 0mm
-   Violation between SMD To Plane Constraint: Between Pad T1002_1-S(57.803mm,57.601mm) on Top Signal And Via (59.08mm,57.201mm) from Top Signal to Bottom Signal Actual Distance = 1.444mm
-   Violation between SMD To Plane Constraint: Between Pad T1002_2-S(63.259mm,57.601mm) on Top Signal And Via (64.537mm,57.201mm) from Top Signal to Bottom Signal Actual Distance = 1.444mm
-   Violation between SMD To Plane Constraint: Between Pad T1002_3-S(68.715mm,57.601mm) on Top Signal And Via (69.993mm,57.201mm) from Top Signal to Bottom Signal Actual Distance = 1.444mm
-   Violation between SMD To Plane Constraint: Between Pad T1002_4-S(74.171mm,57.601mm) on Top Signal And Via (75.449mm,57.201mm) from Top Signal to Bottom Signal Actual Distance = 1.444mm
-   Violation between SMD To Plane Constraint: Between Pad T1002_5-S(79.627mm,57.601mm) on Top Signal And Via (80.905mm,57.201mm) from Top Signal to Bottom Signal Actual Distance = 1.444mm
-   Violation between SMD To Plane Constraint: Between Pad T1002_6-S(85.083mm,57.601mm) on Top Signal And Via (86.361mm,57.201mm) from Top Signal to Bottom Signal Actual Distance = 1.444mm
-   Violation between SMD To Plane Constraint: Pad T400-S(117.024mm,53.68mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T401-2(74.334mm,52.053mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad T501-2(35.758mm,19.35mm) on Top Signal And Via (33.496mm,19.591mm) from Top Signal to Bottom Signal Actual Distance = 0.68mm
-   Violation between SMD To Plane Constraint: Pad T901-1(68.301mm,98.857mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T901-2(67.031mm,98.857mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T901-3(65.761mm,98.857mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T901-5(64.491mm,93.392mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T901-6(65.761mm,93.392mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T901-7(67.031mm,93.392mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T901-8(68.301mm,93.392mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad T902-S(50.879mm,56.612mm) on Top Signal And Via (52.135mm,57.683mm) from Top Signal to Bottom Signal Actual Distance = 1.989mm
-   Violation between SMD To Plane Constraint: Between Pad T903-S(35.086mm,68.813mm) on Top Signal And Via (34.925mm,66.66mm) from Top Signal to Bottom Signal Actual Distance = 1.618mm
-   Violation between SMD To Plane Constraint: Pad T904-1(62.535mm,98.857mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T904-2(61.265mm,98.857mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T904-3(59.995mm,98.857mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T904-5(58.725mm,93.392mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T904-6(59.995mm,93.392mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T904-7(61.265mm,93.392mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad T904-8(62.535mm,93.392mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad TP_V3.3_1-1(4.65mm,60.833mm) on Top Signal And Via (4.65mm,62.255mm) from Top Signal to Bottom Signal Actual Distance = 1.422mm
-   Violation between SMD To Plane Constraint: Between Pad TPeGND0-1(29.5mm,94.611mm) on Top Signal And Via (24.028mm,92.438mm) from Top Signal to Bottom Signal Actual Distance = 6.392mm
-   Violation between SMD To Plane Constraint: Pad TPeGND-1(158.699mm,109.449mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad TPeSUP0-1(29.5mm,92.126mm) on Top Signal And Via (29.185mm,90.703mm) from Top Signal to Bottom Signal Actual Distance = 3.113mm
-   Violation between SMD To Plane Constraint: Pad TPeSUPO-1(137.802mm,85.718mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad TPi3.3v0-1(156.693mm,49.697mm) on Top Signal And Via (156.693mm,48.133mm) from Top Signal to Bottom Signal Actual Distance = 1.564mm
-   Violation between SMD To Plane Constraint: Between Pad TPu3.3v1-1(106.783mm,96.29mm) on Top Signal And Via (106.832mm,92.913mm) from Top Signal to Bottom Signal Actual Distance = 3.327mm
-   Violation between SMD To Plane Constraint: Between Pad TPu3.3v2-1(1.954mm,97.005mm) on Top Signal And Via (2.958mm,92.735mm) from Top Signal to Bottom Signal Actual Distance = 4.586mm
-   Violation between SMD To Plane Constraint: Pad TPuGND1-1(108.834mm,98.072mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad TPuGND2-1(1.954mm,102.589mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad X403-1(60.465mm,40.943mm) on Top Signal And Via (60.325mm,42.689mm) from Top Signal to Bottom Signal Actual Distance = 1.606mm
-   Violation between SMD To Plane Constraint: Between Pad X403-11(60.465mm,34.593mm) on Top Signal And Via (58.42mm,35.863mm) from Top Signal to Bottom Signal Actual Distance = 3.185mm
-   Violation between SMD To Plane Constraint: Between Pad X403-13(60.465mm,33.323mm) on Top Signal And Via (58.417mm,33.323mm) from Top Signal to Bottom Signal Actual Distance = 2.045mm
-   Violation between SMD To Plane Constraint: Between Pad X403-15(60.465mm,32.053mm) on Top Signal And Via (58.42mm,32.053mm) from Top Signal to Bottom Signal Actual Distance = 2.045mm
-   Violation between SMD To Plane Constraint: Between Pad X403-17(60.465mm,30.783mm) on Top Signal And Via (58.42mm,30.783mm) from Top Signal to Bottom Signal Actual Distance = 2.045mm
-   Violation between SMD To Plane Constraint: Between Pad X403-19(60.465mm,29.513mm) on Top Signal And Via (58.42mm,30.783mm) from Top Signal to Bottom Signal Actual Distance = 3.204mm
-   Violation between SMD To Plane Constraint: Between Pad X403-3(60.465mm,39.673mm) on Top Signal And Via (58.42mm,39.673mm) from Top Signal to Bottom Signal Actual Distance = 2.045mm
-   Violation between SMD To Plane Constraint: Between Pad X403-5(60.465mm,38.403mm) on Top Signal And Via (58.42mm,38.403mm) from Top Signal to Bottom Signal Actual Distance = 2.045mm
-   Violation between SMD To Plane Constraint: Between Pad X403-9(60.465mm,35.863mm) on Top Signal And Via (58.42mm,35.863mm) from Top Signal to Bottom Signal Actual Distance = 2.045mm
-   Violation between SMD To Plane Constraint: Pad X502-1(64.535mm,4.43mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad X502-11(64.535mm,10.78mm) on Top Signal And Via (66.675mm,10.78mm) from Top Signal to Bottom Signal Actual Distance = 2.14mm
-   Violation between SMD To Plane Constraint: Between Pad X502-13(64.535mm,12.05mm) on Top Signal And Via (66.675mm,12.05mm) from Top Signal to Bottom Signal Actual Distance = 2.14mm
-   Violation between SMD To Plane Constraint: Between Pad X502-15(64.535mm,13.32mm) on Top Signal And Via (66.675mm,13.32mm) from Top Signal to Bottom Signal Actual Distance = 2.14mm
-   Violation between SMD To Plane Constraint: Between Pad X502-17(64.535mm,14.59mm) on Top Signal And Via (66.675mm,14.59mm) from Top Signal to Bottom Signal Actual Distance = 2.14mm
-   Violation between SMD To Plane Constraint: Between Pad X502-19(64.535mm,15.86mm) on Top Signal And Via (66.675mm,15.86mm) from Top Signal to Bottom Signal Actual Distance = 2.14mm
-   Violation between SMD To Plane Constraint: Pad X502-3(64.535mm,5.7mm) on Top Signal Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad X502-5(64.535mm,6.97mm) on Top Signal And Via (66.675mm,6.97mm) from Top Signal to Bottom Signal Actual Distance = 2.14mm
-   Violation between SMD To Plane Constraint: Between Pad X502-9(64.535mm,9.51mm) on Top Signal And Via (66.675mm,9.51mm) from Top Signal to Bottom Signal Actual Distance = 2.14mm
-   Violation between SMD To Plane Constraint: Between Pad X903_1-5(116.52mm,113.464mm) on Top Signal And Via (116.576mm,107.511mm) from Top Signal to Bottom Signal Actual Distance = 0.122mm
-   Violation between SMD To Plane Constraint: Between Pad X903_2-5(6.025mm,113.464mm) on Top Signal And Via (5.735mm,110.709mm) from Top Signal to Bottom Signal Actual Distance = 0.332mm
-Rule Violations :471
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('D_1_P'))
+Rule Violations :0
 
 Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Allowed) (Ignore First Corner = Allowed)
 Rule Violations :0
@@ -584,14 +105,8 @@ Rule Violations :0
 Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=6.4mm) (All)
 Rule Violations :0
 
-Processing Rule : Hole To Hole Clearance (Gap=0.25mm) (All),(All)
-   Violation between Hole To Hole Clearance Constraint: (0.239mm < 0.25mm) Between Via (12.778mm,106.38mm) from Top Signal to Bottom Signal And Via (12.778mm,106.919mm) from Top Signal to Bottom Signal 
-   Violation between Hole To Hole Clearance Constraint: (0.239mm < 0.25mm) Between Via (13.383mm,106.38mm) from Top Signal to Bottom Signal And Via (13.383mm,106.919mm) from Top Signal to Bottom Signal 
-   Violation between Hole To Hole Clearance Constraint: (0.239mm < 0.25mm) Between Via (3.627mm,106.38mm) from Top Signal to Bottom Signal And Via (3.627mm,106.919mm) from Top Signal to Bottom Signal 
-   Violation between Hole To Hole Clearance Constraint: (0.239mm < 0.25mm) Between Via (4.232mm,106.38mm) from Top Signal to Bottom Signal And Via (4.232mm,106.919mm) from Top Signal to Bottom Signal 
-   Violation between Hole To Hole Clearance Constraint: (0.239mm < 0.25mm) Between Via (5.735mm,110.169mm) from Top Signal to Bottom Signal And Via (5.735mm,110.709mm) from Top Signal to Bottom Signal 
-   Violation between Hole To Hole Clearance Constraint: (0.239mm < 0.25mm) Between Via (6.34mm,110.169mm) from Top Signal to Bottom Signal And Via (6.34mm,110.709mm) from Top Signal to Bottom Signal 
-Rule Violations :6
+Processing Rule : Hole To Hole Clearance (Gap=0.377mm) (All),(All)
+Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.05mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.048mm < 0.05mm) Between Pad IC404-1(124.962mm,53.561mm) on Top Signal And Pad IC404-2(124.462mm,53.561mm) on Top Signal [Top Solder] Mask Sliver [0.048mm]
@@ -604,277 +119,11 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.05mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.048mm < 0.05mm) Between Pad IC404-8(123.962mm,49.061mm) on Top Signal And Pad IC404-9(124.462mm,49.061mm) on Top Signal [Top Solder] Mask Sliver [0.048mm]
 Rule Violations :8
 
-Processing Rule : Silk To Solder Mask (Clearance=0.102mm) (IsPad),(All)
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Arc (141.275mm,86.788mm) on Top Overlay And Pad L202-1(141.002mm,88.051mm) on Top Signal [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C202-1(146.779mm,105.893mm) on Top Signal And Track (145.379mm,105.443mm)(147.179mm,105.443mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C202-1(146.779mm,105.893mm) on Top Signal And Track (145.379mm,106.343mm)(147.179mm,106.343mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C202-1(146.779mm,105.893mm) on Top Signal And Track (147.179mm,105.443mm)(147.179mm,106.343mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C202-2(145.779mm,105.893mm) on Top Signal And Track (145.379mm,105.443mm)(147.179mm,105.443mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C202-2(145.779mm,105.893mm) on Top Signal And Track (145.379mm,106.343mm)(145.379mm,105.443mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C202-2(145.779mm,105.893mm) on Top Signal And Track (145.379mm,106.343mm)(147.179mm,106.343mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.101mm < 0.102mm) Between Pad C210-2(136.854mm,67.428mm) on Top Signal And Track (135.034mm,67.854mm)(135.934mm,67.854mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.101mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.07mm < 0.102mm) Between Pad C210-2(136.854mm,67.428mm) on Top Signal And Track (135.934mm,66.054mm)(135.934mm,67.854mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.07mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C211-1(136.198mm,62.598mm) on Top Signal And Track (135.798mm,62.148mm)(135.798mm,63.048mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C211-1(136.198mm,62.598mm) on Top Signal And Track (135.798mm,62.148mm)(137.598mm,62.148mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C211-1(136.198mm,62.598mm) on Top Signal And Track (135.798mm,63.048mm)(137.598mm,63.048mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C211-2(137.198mm,62.598mm) on Top Signal And Track (135.798mm,62.148mm)(137.598mm,62.148mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C211-2(137.198mm,62.598mm) on Top Signal And Track (135.798mm,63.048mm)(137.598mm,63.048mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C211-2(137.198mm,62.598mm) on Top Signal And Track (137.598mm,62.148mm)(137.598mm,63.048mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C212-1(136.198mm,61.048mm) on Top Signal And Track (135.798mm,60.598mm)(137.598mm,60.598mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C212-1(136.198mm,61.048mm) on Top Signal And Track (135.798mm,61.498mm)(135.798mm,60.598mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C212-1(136.198mm,61.048mm) on Top Signal And Track (135.798mm,61.498mm)(137.598mm,61.498mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C212-2(137.198mm,61.048mm) on Top Signal And Track (135.798mm,60.598mm)(137.598mm,60.598mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C212-2(137.198mm,61.048mm) on Top Signal And Track (135.798mm,61.498mm)(137.598mm,61.498mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C212-2(137.198mm,61.048mm) on Top Signal And Track (137.598mm,60.598mm)(137.598mm,61.498mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C213-1(136.198mm,63.698mm) on Top Signal And Track (135.798mm,63.248mm)(137.598mm,63.248mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C213-1(136.198mm,63.698mm) on Top Signal And Track (135.798mm,64.148mm)(135.798mm,63.248mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C213-1(136.198mm,63.698mm) on Top Signal And Track (135.798mm,64.148mm)(137.598mm,64.148mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C213-2(137.198mm,63.698mm) on Top Signal And Track (135.798mm,63.248mm)(137.598mm,63.248mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C213-2(137.198mm,63.698mm) on Top Signal And Track (135.798mm,64.148mm)(137.598mm,64.148mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C213-2(137.198mm,63.698mm) on Top Signal And Track (137.598mm,64.148mm)(137.598mm,63.248mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad C220-2(155.531mm,103.786mm) on Top Signal And Track (153.347mm,103.584mm)(154.247mm,103.584mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad C220-2(155.531mm,103.786mm) on Top Signal And Track (154.247mm,103.584mm)(154.247mm,105.384mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.035mm < 0.102mm) Between Pad C221-2(145.167mm,103.488mm) on Top Signal And Track (146.278mm,103.381mm)(146.278mm,105.181mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.035mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.035mm < 0.102mm) Between Pad C221-2(145.167mm,103.488mm) on Top Signal And Track (146.278mm,103.381mm)(147.178mm,103.381mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.035mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C311-1(28.535mm,54.306mm) on Top Signal And Track (28.085mm,53.906mm)(28.985mm,53.906mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C311-1(28.535mm,54.306mm) on Top Signal And Track (28.085mm,55.706mm)(28.085mm,53.906mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C311-1(28.535mm,54.306mm) on Top Signal And Track (28.985mm,53.906mm)(28.985mm,55.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C311-2(28.535mm,55.306mm) on Top Signal And Track (28.085mm,55.706mm)(28.085mm,53.906mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C311-2(28.535mm,55.306mm) on Top Signal And Track (28.085mm,55.706mm)(28.985mm,55.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C311-2(28.535mm,55.306mm) on Top Signal And Track (28.985mm,53.906mm)(28.985mm,55.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C312-1(30.435mm,52.256mm) on Top Signal And Track (29.985mm,51.856mm)(29.985mm,53.656mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C312-1(30.435mm,52.256mm) on Top Signal And Track (29.985mm,51.856mm)(30.885mm,51.856mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C312-1(30.435mm,52.256mm) on Top Signal And Track (30.885mm,53.656mm)(30.885mm,51.856mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C312-2(30.435mm,53.256mm) on Top Signal And Track (29.985mm,51.856mm)(29.985mm,53.656mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C312-2(30.435mm,53.256mm) on Top Signal And Track (29.985mm,53.656mm)(30.885mm,53.656mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C312-2(30.435mm,53.256mm) on Top Signal And Track (30.885mm,53.656mm)(30.885mm,51.856mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C313-1(27.435mm,54.306mm) on Top Signal And Track (26.985mm,53.906mm)(26.985mm,55.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C313-1(27.435mm,54.306mm) on Top Signal And Track (26.985mm,53.906mm)(27.885mm,53.906mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C313-1(27.435mm,54.306mm) on Top Signal And Track (27.885mm,53.906mm)(27.885mm,55.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C313-2(27.435mm,55.306mm) on Top Signal And Track (26.985mm,53.906mm)(26.985mm,55.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C313-2(27.435mm,55.306mm) on Top Signal And Track (26.985mm,55.706mm)(27.885mm,55.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C313-2(27.435mm,55.306mm) on Top Signal And Track (27.885mm,53.906mm)(27.885mm,55.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C431-1(131.392mm,49.733mm) on Top Signal And Track (130.942mm,50.133mm)(130.942mm,48.333mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C431-1(131.392mm,49.733mm) on Top Signal And Track (130.942mm,50.133mm)(131.842mm,50.133mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C431-1(131.392mm,49.733mm) on Top Signal And Track (130.942mm,50.133mm)(131.842mm,50.133mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C431-1(131.392mm,49.733mm) on Top Signal And Track (131.842mm,48.333mm)(131.842mm,50.133mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C431-2(131.392mm,48.733mm) on Top Signal And Track (130.942mm,48.333mm)(131.842mm,48.333mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C431-2(131.392mm,48.733mm) on Top Signal And Track (130.942mm,50.133mm)(130.942mm,48.333mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C431-2(131.392mm,48.733mm) on Top Signal And Track (131.842mm,48.333mm)(131.842mm,50.133mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C432-1(126.39mm,49.065mm) on Top Signal And Track (125.94mm,47.665mm)(125.94mm,49.465mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C432-1(126.39mm,49.065mm) on Top Signal And Track (125.94mm,49.465mm)(126.84mm,49.465mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C432-1(126.39mm,49.065mm) on Top Signal And Track (126.84mm,47.665mm)(126.84mm,49.465mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C432-2(126.39mm,48.065mm) on Top Signal And Track (125.94mm,47.665mm)(125.94mm,49.465mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C432-2(126.39mm,48.065mm) on Top Signal And Track (125.94mm,47.665mm)(126.84mm,47.665mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C432-2(126.39mm,48.065mm) on Top Signal And Track (126.84mm,47.665mm)(126.84mm,49.465mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C433-1(123.031mm,56.439mm) on Top Signal And Track (122.631mm,55.989mm)(122.631mm,56.889mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C433-1(123.031mm,56.439mm) on Top Signal And Track (122.631mm,55.989mm)(124.431mm,55.989mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C433-1(123.031mm,56.439mm) on Top Signal And Track (122.631mm,56.889mm)(124.431mm,56.889mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C433-2(124.031mm,56.439mm) on Top Signal And Track (122.631mm,55.989mm)(124.431mm,55.989mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C433-2(124.031mm,56.439mm) on Top Signal And Track (122.631mm,56.889mm)(124.431mm,56.889mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C433-2(124.031mm,56.439mm) on Top Signal And Track (124.431mm,55.989mm)(124.431mm,56.889mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C434-1(126.549mm,53.586mm) on Top Signal And Track (126.099mm,52.186mm)(126.099mm,53.986mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C434-1(126.549mm,53.586mm) on Top Signal And Track (126.099mm,53.986mm)(126.999mm,53.986mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C434-1(126.549mm,53.586mm) on Top Signal And Track (126.999mm,52.186mm)(126.999mm,53.986mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C434-2(126.549mm,52.586mm) on Top Signal And Track (126.099mm,52.186mm)(126.099mm,53.986mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad C434-2(126.549mm,52.586mm) on Top Signal And Track (126.099mm,52.186mm)(126.999mm,52.186mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad C434-2(126.549mm,52.586mm) on Top Signal And Track (126.999mm,52.186mm)(126.999mm,53.986mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-1(131.846mm,63.463mm) on Top Signal And Track (131.971mm,63.813mm)(132.371mm,64.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-1(131.996mm,63.463mm) on Top Signal And Track (131.971mm,63.813mm)(132.371mm,64.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-12(134.946mm,63.463mm) on Top Signal And Track (134.971mm,63.813mm)(134.971mm,64.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-12(135.096mm,63.463mm) on Top Signal And Track (134.971mm,63.813mm)(134.971mm,64.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-13(134.221mm,64.188mm) on Top Signal And Track (134.571mm,64.213mm)(134.971mm,64.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-13(134.221mm,64.338mm) on Top Signal And Track (134.571mm,64.213mm)(134.971mm,64.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-16(132.721mm,64.188mm) on Top Signal And Track (131.971mm,63.813mm)(132.371mm,64.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-16(132.721mm,64.338mm) on Top Signal And Track (131.971mm,63.813mm)(132.371mm,64.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-4(131.846mm,61.963mm) on Top Signal And Track (131.971mm,61.213mm)(131.971mm,61.613mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-4(131.996mm,61.963mm) on Top Signal And Track (131.971mm,61.213mm)(131.971mm,61.613mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-5(132.721mm,61.088mm) on Top Signal And Track (131.971mm,61.213mm)(132.371mm,61.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-5(132.721mm,61.238mm) on Top Signal And Track (131.971mm,61.213mm)(132.371mm,61.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-8(134.221mm,61.088mm) on Top Signal And Track (134.571mm,61.213mm)(134.971mm,61.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-8(134.221mm,61.238mm) on Top Signal And Track (134.571mm,61.213mm)(134.971mm,61.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-9(134.946mm,61.963mm) on Top Signal And Track (134.971mm,61.213mm)(134.971mm,61.613mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC201-9(135.096mm,61.963mm) on Top Signal And Track (134.971mm,61.213mm)(134.971mm,61.613mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-1(26.985mm,50.031mm) on Top Signal And Track (26.235mm,50.556mm)(26.635mm,50.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-1(26.985mm,50.181mm) on Top Signal And Track (26.235mm,50.556mm)(26.635mm,50.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-12(26.985mm,53.131mm) on Top Signal And Track (26.235mm,53.156mm)(26.635mm,53.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-12(26.985mm,53.281mm) on Top Signal And Track (26.235mm,53.156mm)(26.635mm,53.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-13(26.11mm,52.406mm) on Top Signal And Track (26.235mm,52.756mm)(26.235mm,53.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-13(26.26mm,52.406mm) on Top Signal And Track (26.235mm,52.756mm)(26.235mm,53.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-16(26.11mm,50.906mm) on Top Signal And Track (26.235mm,50.556mm)(26.635mm,50.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-16(26.26mm,50.906mm) on Top Signal And Track (26.235mm,50.556mm)(26.635mm,50.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-4(28.485mm,50.031mm) on Top Signal And Track (28.835mm,50.156mm)(29.235mm,50.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-4(28.485mm,50.181mm) on Top Signal And Track (28.835mm,50.156mm)(29.235mm,50.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-5(29.21mm,50.906mm) on Top Signal And Track (29.235mm,50.156mm)(29.235mm,50.556mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-5(29.36mm,50.906mm) on Top Signal And Track (29.235mm,50.156mm)(29.235mm,50.556mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-8(29.21mm,52.406mm) on Top Signal And Track (29.235mm,52.756mm)(29.235mm,53.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-8(29.36mm,52.406mm) on Top Signal And Track (29.235mm,52.756mm)(29.235mm,53.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-9(28.485mm,53.131mm) on Top Signal And Track (28.835mm,53.156mm)(29.235mm,53.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Pad IC301-9(28.485mm,53.281mm) on Top Signal And Track (28.835mm,53.156mm)(29.235mm,53.156mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.065mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.063mm < 0.102mm) Between Pad IC906_2-5(9.637mm,107.716mm) on Top Signal And Text "L901_2" (10.693mm,108.229mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.063mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad L201-1(129.071mm,61.663mm) on Top Signal And Track (127.021mm,61.213mm)(127.021mm,65.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad L201-1(129.071mm,61.663mm) on Top Signal And Track (131.121mm,65.213mm)(131.121mm,61.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad L201-2(129.071mm,64.763mm) on Top Signal And Track (127.021mm,61.213mm)(127.021mm,65.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad L201-2(129.071mm,64.763mm) on Top Signal And Track (131.121mm,65.213mm)(131.121mm,61.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.089mm < 0.102mm) Between Pad L202-1(141.002mm,88.051mm) on Top Signal And Track (139.412mm,86.461mm)(139.412mm,88.061mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.089mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.089mm < 0.102mm) Between Pad L202-1(141.002mm,88.051mm) on Top Signal And Track (139.412mm,86.461mm)(141.012mm,86.461mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.089mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.089mm < 0.102mm) Between Pad L202-2(148.622mm,88.051mm) on Top Signal And Track (149.512mm,86.461mm)(150.212mm,86.461mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.089mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.089mm < 0.102mm) Between Pad L202-2(148.622mm,88.051mm) on Top Signal And Track (150.212mm,86.461mm)(150.212mm,87.161mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.089mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.089mm < 0.102mm) Between Pad L202-3(148.622mm,94.271mm) on Top Signal And Track (149.512mm,95.861mm)(150.212mm,95.861mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.089mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.089mm < 0.102mm) Between Pad L202-3(148.622mm,94.271mm) on Top Signal And Track (150.212mm,95.161mm)(150.212mm,95.861mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.089mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.089mm < 0.102mm) Between Pad L202-4(141.002mm,94.271mm) on Top Signal And Track (139.412mm,95.161mm)(139.412mm,95.861mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.089mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.089mm < 0.102mm) Between Pad L202-4(141.002mm,94.271mm) on Top Signal And Track (139.412mm,95.861mm)(140.112mm,95.861mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.089mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad L301-1(28.785mm,47.256mm) on Top Signal And Track (25.235mm,45.206mm)(29.235mm,45.206mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad L301-1(28.785mm,47.256mm) on Top Signal And Track (25.235mm,49.306mm)(29.235mm,49.306mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad L301-2(25.685mm,47.256mm) on Top Signal And Track (25.235mm,45.206mm)(29.235mm,45.206mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad L301-2(25.685mm,47.256mm) on Top Signal And Track (25.235mm,49.306mm)(29.235mm,49.306mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad L801-2(127.249mm,98.897mm) on Top Signal And Text "C201" (128.422mm,99.659mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.097mm < 0.102mm) Between Pad L903_2-1(3.975mm,108.428mm) on Top Signal And Text "IC906_2" (5.239mm,105.267mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.097mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R203-1(153.797mm,104.984mm) on Top Signal And Track (153.347mm,103.584mm)(153.347mm,105.384mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R203-1(153.797mm,104.984mm) on Top Signal And Track (153.347mm,105.384mm)(154.247mm,105.384mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R203-1(153.797mm,104.984mm) on Top Signal And Track (154.247mm,103.584mm)(154.247mm,105.384mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R203-2(153.797mm,103.984mm) on Top Signal And Track (153.347mm,103.584mm)(153.347mm,105.384mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R203-2(153.797mm,103.984mm) on Top Signal And Track (153.347mm,103.584mm)(154.247mm,103.584mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R203-2(153.797mm,103.984mm) on Top Signal And Track (154.247mm,103.584mm)(154.247mm,105.384mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R204-1(135.484mm,67.454mm) on Top Signal And Track (135.034mm,66.054mm)(135.034mm,67.854mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R204-1(135.484mm,67.454mm) on Top Signal And Track (135.034mm,67.854mm)(135.934mm,67.854mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R204-1(135.484mm,67.454mm) on Top Signal And Track (135.934mm,66.054mm)(135.934mm,67.854mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R204-2(135.484mm,66.454mm) on Top Signal And Track (135.034mm,66.054mm)(135.034mm,67.854mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R204-2(135.484mm,66.454mm) on Top Signal And Track (135.034mm,66.054mm)(135.934mm,66.054mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R204-2(135.484mm,66.454mm) on Top Signal And Track (135.934mm,66.054mm)(135.934mm,67.854mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R205-1(146.728mm,104.781mm) on Top Signal And Track (146.278mm,103.381mm)(146.278mm,105.181mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R205-1(146.728mm,104.781mm) on Top Signal And Track (146.278mm,105.181mm)(147.178mm,105.181mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R205-1(146.728mm,104.781mm) on Top Signal And Track (147.178mm,103.381mm)(147.178mm,105.181mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R205-2(146.728mm,103.781mm) on Top Signal And Track (146.278mm,103.381mm)(146.278mm,105.181mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R205-2(146.728mm,103.781mm) on Top Signal And Track (146.278mm,103.381mm)(147.178mm,103.381mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R205-2(146.728mm,103.781mm) on Top Signal And Track (147.178mm,103.381mm)(147.178mm,105.181mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R206-1(153.797mm,107.078mm) on Top Signal And Track (153.347mm,107.478mm)(153.347mm,105.678mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R206-1(153.797mm,107.078mm) on Top Signal And Track (153.347mm,107.478mm)(154.247mm,107.478mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R206-1(153.797mm,107.078mm) on Top Signal And Track (154.247mm,105.678mm)(154.247mm,107.478mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R206-2(153.797mm,106.078mm) on Top Signal And Track (153.347mm,105.678mm)(154.247mm,105.678mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R206-2(153.797mm,106.078mm) on Top Signal And Track (153.347mm,107.478mm)(153.347mm,105.678mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R206-2(153.797mm,106.078mm) on Top Signal And Track (154.247mm,105.678mm)(154.247mm,107.478mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R207-1(151.57mm,107.061mm) on Top Signal And Track (151.17mm,106.611mm)(151.17mm,107.511mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R207-1(151.57mm,107.061mm) on Top Signal And Track (151.17mm,106.611mm)(152.97mm,106.611mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R207-1(151.57mm,107.061mm) on Top Signal And Track (151.17mm,107.511mm)(152.97mm,107.511mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R207-2(152.57mm,107.061mm) on Top Signal And Track (151.17mm,106.611mm)(152.97mm,106.611mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R207-2(152.57mm,107.061mm) on Top Signal And Track (151.17mm,107.511mm)(152.97mm,107.511mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R207-2(152.57mm,107.061mm) on Top Signal And Track (152.97mm,106.611mm)(152.97mm,107.511mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R208-1(147.884mm,107.061mm) on Top Signal And Track (147.484mm,106.611mm)(147.484mm,107.511mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R208-1(147.884mm,107.061mm) on Top Signal And Track (147.484mm,106.611mm)(149.284mm,106.611mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R208-1(147.884mm,107.061mm) on Top Signal And Track (147.484mm,107.511mm)(149.284mm,107.511mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R208-2(148.884mm,107.061mm) on Top Signal And Track (147.484mm,106.611mm)(149.284mm,106.611mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R208-2(148.884mm,107.061mm) on Top Signal And Track (147.484mm,107.511mm)(149.284mm,107.511mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R208-2(148.884mm,107.061mm) on Top Signal And Track (149.284mm,107.511mm)(149.284mm,106.611mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R209-1(145.779mm,107.061mm) on Top Signal And Track (145.379mm,106.611mm)(145.379mm,107.511mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R209-1(145.779mm,107.061mm) on Top Signal And Track (145.379mm,106.611mm)(147.179mm,106.611mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R209-1(145.779mm,107.061mm) on Top Signal And Track (145.379mm,107.511mm)(147.179mm,107.511mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R209-2(146.779mm,107.061mm) on Top Signal And Track (145.379mm,106.611mm)(147.179mm,106.611mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R209-2(146.779mm,107.061mm) on Top Signal And Track (145.379mm,107.511mm)(147.179mm,107.511mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R209-2(146.779mm,107.061mm) on Top Signal And Track (147.179mm,107.511mm)(147.179mm,106.611mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R304-1(23.985mm,53.256mm) on Top Signal And Track (23.585mm,52.806mm)(23.585mm,53.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R304-1(23.985mm,53.256mm) on Top Signal And Track (23.585mm,52.806mm)(25.385mm,52.806mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R304-1(23.985mm,53.256mm) on Top Signal And Track (23.585mm,53.706mm)(25.385mm,53.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R304-2(24.985mm,53.256mm) on Top Signal And Track (23.585mm,52.806mm)(25.385mm,52.806mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R304-2(24.985mm,53.256mm) on Top Signal And Track (23.585mm,53.706mm)(25.385mm,53.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R304-2(24.985mm,53.256mm) on Top Signal And Track (25.385mm,52.806mm)(25.385mm,53.706mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R400-1(123.046mm,57.48mm) on Top Signal And Track (122.646mm,57.03mm)(122.646mm,57.93mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R400-1(123.046mm,57.48mm) on Top Signal And Track (122.646mm,57.03mm)(124.446mm,57.03mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R400-1(123.046mm,57.48mm) on Top Signal And Track (122.646mm,57.93mm)(124.446mm,57.93mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R400-2(124.046mm,57.48mm) on Top Signal And Track (122.646mm,57.03mm)(124.446mm,57.03mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R400-2(124.046mm,57.48mm) on Top Signal And Track (122.646mm,57.93mm)(124.446mm,57.93mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R400-2(124.046mm,57.48mm) on Top Signal And Track (124.446mm,57.03mm)(124.446mm,57.93mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R410-1(131.392mm,50.533mm) on Top Signal And Track (130.942mm,50.133mm)(130.942mm,51.933mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R410-1(131.392mm,50.533mm) on Top Signal And Track (130.942mm,50.133mm)(131.842mm,50.133mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R410-1(131.392mm,50.533mm) on Top Signal And Track (130.942mm,50.133mm)(131.842mm,50.133mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R410-1(131.392mm,50.533mm) on Top Signal And Track (131.842mm,50.133mm)(131.842mm,51.933mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R410-2(131.392mm,51.533mm) on Top Signal And Track (130.942mm,50.133mm)(130.942mm,51.933mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R410-2(131.392mm,51.533mm) on Top Signal And Track (130.942mm,51.933mm)(131.842mm,51.933mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R410-2(131.392mm,51.533mm) on Top Signal And Track (131.842mm,50.133mm)(131.842mm,51.933mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R411-1(142.792mm,50.185mm) on Top Signal And Track (142.342mm,48.785mm)(142.342mm,50.585mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R411-1(142.792mm,50.185mm) on Top Signal And Track (142.342mm,50.585mm)(143.242mm,50.585mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R411-1(142.792mm,50.185mm) on Top Signal And Track (143.242mm,48.785mm)(143.242mm,50.585mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R411-2(142.792mm,49.185mm) on Top Signal And Track (142.342mm,48.785mm)(142.342mm,50.585mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R411-2(142.792mm,49.185mm) on Top Signal And Track (142.342mm,48.785mm)(143.242mm,48.785mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R411-2(142.792mm,49.185mm) on Top Signal And Track (143.242mm,48.785mm)(143.242mm,50.585mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R412-1(123.031mm,55.397mm) on Top Signal And Track (122.631mm,54.947mm)(122.631mm,55.847mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R412-1(123.031mm,55.397mm) on Top Signal And Track (122.631mm,54.947mm)(124.431mm,54.947mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R412-1(123.031mm,55.397mm) on Top Signal And Track (122.631mm,55.847mm)(124.431mm,55.847mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R412-2(124.031mm,55.397mm) on Top Signal And Track (122.631mm,54.947mm)(124.431mm,54.947mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R412-2(124.031mm,55.397mm) on Top Signal And Track (122.631mm,55.847mm)(124.431mm,55.847mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R412-2(124.031mm,55.397mm) on Top Signal And Track (124.431mm,54.947mm)(124.431mm,55.847mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R413-1(143.891mm,50.185mm) on Top Signal And Track (143.441mm,48.785mm)(143.441mm,50.585mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R413-1(143.891mm,50.185mm) on Top Signal And Track (143.441mm,50.585mm)(144.341mm,50.585mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R413-1(143.891mm,50.185mm) on Top Signal And Track (144.341mm,48.785mm)(144.341mm,50.585mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R413-2(143.891mm,49.185mm) on Top Signal And Track (143.441mm,48.785mm)(143.441mm,50.585mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R413-2(143.891mm,49.185mm) on Top Signal And Track (143.441mm,48.785mm)(144.341mm,48.785mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R413-2(143.891mm,49.185mm) on Top Signal And Track (144.341mm,48.785mm)(144.341mm,50.585mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R414-1(135.977mm,53.18mm) on Top Signal And Track (135.527mm,52.78mm)(135.527mm,54.58mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R414-1(135.977mm,53.18mm) on Top Signal And Track (135.527mm,52.78mm)(136.427mm,52.78mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R414-1(135.977mm,53.18mm) on Top Signal And Track (136.427mm,52.78mm)(136.427mm,54.58mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R414-2(135.977mm,54.18mm) on Top Signal And Track (135.527mm,52.78mm)(135.527mm,54.58mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R414-2(135.977mm,54.18mm) on Top Signal And Track (135.527mm,54.58mm)(136.427mm,54.58mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R414-2(135.977mm,54.18mm) on Top Signal And Track (136.427mm,52.78mm)(136.427mm,54.58mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R415-1(134.849mm,53.18mm) on Top Signal And Track (134.399mm,52.78mm)(134.399mm,54.58mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R415-1(134.849mm,53.18mm) on Top Signal And Track (134.399mm,52.78mm)(135.299mm,52.78mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R415-1(134.849mm,53.18mm) on Top Signal And Track (135.299mm,52.78mm)(135.299mm,54.58mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R415-2(134.849mm,54.18mm) on Top Signal And Track (134.399mm,52.78mm)(134.399mm,54.58mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.024mm < 0.102mm) Between Pad R415-2(134.849mm,54.18mm) on Top Signal And Track (134.399mm,54.58mm)(135.299mm,54.58mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.049mm < 0.102mm) Between Pad R415-2(134.849mm,54.18mm) on Top Signal And Track (135.299mm,52.78mm)(135.299mm,54.58mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.049mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R906-1(57.287mm,100.508mm) on Top Signal And Text "R913" (55.19mm,99.956mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R906-2(55.487mm,100.508mm) on Top Signal And Text "R913" (55.19mm,99.956mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.002mm < 0.102mm) Between Pad TPeGND-1(158.699mm,109.449mm) on Top Signal And Track (158.45mm,108.796mm)(158.7mm,108.796mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.002mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.002mm < 0.102mm) Between Pad TPeGND-1(158.699mm,109.449mm) on Top Signal And Track (158.7mm,108.596mm)(158.7mm,108.796mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.002mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.078mm < 0.102mm) Between Pad TPu3.3v1-1(106.783mm,96.29mm) on Top Signal And Text "TPu3.3v1" (107.064mm,97.119mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.094mm < 0.102mm) Between Pad TPuGND1-1(108.834mm,98.072mm) on Top Signal And Text "TPuGND1" (109.185mm,98.916mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.094mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad X400-1(139.692mm,51.913mm) on Top Signal And Track (138.942mm,50.113mm)(138.942mm,51.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad X400-1(139.692mm,51.913mm) on Top Signal And Track (140.442mm,50.113mm)(140.442mm,51.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad X400-2(139.692mm,49.413mm) on Top Signal And Track (138.942mm,50.113mm)(138.942mm,51.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.102mm) Between Pad X400-2(139.692mm,49.413mm) on Top Signal And Track (140.442mm,50.113mm)(140.442mm,51.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-Rule Violations :226
+Processing Rule : Silk To Solder Mask (Clearance=0.075mm) (IsPad),(All)
+Rule Violations :0
 
-Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
-   Violation between Silk To Silk Clearance Constraint: (0.069mm < 0.254mm) Between Arc (103.466mm,111.235mm) on Top Overlay And Text "X1206" (102.552mm,111.252mm) on Top Overlay Silk Text to Silk Clearance [0.069mm]
-   Violation between Silk To Silk Clearance Constraint: (0.225mm < 0.254mm) Between Arc (124.42mm,111.235mm) on Top Overlay And Text "X801" (124.485mm,109.258mm) on Top Overlay Silk Text to Silk Clearance [0.225mm]
-   Violation between Silk To Silk Clearance Constraint: (0.122mm < 0.254mm) Between Arc (128.89mm,59.617mm) on Top Overlay And Text "E" (128.654mm,59.302mm) on Top Overlay Silk Text to Silk Clearance [0.122mm]
-   Violation between Silk To Silk Clearance Constraint: (0.159mm < 0.254mm) Between Arc (131.293mm,69.672mm) on Top Overlay And Text "E" (130.963mm,69.202mm) on Top Overlay Silk Text to Silk Clearance [0.159mm]
-   Violation between Silk To Silk Clearance Constraint: (0.244mm < 0.254mm) Between Arc (131.293mm,69.672mm) on Top Overlay And Text "R202" (128.473mm,68.275mm) on Top Overlay Silk Text to Silk Clearance [0.244mm]
-   Violation between Silk To Silk Clearance Constraint: (0.134mm < 0.254mm) Between Arc (134.897mm,111.235mm) on Top Overlay And Text "X802" (134.899mm,109.322mm) on Top Overlay Silk Text to Silk Clearance [0.134mm]
-   Violation between Silk To Silk Clearance Constraint: (0.115mm < 0.254mm) Between Arc (14.833mm,111.237mm) on Top Overlay And Text "X1601" (15.391mm,109.017mm) on Top Overlay Silk Text to Silk Clearance [0.115mm]
-   Violation between Silk To Silk Clearance Constraint: (0.152mm < 0.254mm) Between Arc (145.531mm,111.235mm) on Top Overlay And Text "X201" (145.542mm,109.499mm) on Top Overlay Silk Text to Silk Clearance [0.152mm]
-   Violation between Silk To Silk Clearance Constraint: (Collision < 0.254mm) Between Arc (43.533mm,111.235mm) on Top Overlay And Text "X901" (42.627mm,111.15mm) on Top Overlay Silk Text to Silk Clearance [0mm]
-   Violation between Silk To Silk Clearance Constraint: (0.16mm < 0.254mm) Between Arc (51.078mm,111.235mm) on Top Overlay And Text "X1201" (50.216mm,111.15mm) on Top Overlay Silk Text to Silk Clearance [0.16mm]
-   Violation between Silk To Silk Clearance Constraint: (0.005mm < 0.254mm) Between Arc (61.556mm,111.235mm) on Top Overlay And Text "X1203" (60.642mm,111.15mm) on Top Overlay Silk Text to Silk Clearance [0.005mm]
-   Violation between Silk To Silk Clearance Constraint: (0.084mm < 0.254mm) Between Arc (72.033mm,111.235mm) on Top Overlay And Text "X1205" (71.12mm,111.15mm) on Top Overlay Silk Text to Silk Clearance [0.084mm]
-   Violation between Silk To Silk Clearance Constraint: (0.084mm < 0.254mm) Between Arc (82.511mm,111.235mm) on Top Overlay And Text "X1202" (81.597mm,111.15mm) on Top Overlay Silk Text to Silk Clearance [0.084mm]
-   Violation between Silk To Silk Clearance Constraint: (0.202mm < 0.254mm) Between Arc (92.988mm,111.235mm) on Top Overlay And Text "X1204" (92.126mm,111.252mm) on Top Overlay Silk Text to Silk Clearance [0.202mm]
-   Violation between Silk To Silk Clearance Constraint: (0.253mm < 0.254mm) Between Area Fill (57.674mm,33.958mm) (58.182mm,36.498mm) on Top Overlay And Text "S401" (57.531mm,36.576mm) on Top Overlay Silk Text to Silk Clearance [0.253mm]
-   Violation between Silk To Silk Clearance Constraint: (0.007mm < 0.254mm) Between Text "C201" (128.422mm,99.659mm) on Top Overlay And Track (128.099mm,98.972mm)(128.899mm,98.972mm) on Top Overlay Silk Text to Silk Clearance [0.007mm]
-   Violation between Silk To Silk Clearance Constraint: (0.254mm < 0.254mm) Between Text "C202" (142.596mm,105.664mm) on Top Overlay And Track (141.248mm,105.367mm)(142.598mm,105.367mm) on Top Overlay Silk Text to Silk Clearance [0.254mm]
-   Violation between Silk To Silk Clearance Constraint: (0.254mm < 0.254mm) Between Text "C202" (142.596mm,105.664mm) on Top Overlay And Track (142.598mm,105.367mm)(143.848mm,104.117mm) on Top Overlay Silk Text to Silk Clearance [0.254mm]
-   Violation between Silk To Silk Clearance Constraint: (0.218mm < 0.254mm) Between Text "C210" (131.984mm,56.58mm) on Top Overlay And Track (132.266mm,53.873mm)(132.266mm,57.511mm) on Top Overlay Silk Text to Silk Clearance [0.218mm]
-   Violation between Silk To Silk Clearance Constraint: (0.182mm < 0.254mm) Between Text "C210" (131.984mm,56.58mm) on Top Overlay And Track (132.266mm,57.511mm)(132.266mm,59.63mm) on Top Overlay Silk Text to Silk Clearance [0.182mm]
-   Violation between Silk To Silk Clearance Constraint: (0.249mm < 0.254mm) Between Text "C211" (129.838mm,54.821mm) on Top Overlay And Text "C212" (129.838mm,53.966mm) on Top Overlay Silk Text to Silk Clearance [0.249mm]
-   Violation between Silk To Silk Clearance Constraint: (0.252mm < 0.254mm) Between Text "C211" (129.838mm,54.821mm) on Top Overlay And Text "C213" (129.838mm,55.677mm) on Top Overlay Silk Text to Silk Clearance [0.252mm]
-   Violation between Silk To Silk Clearance Constraint: (0.254mm < 0.254mm) Between Text "C214" (129.838mm,59.096mm) on Top Overlay And Track (132.266mm,57.511mm)(132.266mm,59.63mm) on Top Overlay Silk Text to Silk Clearance [0.254mm]
-   Violation between Silk To Silk Clearance Constraint: (0.241mm < 0.254mm) Between Text "C221" (144.12mm,98.882mm) on Top Overlay And Track (143.848mm,96.867mm)(143.848mm,104.117mm) on Top Overlay Silk Text to Silk Clearance [0.241mm]
-   Violation between Silk To Silk Clearance Constraint: (0.197mm < 0.254mm) Between Text "C302" (23.038mm,81.051mm) on Top Overlay And Track (22.375mm,81.91mm)(31.519mm,81.91mm) on Top Overlay Silk Text to Silk Clearance [0.197mm]
-   Violation between Silk To Silk Clearance Constraint: (0.253mm < 0.254mm) Between Text "C409" (101.219mm,12.257mm) on Top Overlay And Text "C410" (102.072mm,12.257mm) on Top Overlay Silk Text to Silk Clearance [0.253mm]
-   Violation between Silk To Silk Clearance Constraint: (0.238mm < 0.254mm) Between Text "R202" (128.473mm,68.275mm) on Top Overlay And Track (127.844mm,67.963mm)(131.044mm,67.963mm) on Top Overlay Silk Text to Silk Clearance [0.238mm]
-   Violation between Silk To Silk Clearance Constraint: (0.235mm < 0.254mm) Between Text "R203" (154.153mm,101.371mm) on Top Overlay And Track (153.347mm,103.584mm)(154.247mm,103.584mm) on Top Overlay Silk Text to Silk Clearance [0.235mm]
-   Violation between Silk To Silk Clearance Constraint: (0.239mm < 0.254mm) Between Text "R203" (154.153mm,101.371mm) on Top Overlay And Track (154.247mm,103.584mm)(154.247mm,105.384mm) on Top Overlay Silk Text to Silk Clearance [0.239mm]
-   Violation between Silk To Silk Clearance Constraint: (0.245mm < 0.254mm) Between Text "R205" (143.942mm,104.572mm) on Top Overlay And Track (145.379mm,105.443mm)(147.179mm,105.443mm) on Top Overlay Silk Text to Silk Clearance [0.245mm]
-   Violation between Silk To Silk Clearance Constraint: (0.245mm < 0.254mm) Between Text "R205" (143.942mm,104.572mm) on Top Overlay And Track (145.379mm,106.343mm)(145.379mm,105.443mm) on Top Overlay Silk Text to Silk Clearance [0.245mm]
-   Violation between Silk To Silk Clearance Constraint: (0.247mm < 0.254mm) Between Text "R205" (143.942mm,104.572mm) on Top Overlay And Track (146.278mm,103.381mm)(146.278mm,105.181mm) on Top Overlay Silk Text to Silk Clearance [0.247mm]
-   Violation between Silk To Silk Clearance Constraint: (0.244mm < 0.254mm) Between Text "R205" (143.942mm,104.572mm) on Top Overlay And Track (146.278mm,105.181mm)(147.178mm,105.181mm) on Top Overlay Silk Text to Silk Clearance [0.244mm]
-   Violation between Silk To Silk Clearance Constraint: (0.224mm < 0.254mm) Between Text "R206" (152.933mm,107.95mm) on Top Overlay And Track (155.25mm,108.596mm)(155.25mm,108.796mm) on Top Overlay Silk Text to Silk Clearance [0.224mm]
-   Violation between Silk To Silk Clearance Constraint: (0.251mm < 0.254mm) Between Text "R208" (147.523mm,107.848mm) on Top Overlay And Track (147.484mm,107.511mm)(149.284mm,107.511mm) on Top Overlay Silk Text to Silk Clearance [0.251mm]
-   Violation between Silk To Silk Clearance Constraint: (0.24mm < 0.254mm) Between Text "R906" (52.602mm,99.949mm) on Top Overlay And Track (54.787mm,99.558mm)(54.787mm,101.458mm) on Top Overlay Silk Text to Silk Clearance [0.24mm]
-   Violation between Silk To Silk Clearance Constraint: (0.216mm < 0.254mm) Between Text "X1204" (92.126mm,111.252mm) on Top Overlay And Track (92.08mm,112.15mm)(92.08mm,116.06mm) on Top Overlay Silk Text to Silk Clearance [0.216mm]
-   Violation between Silk To Silk Clearance Constraint: (0.227mm < 0.254mm) Between Text "X1204" (92.126mm,111.252mm) on Top Overlay And Track (92.08mm,112.15mm)(94.655mm,112.15mm) on Top Overlay Silk Text to Silk Clearance [0.227mm]
-   Violation between Silk To Silk Clearance Constraint: (0.208mm < 0.254mm) Between Text "X1206" (102.552mm,111.252mm) on Top Overlay And Track (102.558mm,112.15mm)(102.558mm,116.06mm) on Top Overlay Silk Text to Silk Clearance [0.208mm]
-   Violation between Silk To Silk Clearance Constraint: (0.227mm < 0.254mm) Between Text "X1206" (102.552mm,111.252mm) on Top Overlay And Track (102.558mm,112.15mm)(105.132mm,112.15mm) on Top Overlay Silk Text to Silk Clearance [0.227mm]
-Rule Violations :40
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
    Violation between Net Antennae: Track (76.798mm,51.376mm)(78.746mm,51.376mm) on Top Signal 
@@ -883,22 +132,8 @@ Processing Rule : Net Antennae (Tolerance=0mm) (All)
    Violation between Net Antennae: Via (23.34mm,53.231mm) from Top Signal to Bottom Signal 
 Rule Violations :4
 
-Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (0.025mm,82.855mm)(14.499mm,82.855mm) on Inner Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (0.127mm,76.556mm)(17.45mm,76.556mm) on Top Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (0mm,75.413mm)(18.106mm,75.413mm) on Bottom Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (113.309mm,115.334mm)(113.309mm,120mm) on Top Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (122.86mm,115.214mm)(122.86mm,119.99mm) on Top Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (13.005mm,116.103mm)(13.005mm,120mm) on Top Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (13.383mm,115.014mm)(13.383mm,120mm) on Bottom Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (135.389mm,76.86mm)(160mm,76.86mm) on Top Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (140.327mm,76.606mm)(160mm,76.606mm) on Bottom Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (144.399mm,110.901mm)(144.399mm,120mm) on Top Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (156.058mm,67.056mm)(159.995mm,67.056mm) on Inner Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (69.139mm,0.356mm)(69.139mm,23.901mm) on Bottom Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (69.317mm,0mm)(69.317mm,23.973mm) on Top Signal 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.203mm) Between Board Edge And Track (70.063mm,-0.05mm)(70.063mm,21.69mm) on Inner Signal 
-Rule Violations :14
+Processing Rule : Board Clearance Constraint (Gap=0mm) (not IsKeepOut)
+Rule Violations :0
 
 Processing Rule : Length Constraint (Min=0mm) (Max=120mm) (InNetClass('FMC.SDRAM'))
 Rule Violations :0
@@ -925,6 +160,6 @@ Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (Al
 Rule Violations :0
 
 
-Violations Detected : 774
+Violations Detected : 15
 Waived Violations : 0
-Time Elapsed        : 00:00:27
+Time Elapsed        : 00:00:10
