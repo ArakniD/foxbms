@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Sandbox\github\foxbms\hardware\hw-master\v1.0.6\Sources\master.PcbDoc
-Date     : 12/07/2019
-Time     : 8:07:35 AM
+Date     : 15/07/2019
+Time     : 10:16:11 PM
 
 Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU_SEC') and OnOutside and not IsKeepOut),((not InNetClass('ISO_MCU_SEC')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_USB')))
 Rule Violations :0
@@ -19,16 +19,13 @@ Processing Rule : Clearance Constraint (Gap=0.2mm) (OnMid),(not IsKeepOut)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.15mm) (OnOutside),(not IsKeepOut)
-   Violation between Clearance Constraint: (0.033mm < 0.127mm) Between Track (27.323mm,58.801mm)(31.648mm,54.476mm) on Bottom Signal And Via (28.738mm,56.807mm) from Top Signal to Bottom Signal 
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_EXT') and OnOutside and not IsKeepOut),((InNetClass('ISO_EXT') = false) and OnOutside and (IsKeepOut = false) and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB')))
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.12mm) (InNetClass('FMC.SDRAM')),(All)
-   Violation between Clearance Constraint: (0.025mm < 0.12mm) Between Pad C412-1(119.024mm,29.57mm) on Top Signal And Track (116.372mm,30.034mm)(118.569mm,30.034mm) on Top Signal 
-   Violation between Clearance Constraint: (0.025mm < 0.12mm) Between Pad C412-1(119.024mm,29.57mm) on Top Signal And Track (118.569mm,30.034mm)(118.688mm,30.153mm) on Top Signal 
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.15mm) (IsKeepOut),(InPoly)
 Rule Violations :0
@@ -49,25 +46,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net RTN_EXT_0 Between Pad IC203-1(148.714mm,102.21mm) on Top Signal And Pad IC203-2(149.214mm,102.21mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net RTN_EXT_0 Between Pad IC203-15(150.714mm,106.01mm) on Top Signal And Pad IC203-13(151.714mm,106.01mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net RTN_EXT_0 Between Pad IC203-16(150.214mm,106.01mm) on Top Signal And Pad IC203-15(150.714mm,106.01mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net RTN_EXT_0 Between Pad IC203-2(149.214mm,102.21mm) on Top Signal And Pad IC203-3(149.714mm,102.21mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net RTN_EXT_0 Between Pad IC203-3(149.714mm,102.21mm) on Top Signal And Pad IC203-4(150.214mm,102.21mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net RTN_EXT_0 Between Pad IC203-4(150.214mm,102.21mm) on Top Signal And Pad IC203-5(150.714mm,102.21mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net RTN_EXT_0 Between Pad IC203-5(150.714mm,102.21mm) on Top Signal And Pad IC203-6(151.214mm,102.21mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net RTN_EXT_0 Between Pad IC203-6(151.214mm,102.21mm) on Top Signal And Pad IC203-7(151.714mm,102.21mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net RTN_EXT_0 Between Pad IC203-7(151.714mm,102.21mm) on Top Signal And Via (153.427mm,102.354mm) from Top Signal to Bottom Signal 
-   Violation between Un-Routed Net Constraint: Net USB_GND_1 Between Via (121.252mm,107.428mm) from Top Signal to Bottom Signal And Pad L902_1-1(121.274mm,108.812mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net USB_GND_2 Between Pad L902_2-1(13.005mm,108.879mm) on Top Signal And Via (13.283mm,107.374mm) from Top Signal to Bottom Signal 
-   Violation between Un-Routed Net Constraint: Net USB_GND_1 Between Pad L903_1-1(115.12mm,108.78mm) on Top Signal And Via (115.86mm,108.768mm) from Top Signal to Bottom Signal 
-   Violation between Un-Routed Net Constraint: Net USB_GND_2 Between Via (3.697mm,107.323mm) from Top Signal to Bottom Signal And Pad L903_2-1(3.975mm,108.828mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net FB_EXT_1 Between Track (67.107mm,105.918mm)(67.407mm,105.918mm) on Top Signal And Pad R1102-2(67.843mm,106.007mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net GPIO.RTC_INT# Between Pad R410-1(131.041mm,50.847mm) on Top Signal And Track (131.392mm,50.429mm)(133.101mm,50.429mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net USB_GND_1 Between Via (107.49mm,95.18mm) from Top Signal to Bottom Signal And Pad TPuGND1-1(108.834mm,98.072mm) on Top Signal 
-   Violation between Un-Routed Net Constraint: Net USB_GND_2 Between Pad TPuGND2-1(1.954mm,102.589mm) on Top Signal And Via (3.697mm,105.977mm) from Top Signal to Bottom Signal 
-   Violation between Un-Routed Net Constraint: Net CAN_GND_INT Between Track (67.721mm,56.058mm)(67.721mm,56.158mm) on Top Signal And Track (68.313mm,56.75mm)(68.313mm,57.067mm) on Top Signal 
-Rule Violations :18
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -84,28 +63,7 @@ Rule Violations :0
 Processing Rule : Routing Via (MinHoleWidth=0.2mm) (MaxHoleWidth=1mm) (PreferredHoleWidth=0.3mm) (MinWidth=0.45mm) (MaxWidth=7mm) (PreferedWidth=0.45mm) (All)
 Rule Violations :0
 
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.203mm) (Prefered=0.152mm)  and Width Constraints (Min=0.131mm) (Max=0.152mm) (Prefered=0.14mm) (All)
-Rule Violations :0
-
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('U_1_N'))
-Rule Violations :0
-
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('D_1_P'))
-Rule Violations :0
-
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('D_1_N'))
-Rule Violations :0
-
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('U_1_P'))
-Rule Violations :0
-
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('U_2_P'))
-Rule Violations :0
-
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('U_2_N'))
-Rule Violations :0
-
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (InNet('D_2_N'))
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.131mm) (Max=0.381mm) (Prefered=0.381mm) (All)
 Rule Violations :0
 
 Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Allowed) (Ignore First Corner = Allowed)
@@ -130,96 +88,16 @@ Processing Rule : Hole To Hole Clearance (Gap=0.377mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.05mm) (All),(All)
-   Violation between Minimum Solder Mask Sliver Constraint: (0.048mm < 0.05mm) Between Pad IC404-1(124.962mm,53.561mm) on Top Signal And Pad IC404-2(124.462mm,53.561mm) on Top Signal [Top Solder] Mask Sliver [0.048mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.048mm < 0.05mm) Between Pad IC404-10(124.962mm,49.061mm) on Top Signal And Pad IC404-9(124.462mm,49.061mm) on Top Signal [Top Solder] Mask Sliver [0.048mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.048mm < 0.05mm) Between Pad IC404-2(124.462mm,53.561mm) on Top Signal And Pad IC404-3(123.962mm,53.561mm) on Top Signal [Top Solder] Mask Sliver [0.048mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.048mm < 0.05mm) Between Pad IC404-3(123.962mm,53.561mm) on Top Signal And Pad IC404-4(123.462mm,53.561mm) on Top Signal [Top Solder] Mask Sliver [0.048mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.048mm < 0.05mm) Between Pad IC404-4(123.462mm,53.561mm) on Top Signal And Pad IC404-5(122.962mm,53.561mm) on Top Signal [Top Solder] Mask Sliver [0.048mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.048mm < 0.05mm) Between Pad IC404-6(122.962mm,49.061mm) on Top Signal And Pad IC404-7(123.462mm,49.061mm) on Top Signal [Top Solder] Mask Sliver [0.048mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.048mm < 0.05mm) Between Pad IC404-7(123.462mm,49.061mm) on Top Signal And Pad IC404-8(123.962mm,49.061mm) on Top Signal [Top Solder] Mask Sliver [0.048mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.048mm < 0.05mm) Between Pad IC404-8(123.962mm,49.061mm) on Top Signal And Pad IC404-9(124.462mm,49.061mm) on Top Signal [Top Solder] Mask Sliver [0.048mm]
-Rule Violations :8
+Rule Violations :0
 
 Processing Rule : Silk To Solder Mask (Clearance=0.075mm) (IsPad),(All)
-   Violation between Silk To Solder Mask Clearance Constraint: (0.05mm < 0.075mm) Between Pad C1202-1(52.945mm,107.437mm) on Top Signal And Track (52.42mm,107.287mm)(52.42mm,110.187mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.05mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.071mm < 0.075mm) Between Pad C402-2(106.934mm,16.627mm) on Top Signal And Track (107.329mm,17.077mm)(107.329mm,16.177mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.071mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.07mm < 0.075mm) Between Pad C414-1(107.729mm,16.627mm) on Top Signal And Track (107.334mm,17.077mm)(107.334mm,16.177mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.07mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.059mm < 0.075mm) Between Pad C801-1(124.879mm,85.51mm) on Top Signal And Text "C803" (124.884mm,86.282mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.059mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad C801-2(123.279mm,85.51mm) on Top Signal And Text "C803" (124.884mm,86.282mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.059mm < 0.075mm) Between Pad D1102-1(86.494mm,105.613mm) on Top Signal And Track (87.005mm,104.897mm)(87.005mm,107.797mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.059mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.068mm < 0.075mm) Between Pad D1102-2(84.244mm,105.613mm) on Top Signal And Track (83.678mm,103.768mm)(83.678mm,106.668mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.068mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad D801-3(128.549mm,105.375mm) on Top Signal And Track (127.899mm,104.98mm)(129.199mm,104.98mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad F1001_1-1(57.76mm,74.871mm) on Top Signal And Text "R1002_2" (60.219mm,72.339mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad F1001_2-1(63.216mm,74.871mm) on Top Signal And Text "R1002_3" (65.675mm,72.339mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad F1001_3-1(68.672mm,74.871mm) on Top Signal And Text "R1002_4" (71.131mm,72.339mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad F1001_4-1(74.128mm,74.871mm) on Top Signal And Text "R1002_5" (76.587mm,72.339mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC1_1-3(58.826mm,70.52mm) on Top Signal And Text "R1003_2" (56.358mm,70.866mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC1_1-4(56.286mm,70.52mm) on Top Signal And Text "R1003_2" (56.358mm,70.866mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC1_2-3(64.283mm,70.52mm) on Top Signal And Text "R1003_3" (61.814mm,70.891mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC1_2-4(61.743mm,70.52mm) on Top Signal And Text "R1003_3" (61.814mm,70.891mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC1_3-3(69.739mm,70.52mm) on Top Signal And Text "R1003_4" (67.27mm,70.891mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC1_3-4(67.199mm,70.52mm) on Top Signal And Text "R1003_4" (67.27mm,70.891mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC1_4-3(75.195mm,70.52mm) on Top Signal And Text "R1003_5" (72.726mm,70.891mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC1_4-4(72.655mm,70.52mm) on Top Signal And Text "R1003_5" (72.726mm,70.891mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.061mm < 0.075mm) Between Pad IC201-10(134.946mm,62.463mm) on Top Signal And Track (135.367mm,61.089mm)(135.367mm,62.389mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.061mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.036mm < 0.075mm) Between Pad IC201-10(134.946mm,62.463mm) on Top Signal And Track (135.367mm,62.389mm)(136.092mm,62.389mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.036mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.071mm < 0.075mm) Between Pad IC201-10(134.946mm,62.463mm) on Top Signal And Track (135.38mm,62.659mm)(135.38mm,63.959mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.071mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.071mm < 0.075mm) Between Pad IC201-10(134.946mm,62.463mm) on Top Signal And Track (135.38mm,62.659mm)(136.105mm,62.659mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.071mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC201-10(135.096mm,62.463mm) on Top Signal And Track (135.367mm,61.089mm)(135.367mm,62.389mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC201-10(135.096mm,62.463mm) on Top Signal And Track (135.367mm,62.389mm)(136.092mm,62.389mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC201-10(135.096mm,62.463mm) on Top Signal And Track (135.38mm,62.659mm)(135.38mm,63.959mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC201-10(135.096mm,62.463mm) on Top Signal And Track (135.38mm,62.659mm)(136.105mm,62.659mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.073mm < 0.075mm) Between Pad IC201-11(134.946mm,62.963mm) on Top Signal And Track (135.38mm,62.659mm)(135.38mm,63.959mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.073mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC201-11(135.096mm,62.963mm) on Top Signal And Track (135.38mm,62.659mm)(135.38mm,63.959mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.073mm < 0.075mm) Between Pad IC201-12(134.946mm,63.463mm) on Top Signal And Track (135.38mm,62.659mm)(135.38mm,63.959mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.073mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC201-12(135.096mm,63.463mm) on Top Signal And Track (135.38mm,62.659mm)(135.38mm,63.959mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.061mm < 0.075mm) Between Pad IC201-9(134.946mm,61.963mm) on Top Signal And Track (135.367mm,61.089mm)(135.367mm,62.389mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.061mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC201-9(135.096mm,61.963mm) on Top Signal And Track (135.367mm,61.089mm)(135.367mm,62.389mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-10(27.985mm,53.131mm) on Top Signal And Track (26.833mm,53.566mm)(28.133mm,53.566mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.063mm < 0.075mm) Between Pad IC301-10(27.985mm,53.131mm) on Top Signal And Track (28.121mm,53.577mm)(28.121mm,54.302mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.063mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.063mm < 0.075mm) Between Pad IC301-10(27.985mm,53.131mm) on Top Signal And Track (28.121mm,53.577mm)(29.421mm,53.577mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.063mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.074mm < 0.075mm) Between Pad IC301-10(27.985mm,53.131mm) on Top Signal And Track (28.133mm,53.566mm)(28.133mm,54.291mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.074mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-10(27.985mm,53.281mm) on Top Signal And Track (26.833mm,53.566mm)(28.133mm,53.566mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-10(27.985mm,53.281mm) on Top Signal And Track (28.121mm,53.577mm)(28.121mm,54.302mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-10(27.985mm,53.281mm) on Top Signal And Track (28.121mm,53.577mm)(29.421mm,53.577mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-10(27.985mm,53.281mm) on Top Signal And Track (28.133mm,53.566mm)(28.133mm,54.291mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-11(27.485mm,53.131mm) on Top Signal And Track (26.833mm,53.566mm)(28.133mm,53.566mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-11(27.485mm,53.281mm) on Top Signal And Track (26.833mm,53.566mm)(28.133mm,53.566mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.001mm < 0.075mm) Between Pad IC301-12(26.985mm,53.131mm) on Top Signal And Track (26.833mm,53.566mm)(26.833mm,54.291mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.001mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-12(26.985mm,53.131mm) on Top Signal And Track (26.833mm,53.566mm)(28.133mm,53.566mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-12(26.985mm,53.281mm) on Top Signal And Track (26.833mm,53.566mm)(26.833mm,54.291mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-12(26.985mm,53.281mm) on Top Signal And Track (26.833mm,53.566mm)(28.133mm,53.566mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-13(26.11mm,52.406mm) on Top Signal And Track (23.035mm,52.606mm)(25.935mm,52.606mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-13(26.11mm,52.406mm) on Top Signal And Track (25.935mm,52.606mm)(25.935mm,53.906mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.008mm < 0.075mm) Between Pad IC301-13(26.26mm,52.406mm) on Top Signal And Track (23.035mm,52.606mm)(25.935mm,52.606mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.008mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.017mm < 0.075mm) Between Pad IC301-13(26.26mm,52.406mm) on Top Signal And Track (25.935mm,52.606mm)(25.935mm,53.906mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.017mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-9(28.485mm,53.131mm) on Top Signal And Track (28.121mm,53.577mm)(29.421mm,53.577mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC301-9(28.485mm,53.281mm) on Top Signal And Track (28.121mm,53.577mm)(29.421mm,53.577mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.014mm < 0.075mm) Between Pad IC801-5(130.531mm,92.158mm) on Top Signal And Text "C807" (130.617mm,93.335mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.014mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC802-15(124.536mm,82.343mm) on Top Signal And Text "C802" (125.127mm,82.436mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad IC802-16(123.266mm,82.343mm) on Top Signal And Text "C802" (125.127mm,82.436mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad L901_1-1(119.908mm,110.566mm) on Top Signal And Track (120.449mm,108.262mm)(120.449mm,111.162mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad L901_1-2(119.908mm,108.766mm) on Top Signal And Track (120.449mm,108.262mm)(120.449mm,111.162mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad L902_1-1(121.274mm,108.812mm) on Top Signal And Track (120.733mm,108.216mm)(120.733mm,111.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad L902_1-2(121.274mm,110.612mm) on Top Signal And Track (120.733mm,108.216mm)(120.733mm,111.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad R411-1(142.792mm,50.485mm) on Top Signal And Track (143.241mm,48.235mm)(143.241mm,51.135mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad R411-2(142.792mm,48.885mm) on Top Signal And Track (143.241mm,48.235mm)(143.241mm,51.135mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad R413-1(143.891mm,50.485mm) on Top Signal And Track (143.442mm,48.235mm)(143.442mm,51.135mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad R413-2(143.891mm,48.885mm) on Top Signal And Track (143.442mm,48.235mm)(143.442mm,51.135mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.064mm < 0.075mm) Between Pad R913_1-1(112.947mm,96.843mm) on Top Signal And Track (112.129mm,96.788mm)(114.18mm,98.838mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.064mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.064mm < 0.075mm) Between Pad R913_1-2(114.078mm,97.975mm) on Top Signal And Track (112.129mm,96.788mm)(114.18mm,98.838mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.064mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.064mm < 0.075mm) Between Pad R914_1-1(112.129mm,97.707mm) on Top Signal And Track (112.028mm,96.843mm)(114.078mm,98.894mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.064mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.064mm < 0.075mm) Between Pad R914_1-2(113.26mm,98.838mm) on Top Signal And Track (112.028mm,96.843mm)(114.078mm,98.894mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.064mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.075mm) Between Pad TPvRef0-1(119.156mm,16.317mm) on Top Signal And Track (118.506mm,15.815mm)(119.806mm,15.815mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.054mm < 0.075mm) Between Pad X1206-4(109.132mm,110.14mm) on Multi-Layer And Track (110.011mm,107.287mm)(110.011mm,110.187mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.054mm]
-Rule Violations :71
+Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Via (22.66mm,53.231mm) from Top Signal to Bottom Signal 
-Rule Violations :1
+Processing Rule : Net Antennae (Tolerance=0mm) (not InNet('CAN_GND_INT')  and not InNet('GND_1'))
+Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (not IsKeepOut)
 Rule Violations :0
@@ -227,28 +105,23 @@ Rule Violations :0
 Processing Rule : Length Constraint (Min=0mm) (Max=120mm) (InNetClass('FMC.SDRAM'))
 Rule Violations :0
 
-Processing Rule : Matched Lengths(Tolerance=12mm) (InNetClass('FMC.DQM'))
-   Violation between Matched Net Lengths: Between Net FMC_MCU_0_RAM_D11 And Net FMC_MCU_0_RAM_D2 Length:28.503mm is not within 12mm tolerance of Length:43.082mm (2.578mm short) 
-Rule Violations :1
-
-Processing Rule : Matched Lengths(Tolerance=22mm) (InNetClass('FMC.CMD'))
+Processing Rule : Matched Lengths(Tolerance=10mm) (InNetClass('FMC.DQM'))
 Rule Violations :0
 
-Processing Rule : Matched Lengths(Tolerance=22mm) (InNetClass('FMC.CNTRL'))
-   Violation between Matched Net Lengths: Between Net FMC_MCU_0_RAM_NBL1 And Net FMC_MCU_0_RAM_SDNE1 Length:33.983mm is not within 22mm tolerance of Length:57.913mm (1.93mm short) 
-Rule Violations :1
+Processing Rule : Matched Lengths(Tolerance=20mm) (InNetClass('FMC.CNTRL'))
+Rule Violations :0
 
-Processing Rule : Matched Lengths(Tolerance=12mm) (InNetClass('FMC.ADR'))
+Processing Rule : Matched Lengths(Tolerance=10mm) (InNetClass('FMC.ADR'))
 Rule Violations :0
 
 Processing Rule : Component Clearance Constraint ( Horizontal Gap = 0.1mm, Vertical Gap = 0.1mm ) (All),(All) 
-   Violation between Component Clearance Constraint: (Collision < 0.1mm) Between Small Component Designator18-Comment (7mm,100mm) on Top Signal And SMT Small Component R914_2-27R (10.033mm,96.85mm) on Top Signal 
+   Violation between Component Clearance Constraint: (Collision < 0.1mm) Between Component Designator18-Comment (7mm,100mm) on Top Signal And SMT Small Component R914_2-27R (10.033mm,96.85mm) on Top Signal 
 Rule Violations :1
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 104
+Violations Detected : 1
 Waived Violations : 0
-Time Elapsed        : 00:00:09
+Time Elapsed        : 00:00:10
