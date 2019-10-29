@@ -9,14 +9,8 @@ ProjectPath=hw-master\v1.0.6\Sources\master-010106.PrjPcb
 [Project4]
 ProjectPath=library\ti-import.LibPkg
 [Project5]
-ProjectPath=..\..\..\..\Users\lucas\Downloads\Altium\UL_50225C\AltiumDesigner\2019-06-14_09-30-08\UL_Import2.PrjScr
-[Project6]
-ProjectPath=..\..\..\..\Users\lucas\Documents\AltiumLL\AltiumLL.PrjScr
-[Project7]
 ProjectPath=hw-multiboard-v2.0.x\foxBMS-MultiBoard\foxBMS-MultiBoard.PrjMbd
-[Project8]
+[Project6]
 ProjectPath=hw-slave-12-ltc6811-1\hw-slave-12-ltc6811-1-v2.1.5\Sources\slave-12-ltc6811-1.PrjPcb
-[Project9]
-ProjectPath=..\..\..\..\Users\lucas\Nextcloud\Documents\PCB Design\BatPack\PWR578A.PrjPCB
-[Project10]
-ProjectPath=..\..\..\..\Users\lucas\Nextcloud\Documents\PCB Design\N\PWR578A\PWR578A.LibPkg
+[Project7]
+ProjectPath=..\..\..\..\Nextcloud\Documents\PCB Design\B\Rio Tinto MAT B.PrjPCB
