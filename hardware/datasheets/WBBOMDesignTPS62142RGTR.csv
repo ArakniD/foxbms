@@ -1,0 +1,7 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+Cin,Kemet,C0805C106K8PACTU,1,0.03,6.75,Cap: 10 µF  Total Derated Cap: 5.6 µF  VDC: 10 V  ESR: 3 mΩ  Package: 0805  
+Cout,MuRata,GRM188R60J226MEA0D,1,0.05,4.68,Cap: 22 µF  Total Derated Cap: 7.9 µF  VDC: 6.3 V  ESR: 1 mΩ  Package: 0603  
+Css,MuRata,GRM1555C1E391JA01D,1,0.01,3,Cap: 390 pF  Total Derated Cap: 390 pF  VDC: 25 V  ESR: 1 mΩ  Package: 0402  
+L1,Pulse Engineering,PA4332.222NLT,1,0.22,27.04,L: 2.2 µH  DCR: 48 mΩ  IDC: 4.3 A  
+Rpg,Vishay-Dale,CRCW0402100KFKED,1,0.01,3,Resistance: 100 kΩ  Tolerance: 1.0%  Power: 63 mW  
+U1,Texas Instruments,TPS62142RGTR,1,0.78,16.81,

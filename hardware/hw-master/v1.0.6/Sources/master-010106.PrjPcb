@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for master-010106
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -111,6 +111,23 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document5]
+DocumentPath=dcdc_5v0_3v3.SchDoc
+AnnotationEnabled=0
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=34
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=EERWJTCV
+
+[Document6]
 DocumentPath=hierarchy.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -127,9 +144,9 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MUJHUFIQ
 
-[Document6]
-DocumentPath=supply1.SchDoc
-AnnotationEnabled=0
+[Document7]
+DocumentPath=supply_internal.SchDoc
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -144,8 +161,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MDDOCAAC
 
-[Document7]
-DocumentPath=supply0.SchDoc
+[Document8]
+DocumentPath=supply_external.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=201
 AnnotationIndexControlEnabled=0
@@ -161,7 +178,24 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CNUTEUVI
 
-[Document8]
+[Document9]
+DocumentPath=dcdc_wide_3v3.SchDoc
+AnnotationEnabled=0
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=35
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=YJBYPAQY
+
+[Document10]
 DocumentPath=mcu0_primary.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=401
@@ -178,7 +212,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MBBNYSIA
 
-[Document9]
+[Document11]
 DocumentPath=mcu1_secondary.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -195,7 +229,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document12]
 DocumentPath=mcu1_secondary.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -212,7 +246,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KCSDMPLK
 
-[Document11]
+[Document13]
 DocumentPath=mcu0_to_mcu1_isolated_SPI.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -228,40 +262,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GTQCFPPN
-
-[Document12]
-DocumentPath=CAN0.Harness
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document13]
-DocumentPath=CAN0.SchDoc
-AnnotationEnabled=0
-AnnotateStartValue=801
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=3
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=AUOMEHHM
 
 [Document14]
 DocumentPath=interlock_circuit.SchDoc
@@ -315,74 +315,6 @@ GenerateClassCluster=0
 DocumentUniqueId=WFULEUQM
 
 [Document17]
-DocumentPath=contactor_feedback.Harness
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document18]
-DocumentPath=contactor_feedback.SchDoc
-AnnotationEnabled=0
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=7
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=RSJIECQP
-
-[Document19]
-DocumentPath=contactor_connectors.Harness
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document20]
-DocumentPath=contactor_connectors.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1201
-AnnotationIndexControlEnabled=1
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=5
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=IVLDKUOE
-
-[Document21]
 DocumentPath=isolated_USB.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -399,7 +331,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document22]
+[Document18]
 DocumentPath=isolated_USB.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -416,7 +348,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GPBNLEEL
 
-[Document23]
+[Document19]
 DocumentPath=EEPROM.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -433,7 +365,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document24]
+[Document20]
 DocumentPath=EEPROM.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -450,7 +382,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UUKYMIUK
 
-[Document25]
+[Document21]
 DocumentPath=bms-interface_interface.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -467,7 +399,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document26]
+[Document22]
 DocumentPath=bms-interface_interface.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -484,7 +416,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QQYOLTCS
 
-[Document27]
+[Document23]
 DocumentPath=SDRAM.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -501,7 +433,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DTMEHKVI
 
-[Document28]
+[Document24]
 DocumentPath=FPGA_SPI_interface.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -518,7 +450,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document29]
+[Document25]
 DocumentPath=FPGA_SPI_interface.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -535,7 +467,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KTDILLVU
 
-[Document30]
+[Document26]
 DocumentPath=connector_to_BMS_extension.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -552,7 +484,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document31]
+[Document27]
 DocumentPath=connector_to_BMS_extension.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -569,7 +501,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GCOULGMU
 
-[Document32]
+[Document28]
 DocumentPath=power.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=401
@@ -586,7 +518,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ECXOYAVJ
 
-[Document33]
+[Document29]
 DocumentPath=crystals.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -603,7 +535,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GJIGXEBC
 
-[Document34]
+[Document30]
 DocumentPath=debug_LED.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -620,7 +552,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JQWVJWYY
 
-[Document35]
+[Document31]
 DocumentPath=ext_bootload_activation.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -637,7 +569,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FHLHOJRK
 
-[Document36]
+[Document32]
 DocumentPath=SDRAM.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -654,7 +586,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document37]
+[Document33]
 DocumentPath=mcu0_primary.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -671,7 +603,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document38]
+[Document34]
 DocumentPath=mcu0_to_mcu1_isolated_SPI.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -688,7 +620,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document39]
+[Document35]
 DocumentPath=..\..\..\library\master.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -705,7 +637,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CJPPRIKI
 
-[Document40]
+[Document36]
 DocumentPath=..\..\..\library\29197.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -722,7 +654,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JOBQFWIJ
 
-[Document41]
+[Document37]
 DocumentPath=power.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -739,7 +671,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document42]
+[Document38]
 DocumentPath=..\..\..\library\ti-import.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -756,7 +688,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GXWVUDOV
 
-[Document43]
+[Document39]
 DocumentPath=..\..\..\library\ti-import.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -773,7 +705,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UDTTDFVD
 
-[Document44]
+[Document40]
 DocumentPath=isolated_usb_single.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=901
@@ -790,7 +722,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YQZPUAWO
 
-[Document45]
+[Document41]
 DocumentPath=contactor_single.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1001
@@ -807,8 +739,246 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RZTVYFVS
 
-[Document46]
+[Document42]
 DocumentPath=master-010106.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document43]
+DocumentPath=master-010106.SCHLIB
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KIRUOKAQ
+
+[Document44]
+DocumentPath=03_LTC6820.SchDoc
+AnnotationEnabled=0
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=26
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TIRLOJUG
+
+[Document45]
+DocumentPath=bms-slave-magnetics.SchDoc
+AnnotationEnabled=0
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=27
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=1
+DocumentUniqueId=CIERHUMW
+
+[Document46]
+DocumentPath=0301_LTC6820_chip.SchDoc
+AnnotationEnabled=0
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=28
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MWDPPGWF
+
+[Document47]
+DocumentPath=isolated_rs485.SchDoc
+AnnotationEnabled=0
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=29
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PSQULRSK
+
+[Document48]
+DocumentPath=memorycard.SchDoc
+AnnotationEnabled=0
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=30
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=FGDQGGJR
+
+[Document49]
+DocumentPath=memorycard.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document50]
+DocumentPath=isolated_rs485.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document51]
+DocumentPath=hierarchy.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document52]
+DocumentPath=CAN_new.SchDoc
+AnnotationEnabled=0
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=31
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VIBGAPFG
+
+[Document53]
+DocumentPath=isolated_dcdc_3.3to3.3.SchDoc
+AnnotationEnabled=0
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=33
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=IAGQLSVT
+
+[Document54]
+DocumentPath=..\..\..\library\25157.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document55]
+DocumentPath=IsoDcDc-BSR033A.SchDoc
+AnnotationEnabled=0
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=36
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=WCYTYKFQ
+
+[Document56]
+DocumentPath=..\..\..\library\BSR033A.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -971,7 +1141,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for master-010106
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs

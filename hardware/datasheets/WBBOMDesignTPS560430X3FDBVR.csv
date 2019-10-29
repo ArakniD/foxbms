@@ -1,0 +1,9 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+Cboot,TDK,C2012X7R2A104K125AA,1,0.03,6.75,Cap: 100 nF  Total Derated Cap: 100 nF  VDC: 100 V  ESR: 20.73 mΩ  Package: 0805  
+Renb,Vishay-Dale,CRCW0402200KFKED,1,0.01,3,Resistance: 200 kΩ  Tolerance: 1.0%  Power: 63 mW  
+Cin,MuRata,GRM31CR71H475KA12L,1,0.22,10.92,Cap: 4.7 µF  Total Derated Cap: 2.3 µF  VDC: 50 V  ESR: 3 mΩ  Package: 2220  
+Cout,TDK,C3225X5R1C156M250AA,1,0.18,14.7,Cap: 15 µF  Total Derated Cap: 12 µF  VDC: 16 V  ESR: 2.95 mΩ  Package: 1210_280  
+Rent,Vishay-Dale,CRCW0402412KFKED,1,0.01,3,Resistance: 412 kΩ  Tolerance: 1.0%  Power: 63 mW  
+L1,NIC Components,NPI43C150MTRF,1,0.07,30.74,L: 15 µH  DCR: 250 mΩ  IDC: 1 A  
+U1,Texas Instruments,TPS560430X3FDBVR,1,0.52,14.82,
+Cinx,TDK,CGA3E2X7R1H104K080AA,1,0.01,4.68,Cap: 100 nF  Total Derated Cap: 74 nF  VDC: 50 V  ESR: 29.6 mΩ  Package: 0603  
