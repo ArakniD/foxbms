@@ -1,54 +1,54 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\lucas\Documents\GitHub\foxbms\hardware\hw-master\v1.0.6\Sources\master.PcbDoc
+PCB File : C:\sandbox\github\hardware\hw-master\v1.0.6\Sources\master.PcbDoc
 Date     : 22/12/2019
-Time     : 6:17:54 AM
-
-Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU')  and OnOutside       and not IsKeepOut),((not InNetClass('ISO_MCU')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB')or InNetClass('ISO_COM')))
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU_SEC') and OnOutside and not IsKeepOut),((not InNetClass('ISO_MCU_SEC')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_USB')or InNetClass('ISO_COM')))
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=0.12mm) (InNetClass('FMC.SDRAM')),(All)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_EXT') and OnOutside and not IsKeepOut),((InNetClass('ISO_EXT') = false) and OnOutside and (IsKeepOut = false) and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB') or InNetClass('ISO_COM')))
-Rule Violations :0
+Time     : 11:20:37 PM
 
 Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU_USB') and OnOutside and not IsKeepOut),((not InNetClass('ISO_MCU_USB')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_COM')))
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_MCU_SEC') and OnMid and not IsKeepOut),(not InNetClass('ISO_MCU_SEC') and OnMid and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_USB')or InNetClass('ISO_COM')))
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_MCU_USB') and OnMid and not IsKeepOut),(not InNetClass('ISO_MCU_USB') and OnMid     and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_COM')))
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_EXT') and OnMid and not IsKeepOut),(not InNetClass('ISO_EXT') and OnMid and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB') or InNetClass('ISO_COM')))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_MCU') and OnMid and not IsKeepOut),(not InNetClass('ISO_MCU') and OnMid and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB'or InNetClass('ISO_COM'))))
+Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU_SEC') and OnOutside and not IsKeepOut),((not InNetClass('ISO_MCU_SEC')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_USB')or InNetClass('ISO_COM')))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.2mm) (OnMid),(not IsKeepOut)
+Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_EXT') and OnOutside and not IsKeepOut),((InNetClass('ISO_EXT') = false) and OnOutside and (IsKeepOut = false) and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB') or InNetClass('ISO_COM')))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.2mm) (IsDesignator and OnSilkscreen),(InPoly)
+Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU')  and OnOutside       and not IsKeepOut),((not InNetClass('ISO_MCU')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB')or InNetClass('ISO_COM')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.12mm) (InNetClass('FMC.SDRAM')),(All)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.15mm) (IsKeepOut),(InPoly)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.15mm) (IsPad),(InPoly and OnSilkscreen)
+Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_MCU_USB') and OnMid and not IsKeepOut),(not InNetClass('ISO_MCU_USB') and OnMid     and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_COM')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_MCU') and OnMid and not IsKeepOut),(not InNetClass('ISO_MCU') and OnMid and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB'or InNetClass('ISO_COM'))))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_MCU_SEC') and OnMid and not IsKeepOut),(not InNetClass('ISO_MCU_SEC') and OnMid and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_USB')or InNetClass('ISO_COM')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (OnMid),(not IsKeepOut)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_COM') and OnOutside and not IsKeepOut),((not InNetClass('ISO_COM') and not InNetClass('ISO_EXT')) and OnOutside and not IsKeepOut and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_MCU_USB')))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.15mm) (OnOutside),(not IsKeepOut)
+Processing Rule : Clearance Constraint (Gap=0.2mm) (IsDesignator and OnSilkscreen),(InPoly)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (IsPad),(InPoly and OnSilkscreen)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_COM') and OnMid and not IsKeepOut),((not InNetClass('ISO_COM') and not InNetClass('ISO_EXT')) and OnMid and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_MCU_USB')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (OnOutside),(not IsKeepOut)
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
@@ -60,10 +60,10 @@ Rule Violations :0
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=0.1mm) (Max=20mm) (Preferred=0.2mm) (All)
+Processing Rule : Width Constraint (Min=0.12mm) (Max=0.44mm) (Preferred=0.44mm) (InNetClass('FMC.SDRAM'))
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=0.12mm) (Max=0.44mm) (Preferred=0.44mm) (InNetClass('FMC.SDRAM'))
+Processing Rule : Width Constraint (Min=0.1mm) (Max=20mm) (Preferred=0.2mm) (All)
 Rule Violations :0
 
 Processing Rule : Routing Layers(All)
@@ -126,13 +126,7 @@ Rule Violations :0
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
-Waived Violations Of Rule : Net Antennae (Tolerance=0mm) (not InNet('CAN_GND_INT')  and not InNet('GND_1'))
-   Waived Violation between Net Antennae: Via (36.111mm,49.923mm) from Top Signal to Bottom Signal Waived by Lucas Oldfield at 17/12/2019 6:00:48 AMGuard Rings for Crystals
-   Waived Violation between Net Antennae: Via (36.111mm,50.923mm) from Top Signal to Bottom Signal Waived by Lucas Oldfield at 17/12/2019 6:00:48 AMGuard Rings for Crystals
-   Waived Violation between Net Antennae: Via (37.111mm,50.923mm) from Top Signal to Bottom Signal Waived by Lucas Oldfield at 17/12/2019 6:00:48 AMGuard Rings for Crystals
-Waived Violations :3
-
 
 Violations Detected : 0
-Waived Violations : 3
-Time Elapsed        : 00:00:14
+Waived Violations : 0
+Time Elapsed        : 00:00:07
