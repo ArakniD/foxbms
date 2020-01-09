@@ -1,10 +1,10 @@
 [Design]
 Version=1.0
 HierarchyMode=2
-ChannelRoomNamingStyle=0
+ChannelRoomNamingStyle=2
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$ChannelIndex
-ChannelRoomLevelSeperator=_
+ChannelRoomLevelSeperator=
 OpenOutputs=1
 ArchiveProject=0
 TimestampOutput=0
@@ -112,7 +112,7 @@ DocumentUniqueId=
 
 [Document5]
 DocumentPath=dcdc_5v0_3v3.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -129,7 +129,7 @@ DocumentUniqueId=EERWJTCV
 
 [Document6]
 DocumentPath=hierarchy.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -146,7 +146,7 @@ DocumentUniqueId=MUJHUFIQ
 
 [Document7]
 DocumentPath=supply_internal.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -163,7 +163,7 @@ DocumentUniqueId=MDDOCAAC
 
 [Document8]
 DocumentPath=supply_external.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=201
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -180,7 +180,7 @@ DocumentUniqueId=CNUTEUVI
 
 [Document9]
 DocumentPath=dcdc_wide_3v3.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -197,7 +197,7 @@ DocumentUniqueId=YJBYPAQY
 
 [Document10]
 DocumentPath=mcu0_primary.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=401
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -231,7 +231,7 @@ DocumentUniqueId=
 
 [Document12]
 DocumentPath=mcu1_secondary.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -248,7 +248,7 @@ DocumentUniqueId=KCSDMPLK
 
 [Document13]
 DocumentPath=mcu0_to_mcu1_isolated_SPI.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -265,7 +265,7 @@ DocumentUniqueId=GTQCFPPN
 
 [Document14]
 DocumentPath=interlock_circuit.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -299,7 +299,7 @@ DocumentUniqueId=
 
 [Document16]
 DocumentPath=contactor_control.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -333,7 +333,7 @@ DocumentUniqueId=
 
 [Document18]
 DocumentPath=isolated_USB.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -367,7 +367,7 @@ DocumentUniqueId=
 
 [Document20]
 DocumentPath=EEPROM.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -401,7 +401,7 @@ DocumentUniqueId=
 
 [Document22]
 DocumentPath=bms-interface_interface.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -418,7 +418,7 @@ DocumentUniqueId=QQYOLTCS
 
 [Document23]
 DocumentPath=SDRAM.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -452,7 +452,7 @@ DocumentUniqueId=
 
 [Document25]
 DocumentPath=FPGA_SPI_interface.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -486,7 +486,7 @@ DocumentUniqueId=
 
 [Document27]
 DocumentPath=connector_to_BMS_extension.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -503,9 +503,9 @@ DocumentUniqueId=GCOULGMU
 
 [Document28]
 DocumentPath=power.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=401
-AnnotationIndexControlEnabled=1
+AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=19
@@ -520,7 +520,7 @@ DocumentUniqueId=ECXOYAVJ
 
 [Document29]
 DocumentPath=crystals.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -537,7 +537,7 @@ DocumentUniqueId=GJIGXEBC
 
 [Document30]
 DocumentPath=debug_LED.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -554,7 +554,7 @@ DocumentUniqueId=JQWVJWYY
 
 [Document31]
 DocumentPath=ext_bootload_activation.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -758,7 +758,7 @@ DocumentUniqueId=KIRUOKAQ
 
 [Document43]
 DocumentPath=03_LTC6820.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -775,7 +775,7 @@ DocumentUniqueId=TIRLOJUG
 
 [Document44]
 DocumentPath=bms-slave-magnetics.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -792,7 +792,7 @@ DocumentUniqueId=CIERHUMW
 
 [Document45]
 DocumentPath=0301_LTC6820_chip.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -809,7 +809,7 @@ DocumentUniqueId=MWDPPGWF
 
 [Document46]
 DocumentPath=isolated_rs485.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -826,7 +826,7 @@ DocumentUniqueId=PSQULRSK
 
 [Document47]
 DocumentPath=memorycard.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -894,7 +894,7 @@ DocumentUniqueId=
 
 [Document51]
 DocumentPath=CAN_new.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -911,7 +911,7 @@ DocumentUniqueId=VIBGAPFG
 
 [Document52]
 DocumentPath=isolated_dcdc_3.3to3.3.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -945,7 +945,7 @@ DocumentUniqueId=
 
 [Document54]
 DocumentPath=IsoDcDc-BSR033A.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -994,6 +994,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IRLEXGSA
 
+[Document57]
+DocumentPath=master-010106.Annotation
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [ProjectVariant1]
 UniqueID=8677A55E-3DC8-494F-B94E-FB321076882E
 Description=default
@@ -1011,40 +1028,140 @@ Variation8=Designator=SV501|UniqueId=\QECNKUFY\FHATMFKW|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for master-010106\Design Rule Check - master.html
+DocumentPath=Project Outputs for master-010106\BOM\Bill of Materials-master.xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=master 15-07-2019 2-28-30 PM.WAS
+DocumentPath=Project Outputs for master-010106\Design Rule Check - master.html
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=master 15-07-2019 2-29-31 PM.WAS
+DocumentPath=master 9-01-2020 7-32-38 AM.WAS
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=master 15-07-2019 2-30-15 PM.WAS
+DocumentPath=master 9-01-2020 9-20-23 AM.WAS
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=master 15-07-2019 2-30-57 PM.WAS
+DocumentPath=master 15-07-2019 2-28-30 PM.WAS
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=master 15-07-2019 2-31-54 PM.WAS
+DocumentPath=master 15-07-2019 2-29-31 PM.WAS
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=master 15-07-2019 2-32-47 PM.WAS
+DocumentPath=master 15-07-2019 2-30-15 PM.WAS
 DItemRevisionGUID=
 
 [GeneratedDocument8]
+DocumentPath=master 15-07-2019 2-30-57 PM.WAS
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=master 15-07-2019 2-31-54 PM.WAS
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=master 15-07-2019 2-32-47 PM.WAS
+DItemRevisionGUID=
+
+[GeneratedDocument11]
 DocumentPath=master 15-07-2019 2-33-30 PM.WAS
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for master-010106\NC Drill\master-RoundHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for master-010106\NC Drill\master-SlotHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for master-010106\NC Drill\master.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for master-010106\Gerber\master.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for master-010106\Gerber\master.G1
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GM2
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GP1
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GP2
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GP3
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for master-010106\Gerber\master.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for master-010106\NC Drill\master.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for master-010106\Gerber\master.REP
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for master-010106\Gerber\master.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for master-010106\ExportSTEP\master.step
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=MessageListReport.html
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for master-010106\Pick Place\Pick Place for master.txt
 DItemRevisionGUID=
 
 [Parameter1]
 Name=GlobalDate
-Value=2019-07-15
+Value=2020-01-10
 
 [Parameter2]
 Name=GlobalLicense
@@ -1056,7 +1173,7 @@ Value=foxBMS BMS-master
 
 [Parameter4]
 Name=GlobalVersion
-Value=1.0.6-1
+Value=1.0.6-2
 
 [Configuration1]
 Name=Sources
@@ -1252,7 +1369,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP Color LaserJet M254dw (C74D7F)
+TargetPrinter=OneNote
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -2096,9 +2213,305 @@ MatchParameter1=Comment
 MatchStrictly1=1
 MatchParameter2=Library Reference
 MatchStrictly2=1
-PhysicalNamingFormat=$Component_$RoomName
+PhysicalNamingFormat=$ComponentPrefix$ComponentIndex.$ChannelIndex
 GlobalIndexSortOrder=3
 GlobalIndexSortLocation=0
+UniqueIDPath0=\ICVWFQIP\CFNVUAWL
+DocumentName0=dcdc_5v0_3v3.SchDoc
+IsEnabled0=1
+SelectionScope0=All
+Order0=15
+IndexEnabled0=0
+IndexStartValue0=1
+Suffix0=
+UniqueIDPath1=\MHIOBXFS\PUAOQTRH
+DocumentName1=debug_LED.SchDoc
+IsEnabled1=1
+SelectionScope1=All
+Order1=17
+IndexEnabled1=0
+IndexStartValue1=1
+Suffix1=
+UniqueIDPath2=\MHIOBXFS\XEPSYAUX
+DocumentName2=ext_bootload_activation.SchDoc
+IsEnabled2=1
+SelectionScope2=All
+Order2=19
+IndexEnabled2=0
+IndexStartValue2=1
+Suffix2=
+UniqueIDPath3=\BCUWEEJH
+DocumentName3=contactor_control.SchDoc
+IsEnabled3=1
+SelectionScope3=All
+Order3=12
+IndexEnabled3=0
+IndexStartValue3=1
+Suffix3=
+UniqueIDPath4=\PTOWSJEE
+DocumentName4=CAN_new.SchDoc
+IsEnabled4=1
+SelectionScope4=All
+Order4=10
+IndexEnabled4=0
+IndexStartValue4=1
+Suffix4=
+UniqueIDPath5=\MADBXNLA
+DocumentName5=SDRAM.SchDoc
+IsEnabled5=1
+SelectionScope5=All
+Order5=35
+IndexEnabled5=0
+IndexStartValue5=1
+Suffix5=
+UniqueIDPath6=\FRUMINWQ
+DocumentName6=isolated_USB.SchDoc
+IsEnabled6=1
+SelectionScope6=All
+Order6=27
+IndexEnabled6=0
+IndexStartValue6=1
+Suffix6=
+UniqueIDPath7=\ABIPAGWJ
+DocumentName7=bms-interface_interface.SchDoc
+IsEnabled7=1
+SelectionScope7=All
+Order7=7
+IndexEnabled7=0
+IndexStartValue7=1
+Suffix7=
+UniqueIDPath8=\ICVWFQIP\AFETUVNP
+DocumentName8=dcdc_5v0_3v3.SchDoc
+IsEnabled8=1
+SelectionScope8=All
+Order8=14
+IndexEnabled8=0
+IndexStartValue8=1
+Suffix8=
+UniqueIDPath9=\UFDRACJJ
+DocumentName9=FPGA_SPI_interface.SchDoc
+IsEnabled9=1
+SelectionScope9=All
+Order9=20
+IndexEnabled9=0
+IndexStartValue9=1
+Suffix9=
+UniqueIDPath10=\MBFLXABH
+DocumentName10=memorycard.SchDoc
+IsEnabled10=1
+SelectionScope10=All
+Order10=33
+IndexEnabled10=0
+IndexStartValue10=1
+Suffix10=
+UniqueIDPath11=\ABIPAGWJ\SIAHWWYR\XQTUYOPK
+DocumentName11=0301_LTC6820_chip.SchDoc
+IsEnabled11=1
+SelectionScope11=All
+Order11=3
+IndexEnabled11=0
+IndexStartValue11=1
+Suffix11=
+UniqueIDPath12=\QIFQOCFF
+DocumentName12=CAN_new.SchDoc
+IsEnabled12=1
+SelectionScope12=All
+Order12=9
+IndexEnabled12=0
+IndexStartValue12=1
+Suffix12=
+UniqueIDPath13=\ICVWFQIP\RUPGZEVH
+DocumentName13=dcdc_wide_3v3.SchDoc
+IsEnabled13=1
+SelectionScope13=All
+Order13=16
+IndexEnabled13=0
+IndexStartValue13=1
+Suffix13=
+UniqueIDPath14=\MHIOBXFS
+DocumentName14=mcu0_primary.SchDoc
+IsEnabled14=1
+SelectionScope14=All
+Order14=30
+IndexEnabled14=0
+IndexStartValue14=1
+Suffix14=
+UniqueIDPath15=\IRKQYTOR
+DocumentName15=mcu1_secondary.SchDoc
+IsEnabled15=1
+SelectionScope15=All
+Order15=32
+IndexEnabled15=0
+IndexStartValue15=1
+Suffix15=
+UniqueIDPath16=\ICVWFQIP\RFAZBZTR
+DocumentName16=supply_external.SchDoc
+IsEnabled16=1
+SelectionScope16=All
+Order16=36
+IndexEnabled16=0
+IndexStartValue16=1
+Suffix16=
+UniqueIDPath17=\ABIPAGWJ\QCRKSLMP
+DocumentName17=03_LTC6820.SchDoc
+IsEnabled17=1
+SelectionScope17=All
+Order17=2
+IndexEnabled17=0
+IndexStartValue17=1
+Suffix17=
+UniqueIDPath18=\UFLKHFDF
+DocumentName18=interlock_circuit.SchDoc
+IsEnabled18=1
+SelectionScope18=All
+Order18=22
+IndexEnabled18=0
+IndexStartValue18=1
+Suffix18=
+UniqueIDPath19=\MHIOBXFS\MDUSHCPB
+DocumentName19=crystals.SchDoc
+IsEnabled19=1
+SelectionScope19=All
+Order19=13
+IndexEnabled19=0
+IndexStartValue19=1
+Suffix19=
+UniqueIDPath20=\ABIPAGWJ\QCRKSLMP\LUDJQRTP
+DocumentName20=0301_LTC6820_chip.SchDoc
+IsEnabled20=1
+SelectionScope20=All
+Order20=6
+IndexEnabled20=0
+IndexStartValue20=1
+Suffix20=
+UniqueIDPath21=\ICVWFQIP\VVZZADDL
+DocumentName21=IsoDcDc-BSR033A.SchDoc
+IsEnabled21=1
+SelectionScope21=All
+Order21=24
+IndexEnabled21=0
+IndexStartValue21=1
+Suffix21=
+UniqueIDPath22=\LKQUSXCS
+DocumentName22=mcu0_to_mcu1_isolated_SPI.SchDoc
+IsEnabled22=1
+SelectionScope22=All
+Order22=31
+IndexEnabled22=0
+IndexStartValue22=1
+Suffix22=
+UniqueIDPath23=\ABIPAGWJ\QCRKSLMP\XQTUYOPK
+DocumentName23=0301_LTC6820_chip.SchDoc
+IsEnabled23=1
+SelectionScope23=All
+Order23=4
+IndexEnabled23=0
+IndexStartValue23=1
+Suffix23=
+UniqueIDPath24=\RNKDSDCK
+DocumentName24=isolated_rs485.SchDoc
+IsEnabled24=1
+SelectionScope24=All
+Order24=26
+IndexEnabled24=0
+IndexStartValue24=1
+Suffix24=
+UniqueIDPath25=\FRUMINWQ\UVRGQGCX
+DocumentName25=isolated_usb_single.SchDoc
+IsEnabled25=1
+SelectionScope25=All
+Order25=28
+IndexEnabled25=0
+IndexStartValue25=1
+Suffix25=
+UniqueIDPath26=\TRBYXMBK
+DocumentName26=EEPROM.SchDoc
+IsEnabled26=1
+SelectionScope26=All
+Order26=18
+IndexEnabled26=0
+IndexStartValue26=1
+Suffix26=
+UniqueIDPath27=\ICVWFQIP\HYOAUAWV
+DocumentName27=isolated_dcdc_3.3to3.3.SchDoc
+IsEnabled27=1
+SelectionScope27=All
+Order27=25
+IndexEnabled27=0
+IndexStartValue27=1
+Suffix27=
+UniqueIDPath28=
+DocumentName28=hierarchy.SchDoc
+IsEnabled28=1
+SelectionScope28=All
+Order28=21
+IndexEnabled28=0
+IndexStartValue28=1
+Suffix28=
+UniqueIDPath29=\ABIPAGWJ\SIAHWWYR\LUDJQRTP
+DocumentName29=0301_LTC6820_chip.SchDoc
+IsEnabled29=1
+SelectionScope29=All
+Order29=5
+IndexEnabled29=0
+IndexStartValue29=1
+Suffix29=
+UniqueIDPath30=\ICVWFQIP
+DocumentName30=supply_internal.SchDoc
+IsEnabled30=1
+SelectionScope30=All
+Order30=37
+IndexEnabled30=0
+IndexStartValue30=1
+Suffix30=
+UniqueIDPath31=\ABIPAGWJ\FDIITRGN
+DocumentName31=bms-slave-magnetics.SchDoc
+IsEnabled31=1
+SelectionScope31=All
+Order31=8
+IndexEnabled31=0
+IndexStartValue31=1
+Suffix31=
+UniqueIDPath32=\ICVWFQIP\QYQCVLWQ
+DocumentName32=IsoDcDc-BSR033A.SchDoc
+IsEnabled32=1
+SelectionScope32=All
+Order32=23
+IndexEnabled32=0
+IndexStartValue32=1
+Suffix32=
+UniqueIDPath33=\ANIUYTDF
+DocumentName33=connector_to_BMS_extension.SchDoc
+IsEnabled33=1
+SelectionScope33=All
+Order33=11
+IndexEnabled33=0
+IndexStartValue33=1
+Suffix33=
+UniqueIDPath34=\FRUMINWQ\BUEPGCGD
+DocumentName34=isolated_usb_single.SchDoc
+IsEnabled34=1
+SelectionScope34=All
+Order34=29
+IndexEnabled34=0
+IndexStartValue34=1
+Suffix34=
+UniqueIDPath35=\MHIOBXFS\IIPXNDCX
+DocumentName35=power.SchDoc
+IsEnabled35=1
+SelectionScope35=All
+Order35=34
+IndexEnabled35=0
+IndexStartValue35=1
+Suffix35=
+UniqueIDPath36=\ABIPAGWJ\SIAHWWYR
+DocumentName36=03_LTC6820.SchDoc
+IsEnabled36=1
+SelectionScope36=All
+Order36=1
+IndexEnabled36=0
+IndexStartValue36=1
+Suffix36=
 
 [PrjClassGen]
 CompClassManualEnabled=0

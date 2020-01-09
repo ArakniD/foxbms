@@ -1,12 +1,10 @@
 Protel Design System Design Rule Check
 PCB File : C:\sandbox\github\hardware\hw-master\v1.0.6\Sources\master.PcbDoc
-Date     : 7/01/2020
-Time     : 11:28:41 PM
+Date     : 9/01/2020
+Time     : 10:03:49 PM
 
-WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
-   Polygon named: NONET_L01_P235 In net GND_1 On Top Signal
-   Polygon named: NONET_L06_P217 In net GND_1 On Bottom Signal
-   Polygon named: Inner Signal-CAN_GND_INT In net GND_1 On Inner Signal
+Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_COM') and OnOutside and not IsKeepOut),((not InNetClass('ISO_COM') and not InNetClass('ISO_EXT')) and OnOutside and not IsKeepOut and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_MCU_USB')))
+Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_COM') and OnMid and not IsKeepOut),((not InNetClass('ISO_COM') and not InNetClass('ISO_EXT')) and OnMid and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_MCU_USB')))
 Rule Violations :0
@@ -14,7 +12,7 @@ Rule Violations :0
 Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU_SEC') and OnOutside and not IsKeepOut),((not InNetClass('ISO_MCU_SEC')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_USB')or InNetClass('ISO_COM')))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU_USB') and OnOutside and not IsKeepOut),((not InNetClass('ISO_MCU_USB')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_COM')))
+Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_EXT') and OnOutside and not IsKeepOut),((InNetClass('ISO_EXT') = false) and OnOutside and (IsKeepOut = false) and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB') or InNetClass('ISO_COM')))
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU')  and OnOutside       and not IsKeepOut),((not InNetClass('ISO_MCU')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB')or InNetClass('ISO_COM')))
@@ -23,7 +21,7 @@ Rule Violations :0
 Processing Rule : Clearance Constraint (Gap=0.2mm) (IsDesignator and OnSilkscreen),(InPoly)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_COM') and OnOutside and not IsKeepOut),((not InNetClass('ISO_COM') and not InNetClass('ISO_EXT')) and OnOutside and not IsKeepOut and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_MCU_USB')))
+Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_MCU_USB') and OnOutside and not IsKeepOut),((not InNetClass('ISO_MCU_USB')) and OnOutside and not IsKeepOut and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_COM')))
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_MCU_USB') and OnMid and not IsKeepOut),(not InNetClass('ISO_MCU_USB') and OnMid     and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC')or InNetClass('ISO_COM')))
@@ -44,16 +42,13 @@ Rule Violations :0
 Processing Rule : Clearance Constraint (Gap=0.7mm) (InNetClass('ISO_MCU_SEC') and OnMid and not IsKeepOut),(not InNetClass('ISO_MCU_SEC') and OnMid and (InNetClass('ISO_EXT') or InNetClass('ISO_MCU') or InNetClass('ISO_MCU_USB')or InNetClass('ISO_COM')))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=1.8mm) (InNetClass('ISO_EXT') and OnOutside and not IsKeepOut),((InNetClass('ISO_EXT') = false) and OnOutside and (IsKeepOut = false) and (InNetClass('ISO_MCU') or InNetClass('ISO_MCU_SEC') or InNetClass('ISO_MCU_USB') or InNetClass('ISO_COM')))
-Rule Violations :0
-
 Processing Rule : Clearance Constraint (Gap=0.15mm) ((InNet('USB_GND_1') or InNet('USB_GND_2')) And OnLayer('Top Signal')),(InDifferentialPairClass('USB_DP'))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.15mm) (OnOutside),(not IsKeepOut)
+Processing Rule : Clearance Constraint (Gap=0.2mm) (OnMid),(not IsKeepOut)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.2mm) (OnMid),(not IsKeepOut)
+Processing Rule : Clearance Constraint (Gap=0.15mm) (OnOutside),(not IsKeepOut)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.15mm) (IsPad),(InPoly and OnSilkscreen)
@@ -66,14 +61,10 @@ Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
-   Violation between Modified Polygon: Polygon Shelved  (Inner Signal-CAN_GND_INT) on Inner Signal 
-   Violation between Modified Polygon: Polygon Shelved  (NONET_L01_P235) on Top Signal 
-   Violation between Modified Polygon: Polygon Shelved  (NONET_L06_P217) on Bottom Signal 
-Rule Violations :3
+Rule Violations :0
 
 Processing Rule : Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (InNetClass('FMC.SDRAM'))
-   Violation between Width Constraint: Track (124.255mm,27.066mm)(124.433mm,26.889mm) on Top Signal Actual Width = 0.12mm, Target Width = 0.134mm
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Width Constraint (Min=0.1mm) (Max=20mm) (Preferred=0.2mm) (All)
 Rule Violations :0
@@ -85,61 +76,14 @@ Processing Rule : Routing Via (MinHoleWidth=0.2mm) (MaxHoleWidth=1mm) (Preferred
 Rule Violations :0
 
 Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=2mm) (Prefered=0.65mm)  and Width Constraints (Min=0.024mm) (Max=0.279mm) (Prefered=0.152mm) (InDifferentialPairClass('All Differential Pairs'))
-   Violation between Differential Pairs Routing: Between Net ABEXT_P And Net ABEXT_N [Uncoupled Length = 20.835mm], [Maximum Uncoupled Length = 12.7mm]
-   Violation between Differential Pairs Routing: Between Net RS485_YZ_P And Net RS485_YZ_N [Uncoupled Length = 21.93mm], [Maximum Uncoupled Length = 12.7mm]
-Rule Violations :2
+   Violation between Differential Pairs Routing: Between Net ABEXT_P And Net ABEXT_N [Uncoupled Length = 20.724mm], [Maximum Uncoupled Length = 12.7mm]
+   Violation between Differential Pairs Routing: Between Net CAN_0_P And Net CAN_0_N [Uncoupled Length = 23.837mm], [Maximum Uncoupled Length = 12.7mm]
+   Violation between Differential Pairs Routing: Between Net CAN_1_P And Net CAN_1_N [Uncoupled Length = 16.901mm], [Maximum Uncoupled Length = 12.7mm]
+   Violation between Differential Pairs Routing: Between Net RS485_YZ_P And Net RS485_YZ_N [Uncoupled Length = 22.923mm], [Maximum Uncoupled Length = 12.7mm]
+Rule Violations :4
 
 Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.127mm) (Max=0.152mm) (Prefered=0.152mm)  and Width Constraints (Min=0.1mm) (Max=0.363mm) (Prefered=0.137mm) (InDifferentialPairClass('USB_DP'))
 Rule Violations :0
-
-Processing Rule : SMD Neck-Down Constraint (Percent=100%) (All)
-   Violation between SMD Neck-Down Constraint: Between Pad C124-1(55.477mm,101.833mm) on Top Signal And Track (55.477mm,101.758mm)(55.477mm,101.833mm) on Top Signal Relative Track Width: 103.23%
-   Violation between SMD Neck-Down Constraint: Between Pad C124-2(52.527mm,101.833mm) on Top Signal And Track (51.703mm,102.582mm)(51.703mm,104.775mm) on Top Signal Relative Track Width: 103.23%
-   Violation between SMD Neck-Down Constraint: Between Pad C13_2-1(4.716mm,45.36mm) on Top Signal And Track (4.828mm,45.936mm)(4.831mm,45.939mm) on Top Signal Relative Track Width: 222.22%
-   Violation between SMD Neck-Down Constraint: Between Pad C14_2-1(10.178mm,41.13mm) on Top Signal And Track (10.178mm,40.98mm)(10.178mm,41.13mm) on Top Signal Relative Track Width: 111.11%
-   Violation between SMD Neck-Down Constraint: Between Pad C32-2(34.392mm,24.305mm) on Top Signal And Track (34.392mm,24.333mm)(34.392mm,24.988mm) on Top Signal Relative Track Width: 120.00%
-   Violation between SMD Neck-Down Constraint: Between Pad C38-1(65.629mm,89.112mm) on Top Signal And Track (66.546mm,86.435mm)(66.546mm,101.59mm) on Top Signal Relative Track Width: 129.03%
-   Violation between SMD Neck-Down Constraint: Between Pad C38-2(62.679mm,89.112mm) on Top Signal And Track (63.237mm,75.373mm)(63.237mm,88.855mm) on Top Signal Relative Track Width: 180.65%
-   Violation between SMD Neck-Down Constraint: Between Pad C39-1(64.808mm,103.019mm) on Top Signal And Track (65.117mm,103.019mm)(66.546mm,101.59mm) on Top Signal Relative Track Width: 129.03%
-   Violation between SMD Neck-Down Constraint: Between Pad C39-2(61.858mm,103.019mm) on Top Signal And Track (60.699mm,102.1mm)(60.699mm,109.178mm) on Top Signal Relative Track Width: 161.29%
-   Violation between SMD Neck-Down Constraint: Between Pad D12-2(128.326mm,99.348mm) on Top Signal And Track (126.449mm,99.348mm)(128.195mm,99.348mm) on Top Signal Relative Track Width: 109.89%
-   Violation between SMD Neck-Down Constraint: Between Pad D14-2(128.282mm,91.728mm) on Top Signal And Track (126.449mm,91.728mm)(128.143mm,91.728mm) on Top Signal Relative Track Width: 109.89%
-   Violation between SMD Neck-Down Constraint: Between Pad D16_1-2(102.25mm,76.985mm) on Top Signal And Track (102.382mm,75.329mm)(102.382mm,78.811mm) on Top Signal Relative Track Width: 116.67%
-   Violation between SMD Neck-Down Constraint: Between Pad D16_2-2(37.027mm,62.444mm) on Top Signal And Track (35.344mm,62.312mm)(39.443mm,62.312mm) on Top Signal Relative Track Width: 116.67%
-   Violation between SMD Neck-Down Constraint: Between Pad IC1_1-73(14.993mm,14.354mm) on Top Signal And Track (13.873mm,14.354mm)(14.993mm,14.354mm) on Top Signal Relative Track Width: 101.60%
-   Violation between SMD Neck-Down Constraint: Between Pad IC18-1(54.002mm,94.717mm) on Top Signal And Track (54.002mm,94.717mm)(54.002mm,95.217mm) on Top Signal Relative Track Width: 291.67%
-   Violation between SMD Neck-Down Constraint: Between Pad IC18-2(54.002mm,95.217mm) on Top Signal And Track (54.002mm,95.217mm)(54.002mm,95.717mm) on Top Signal Relative Track Width: 291.67%
-   Violation between SMD Neck-Down Constraint: Between Pad IC18-3(54.002mm,95.717mm) on Top Signal And Track (54.002mm,95.217mm)(54.002mm,95.717mm) on Top Signal Relative Track Width: 291.67%
-   Violation between SMD Neck-Down Constraint: Between Pad IC18-4(54.002mm,96.217mm) on Top Signal And Track (54.002mm,96.217mm)(54.002mm,96.717mm) on Top Signal Relative Track Width: 291.67%
-   Violation between SMD Neck-Down Constraint: Between Pad IC18-5(54.002mm,96.717mm) on Top Signal And Track (54.002mm,96.217mm)(54.002mm,96.717mm) on Top Signal Relative Track Width: 291.67%
-   Violation between SMD Neck-Down Constraint: Between Pad IC18-6(54.002mm,97.217mm) on Top Signal And Track (54.002mm,97.217mm)(54.002mm,97.717mm) on Top Signal Relative Track Width: 291.67%
-   Violation between SMD Neck-Down Constraint: Between Pad IC18-7(54.002mm,97.717mm) on Top Signal And Track (54.002mm,97.217mm)(54.002mm,97.717mm) on Top Signal Relative Track Width: 291.67%
-   Violation between SMD Neck-Down Constraint: Between Pad IC19-1(52.202mm,106.075mm) on Top Signal And Track (51.703mm,106.74mm)(53.46mm,108.498mm) on Top Signal Relative Track Width: 533.33%
-   Violation between SMD Neck-Down Constraint: Between Pad IC19-2(52.202mm,105.425mm) on Top Signal And Track (51.703mm,102.582mm)(51.703mm,104.775mm) on Top Signal Relative Track Width: 533.33%
-   Violation between SMD Neck-Down Constraint: Between Pad IC19-3(52.202mm,104.775mm) on Top Signal And Track (51.703mm,102.582mm)(51.703mm,104.775mm) on Top Signal Relative Track Width: 533.33%
-   Violation between SMD Neck-Down Constraint: Between Pad IC19-4(52.202mm,104.125mm) on Top Signal And Track (51.703mm,102.582mm)(51.703mm,104.775mm) on Top Signal Relative Track Width: 533.33%
-   Violation between SMD Neck-Down Constraint: Between Pad IC19-5(55.002mm,104.125mm) on Top Signal And Track (55.477mm,101.833mm)(55.477mm,107.671mm) on Top Signal Relative Track Width: 533.33%
-   Violation between SMD Neck-Down Constraint: Between Pad IC19-6(55.002mm,104.775mm) on Top Signal And Track (55.477mm,101.833mm)(55.477mm,107.671mm) on Top Signal Relative Track Width: 533.33%
-   Violation between SMD Neck-Down Constraint: Between Pad IC19-7(55.002mm,105.425mm) on Top Signal And Track (55.477mm,101.833mm)(55.477mm,107.671mm) on Top Signal Relative Track Width: 533.33%
-   Violation between SMD Neck-Down Constraint: Between Pad IC19-8(55.002mm,106.075mm) on Top Signal And Track (55.477mm,101.833mm)(55.477mm,107.671mm) on Top Signal Relative Track Width: 533.33%
-   Violation between SMD Neck-Down Constraint: Between Pad IC20-1(61.654mm,107.165mm) on Top Signal And Track (60.699mm,102.1mm)(60.699mm,109.178mm) on Top Signal Relative Track Width: 833.34%
-   Violation between SMD Neck-Down Constraint: Between Pad IC20-2(61.654mm,106.515mm) on Top Signal And Track (60.699mm,102.1mm)(60.699mm,109.178mm) on Top Signal Relative Track Width: 833.34%
-   Violation between SMD Neck-Down Constraint: Between Pad IC20-3(61.654mm,105.865mm) on Top Signal And Track (60.699mm,102.1mm)(60.699mm,109.178mm) on Top Signal Relative Track Width: 833.34%
-   Violation between SMD Neck-Down Constraint: Between Pad IC20-4(61.654mm,105.215mm) on Top Signal And Track (60.699mm,102.1mm)(60.699mm,109.178mm) on Top Signal Relative Track Width: 833.34%
-   Violation between SMD Neck-Down Constraint: Between Pad IC20-5(64.454mm,105.215mm) on Top Signal And Track (65.403mm,103.155mm)(65.403mm,106.165mm) on Top Signal Relative Track Width: 833.34%
-   Violation between SMD Neck-Down Constraint: Between Pad IC20-6(64.454mm,105.865mm) on Top Signal And Track (65.403mm,103.155mm)(65.403mm,106.165mm) on Top Signal Relative Track Width: 833.34%
-   Violation between SMD Neck-Down Constraint: Between Pad IC20-7(64.454mm,106.515mm) on Top Signal And Track (65.403mm,103.155mm)(65.403mm,106.165mm) on Top Signal Relative Track Width: 833.34%
-   Violation between SMD Neck-Down Constraint: Between Pad IC20-8(64.454mm,107.165mm) on Top Signal And Track (65.403mm,103.155mm)(65.403mm,106.165mm) on Top Signal Relative Track Width: 833.34%
-   Violation between SMD Neck-Down Constraint: Between Pad R2-2(9.977mm,39.115mm) on Top Signal And Track (9.977mm,38.917mm)(9.977mm,39.115mm) on Top Signal Relative Track Width: 111.11%
-   Violation between SMD Neck-Down Constraint: Between Pad R74-1(18.76mm,52.958mm) on Top Signal And Track (7.459mm,52.673mm)(18.892mm,52.673mm) on Top Signal Relative Track Width: 222.22%
-   Violation between SMD Neck-Down Constraint: Between Pad T8_1-2(107.362mm,75.302mm) on Top Signal And Track (104.99mm,75.302mm)(107.225mm,75.302mm) on Top Signal Relative Track Width: 126.76%
-   Violation between SMD Neck-Down Constraint: Between Pad T8_1-3(104.872mm,75.302mm) on Top Signal And Track (104.99mm,75.302mm)(107.225mm,75.302mm) on Top Signal Relative Track Width: 126.76%
-   Violation between SMD Neck-Down Constraint: Between Pad T8_2-2(35.344mm,57.332mm) on Top Signal And Track (35.344mm,57.45mm)(35.344mm,59.694mm) on Top Signal Relative Track Width: 126.76%
-   Violation between SMD Neck-Down Constraint: Between Pad T8_2-3(35.344mm,59.822mm) on Top Signal And Track (35.344mm,57.45mm)(35.344mm,59.694mm) on Top Signal Relative Track Width: 126.76%
-   Violation between SMD Neck-Down Constraint: Between Pad TPeSUPi-1(53.521mm,108.113mm) on Top Signal And Track (51.703mm,106.74mm)(53.46mm,108.498mm) on Top Signal Relative Track Width: 160.00%
-   Violation between SMD Neck-Down Constraint: Between Pad U8_1-6(119.807mm,64.295mm) on Top Signal And Track (119.927mm,64.743mm)(119.927mm,65.498mm) on Top Signal Relative Track Width: 166.67%
-   Violation between SMD Neck-Down Constraint: Between Pad U8_2-6(8.128mm,47.585mm) on Top Signal And Track (8.248mm,48.033mm)(8.248mm,48.788mm) on Top Signal Relative Track Width: 166.67%
-Rule Violations :46
 
 Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Allowed) (Ignore First Corner = Allowed)
 Rule Violations :0
@@ -160,9 +104,7 @@ Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=6.4mm) (All)
 Rule Violations :0
 
 Processing Rule : Hole To Hole Clearance (Gap=0.377mm) (All),(All)
-   Violation between Hole To Hole Clearance Constraint: (0.373mm < 0.377mm) Between Via (28.37mm,90.503mm) from Top Signal to Bottom Signal And Via (28.775mm,90.099mm) from Top Signal to Bottom Signal 
-   Violation between Hole To Hole Clearance Constraint: (0.373mm < 0.377mm) Between Via (30.77mm,88.453mm) from Top Signal to Bottom Signal And Via (31.175mm,88.048mm) from Top Signal to Bottom Signal 
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.05mm) (All),(All)
 Rule Violations :0
@@ -191,10 +133,13 @@ Rule Violations :0
 Processing Rule : Matched Lengths(Tolerance=10mm) (InNetClass('FMC.ADR'))
 Rule Violations :0
 
+Processing Rule : Matched Lengths(Tolerance=10mm) (InNetClass('FMC.CMD'))
+Rule Violations :0
+
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 54
+Violations Detected : 4
 Waived Violations : 0
 Time Elapsed        : 00:00:09
