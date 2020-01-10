@@ -134,8 +134,10 @@ void ISO_ReInit(void) {
 
 
 void ISO_MeasureInsulation(void) {
-#ifdef ISO_ISOGUARD_ENABLE
+    /* Call sysmon notify function */
+    DIAG_SysMonNotify(DIAG_SYSMON_ISOGUARD_ID, 0);        /* task is running, state = ok */
 
+    #ifdef ISO_ISOGUARD_ENABLE
     /* Do not continue if ISOGUARD module is still uninitialized */
     if (iso_state == ISO_STATE_UNINITIALIZED) {
         return;
@@ -177,10 +179,10 @@ void ISO_MeasureInsulation(void) {
     if (ohksState == IO_PIN_RESET ||
             (ISO_measData.valid == 0 && ISO_measData.state == 1)) {
         /* Error if PIN set or invalid insulation detected */
-        DIAG_Handler(DIAG_CH_INSULATION_ERROR, DIAG_EVENT_NOK, 0, 0);
+        DIAG_Handler(DIAG_CH_INSULATION_ERROR, DIAG_EVENT_NOK, 0);
     } else if (ISO_measData.valid == 0 && ISO_measData.state == 0) {
         /* Measurement okay */
-        DIAG_Handler(DIAG_CH_INSULATION_ERROR, DIAG_EVENT_OK, 0, 0);
+        DIAG_Handler(DIAG_CH_INSULATION_ERROR, DIAG_EVENT_OK, 0);
     } else {
         /* Do nothing, Pin == okay, but measurement invalid */
     }
@@ -191,7 +193,5 @@ void ISO_MeasureInsulation(void) {
     /* Store data in database */
     DB_WriteBlock(&ISO_measData, DATA_BLOCK_ID_ISOGUARD);
 #endif
-
-    DIAG_SysMonNotify(DIAG_SYSMON_ISOGUARD_ID, 0);        /* task is running, state = ok */
 }
 #endif

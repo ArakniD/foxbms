@@ -82,8 +82,8 @@
  * \par Default:
  * 0
 */
-/* #define BUILD_MODULE_ENABLE_UART          1 */
-#define BUILD_MODULE_ENABLE_UART          0
+#define BUILD_MODULE_ENABLE_UART          1
+/* #define BUILD_MODULE_ENABLE_UART          0 */
 
 /**
  * @ingroup CONFIG_GENERAL
@@ -115,8 +115,39 @@
  * \par Default:
  * 0
 */
-/* #define BUILD_MODULE_ENABLE_COM           1 */
-#define BUILD_MODULE_ENABLE_COM           0
+#define BUILD_MODULE_ENABLE_COM           1
+/* #define BUILD_MODULE_ENABLE_COM           0 */
+
+/**
+ * @ingroup CONFIG_GENERAL
+ * enables CONTACTOR module
+ * \par Type:
+ * select(2)
+ * \par Default:
+ * 0
+*/
+#define BUILD_MODULE_ENABLE_CONTACTOR           0
+
+/**
+ * @ingroup CONFIG_GENERAL
+ * enables INTERLOCK module
+ * \par Type:
+ * select(2)
+ * \par Default:
+ * 0
+*/
+#define BUILD_MODULE_ENABLE_ILCK          1
+
+/**
+ * @ingroup CONFIG_GENERAL
+ * enables ISOGUARD module.
+ * \par Type:
+ * select(2)
+ * \par Default:
+ * 0
+*/
+#define BUILD_MODULE_ENABLE_ISOGUARD          0
+
 
 /**
  * @ingroup CONFIG_GENERAL
@@ -126,8 +157,10 @@
  * \par Default:
  * 0
 */
+
 /* #define BUILD_MODULE_DEBUGPRINTF          1 */
-#define BUILD_MODULE_DEBUGPRINTF          0
+#define BUILD_MODULE_DEBUGPRINTF          1
+
 
 /**
  * @ingroup CONFIG_GENERAL
@@ -141,35 +174,13 @@
 /* #define BUILD_MODULE_ENABLE_RTC           0 */
 
 /**
- * @ingroup CONFIG_GENERAL
- * enables CONTACTOR peripheral
- * \par Type:
- * select(2)
- * \par Default:
- * 0
+  * @ingroup CONFIG_GENERAL
+  * enables the generation of FreeRTOS runtime statistics
+  * at the expense of (maybe) slightly reduced system performance
 */
-#define BUILD_MODULE_ENABLE_CONTACTOR           1
 
-/**
- * @ingroup CONFIG_GENERAL
- * enables INTERLOCK peripheral
- * \par Type:
- * select(2)
- * \par Default:
- * 0
-*/
-#define BUILD_MODULE_ENABLE_ILCK           1
-
-/**
- * @ingroup CONFIG_GENERAL
- * enables ISOGUARD module.
- * \par Type:
- * select(2)
- * \par Default:
- * 0
-*/
-#define BUILD_MODULE_ENABLE_ISOGUARD          1
-
+/* #define BUILD_MODULE_ENABLE_RUNTIMESTATS  1 */
+#define BUILD_MODULE_ENABLE_RUNTIMESTATS 0
 
 /**
  * @ingroup CONFIG_GENERAL
@@ -182,9 +193,30 @@
 #define BUILD_MODULE_ENABLE_WATCHDOG        1
 /* #define BUILD_MODULE_ENABLE_WATCHDOG      0 */
 
+/**
+ * @ingroup CONFIG_GENERAL
+ * allows the MCU to startup altough the binary is from a dirty repository
+ * (no remote or git status was not clean)
+ * \par Type:
+ * select(2)
+ * \par Default:
+ * 1
+*/
+#define BUILD_ALLOW_DIRTY_STARTUP        1
+/* #define BUILD_ALLOW_DIRTY_STARTUP      0 */
+
 
 /* #define BUILD_MODULE_IMPORT_CELL_DATASHEET  1 */
 #define BUILD_MODULE_IMPORT_CELL_DATASHEET  0
+
+/**
+ * @brief Enable task statistics
+ *
+ * If this define is set to 1, task statistics will be computed
+ * during runtime with diag_calc_runtime_stats().
+ */
+#define BUILD_DIAG_ENABLE_TASK_STATISTICS        1
+/* #define BUILD_DIAG_ENABLE_TASK_STATISTICS      0 */
 
 /**
  * A variable defined as ``(type) MEM_BKP_SRAM (name)`` will be stored in the

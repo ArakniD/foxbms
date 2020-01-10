@@ -67,7 +67,6 @@
 #include "eepr.h"
 
 #include "diag.h"
-#include "io.h"
 #include "os.h"
 #include "rtc.h"
 
@@ -484,23 +483,23 @@ void EEPR_TransferStateRequest(void) {  /* uses the request to update the curren
 void EEPR_ClearErrorEvent(void) {
     switch (eepr_state.statereq) {
         case EEPR_WRITEMEMORY:
-            (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_RESET, 0, NULL));  /* clear error event */
+            (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_RESET, 0));  /* clear error event */
             break;
 
         case EEPR_READMEMORY:
-            (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_RESET, 1, NULL));  /* clear error event */
+            (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_RESET, 1));  /* clear error event */
             break;
 
         case EEPR_IDLE:
             if (eepr_state.state == EEPR_IDLE || eepr_state.state  ==  EEPR_READFAILED || eepr_state.state  ==  EEPR_WRITEFAILED) {
-                (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_RESET, 2, NULL));  /* clear error event */
+                (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_RESET, 2));  /* clear error event */
             } else if (eepr_state.state == EEPR_UNINITIALIZED || eepr_state.state == EEPR_INITFAILED || eepr_state.state == EEPR_DISABLED) {
-                (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_RESET, 3, NULL));  /* clear error event */
+                (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_RESET, 3));  /* clear error event */
             }
             break;
 
         case EEPR_UNINITIALIZED:
-            (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_RESET, 4, NULL));  /* clear error event */
+            (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_RESET, 4));  /* clear error event */
             break;
 
         default:
@@ -1005,7 +1004,7 @@ void EEPR_Trigger(void) {
 
         case EEPR_INITFAILED:
             if (eepr_state.substate == 0) {
-                (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_NOK, 2, NULL));
+                (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_NOK, 2));
                 EEPR_ReEnterStateInit();
                 eepr_state.substate = 1;
             }
@@ -1015,8 +1014,7 @@ void EEPR_Trigger(void) {
         case EEPR_READFAILED:
             if (eepr_state.substate == 0) {
                 eepr_ch_cfg[eepr_state.currentchannel].errorflag = EEPR_ERR_RD;
-                (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_NOK, 1, NULL));
-                IO_WritePin(IO_PIN_MCU_0_TO_FPGA_INTERFACE_SPI_NSS, IO_PIN_SET);
+                (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_NOK, 1));
                 EEPR_ReEnterStateInit();
                 eepr_state.substate = 1;
             }
@@ -1025,7 +1023,7 @@ void EEPR_Trigger(void) {
         case EEPR_WRITEFAILED:
             if (eepr_state.substate == 0) {
                 eepr_ch_cfg[eepr_state.currentchannel].errorflag = EEPR_ERR_WR;
-                (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_NOK, 0, NULL));
+                (void)(DIAG_Handler(DIAG_CH_CALIB_EEPR_FAILURE, DIAG_EVENT_NOK, 0));
                 EEPR_ReEnterStateInit();
                 eepr_state.substate = 1;
             }
