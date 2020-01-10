@@ -5,12 +5,10 @@ ProjectPath=hw-extension\v1.0.5\Sources\extension-010005.PrjPcb
 [Project2]
 ProjectPath=hw-interface-ltc6820\v1.9.3\Sources\interface.PrjPcb
 [Project3]
-ProjectPath=hw-master\v1.0.6\Sources\master-010106.PrjPcb
+ProjectPath=hw-master\v1.0.6-2\Sources\master-010106.PrjPcb
 [Project4]
 ProjectPath=library\ti-import.LibPkg
 [Project5]
 ProjectPath=hw-multiboard-v2.0.x\foxBMS-MultiBoard\foxBMS-MultiBoard.PrjMbd
 [Project6]
 ProjectPath=hw-slave-12-ltc6811-1\hw-slave-12-ltc6811-1-v2.1.5\Sources\slave-12-ltc6811-1.PrjPcb
-[Project7]
-ProjectPath=library\Imported T521X336M050ATE075.lia\T521X336M050ATE075.LibPkg

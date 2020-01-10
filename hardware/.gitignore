@@ -3,3 +3,8 @@ eagle.epf
 *.b#*
 *.s#*
 *.l#*
+# Ignore Altium working folders
+**/History
+**/__Previews
+**/Project Logs*
+**/Project Outputs*
