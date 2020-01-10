@@ -1,14 +1,8 @@
 [ProjectGroup]
 Version=1.0
 [Project1]
-ProjectPath=hw-extension\v1.0.5\Sources\extension-010005.PrjPcb
+ProjectPath=hw-master\v1.0.6-2\Sources\master.PrjPcb
 [Project2]
-ProjectPath=hw-interface-ltc6820\v1.9.3\Sources\interface.PrjPcb
+ProjectPath=library\library.LibPkg
 [Project3]
-ProjectPath=hw-master\v1.0.6-2\Sources\master-010106.PrjPcb
-[Project4]
-ProjectPath=library\ti-import.LibPkg
-[Project5]
-ProjectPath=hw-multiboard-v2.0.x\foxBMS-MultiBoard\foxBMS-MultiBoard.PrjMbd
-[Project6]
-ProjectPath=hw-slave-12-ltc6811-1\hw-slave-12-ltc6811-1-v2.1.5\Sources\slave-12-ltc6811-1.PrjPcb
+ProjectPath=hw-slave-12-ltc6811-1\v2.1.7\Sources\slave-12-ltc6811-1.PrjPcb

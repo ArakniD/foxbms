@@ -1,0 +1,24 @@
+DRC Rules Export File for PCB: C:\sandbox\github\foxBMS\hardware\hw-master\v1.0.6-2\Sources\master.PcbDoc
+RuleKind=Clearance|RuleName=USB Clear|Scope=Board|Minimum=5.91
+RuleKind=Clearance|RuleName=PolygonOverlay|Scope=Board|Minimum=5.91
+RuleKind=Clearance|RuleName=OverlayClear|Scope=Board|Minimum=7.87
+RuleKind=Clearance|RuleName=Outer-LV-GAP_ISO_COM|Scope=Board|Minimum=70.87
+RuleKind=Clearance|RuleName=Inner-LV-GAP_ISO_COM|Scope=Board|Minimum=27.56
+RuleKind=Clearance|RuleName=PolygonClear|Scope=Board|Minimum=5.91
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint|Scope=Board|Minimum=4.72
+RuleKind=Clearance|RuleName=Inner-LV-GAP_ISO_USB|Scope=Board|Minimum=27.56
+RuleKind=Clearance|RuleName=Inner-LV-GAP_ISO_MCU_SEC|Scope=Board|Minimum=27.56
+RuleKind=Clearance|RuleName=Inner-LV-GAP_ISO_MCU|Scope=Board|Minimum=27.56
+RuleKind=Clearance|RuleName=InnerLV-GAP_ISO_EXT|Scope=Board|Minimum=27.56
+RuleKind=Clearance|RuleName=Outer-LV-GAP_ISO_USB|Scope=Board|Minimum=70.87
+RuleKind=Clearance|RuleName=Outer-LV-GAP_ISO_MCU_SEC|Scope=Board|Minimum=70.87
+RuleKind=Clearance|RuleName=Outer-LV-GAP_ISO_MCU|Scope=Board|Minimum=70.87
+RuleKind=Clearance|RuleName=Outer-LV-GAP_ISO_EXT|Scope=Board|Minimum=70.87
+RuleKind=Width|RuleName=SDRAM Impedance Control|Scope=Board|Minimum=3.88
+RuleKind=Clearance|RuleName=InnerLayers|Scope=Board|Minimum=7.87
+RuleKind=Clearance|RuleName=OuterLayers|Scope=Board|Minimum=5.91
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=3.94
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion_VIAs|Scope=Board|Minimum=-393.70
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=3.94

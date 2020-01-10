@@ -1,0 +1,10 @@
+Output: bom
+Type  : BOM
+From  : Variant [default] of Project [master.PrjPcb]
+   Generated File[bom-master(default).xlsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 9:45:09 AM On 11/01/2020

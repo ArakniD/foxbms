@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\sandbox\github\foxBMS\hardware\hw-master\v1.0.6-2\Sources\master.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=master-roundholes.txt|DrillLayers=gtl,gp1,gp2,g1,gp3,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=master-slotholes.txt|DrillLayers=gtl,gp1,gp2,g1,gp3,gbl
